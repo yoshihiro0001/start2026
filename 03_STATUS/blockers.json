@@ -1,0 +1,28 @@
+{
+  "last_updated": "2026-07-05",
+  "top_blockers": [
+    {
+      "rank": 1,
+      "name": "Production path undecided",
+      "impact": "Human Console can be viewed, but cannot yet run app/API/DB loops",
+      "next_action": "Choose GitHub Pages / Vercel / Cloudflare / Supabase direction"
+    },
+    {
+      "rank": 2,
+      "name": "Temporary password gate only",
+      "impact": "123456 gate is not real security",
+      "next_action": "Move to real auth before important information"
+    },
+    {
+      "rank": 3,
+      "name": "DB/API not selected",
+      "impact": "Console updates are still manual/static",
+      "next_action": "Select backend path after production decision"
+    }
+  ],
+  "resolved_recently": [
+    "GitHub Pages preview URL issued",
+    "Temporary password gate added",
+    "Root index redirect added"
+  ]
+}

@@ -4,23 +4,38 @@ Last updated: 2026-07-05
 
 ## Approval
 
-Human approved password protected preview.
+Human approved moving from "viewable Human Console" toward "Human Console that drives the development loop".
 
-## Temporary Password
+## Current Preview
 
 ```text
-123456
+URL: https://yoshihiro0001.github.io/start2026/
+Temporary password: 123456
 ```
 
 ## Codex Next Task
 
-Preview環境を作成し、Human Consoleをスマホで開けるURLを発行する。
+GitHub Pages仮Previewから、より本番に近いPreview / Auth / DB / API構成を選定する。
 
-Current implementation target:
+Current decision target:
 
 ```text
-GitHub Pages + simple client-side password gate
+GitHub Pages continuation
+vs
+Vercel / Cloudflare / Supabase path
 ```
+
+## Human Next Action
+
+GitHub Pages仮Previewのまま進めるか、Vercel / Cloudflare / Supabase構成へ進むかをDecision Briefで選ぶ。
+
+## Related Files
+
+- `06_DEPLOY/Production_Path_Decision_Brief.md`
+- `02_WORKFLOWS/Console_Update_Loop.md`
+- `03_STATUS/readiness.json`
+- `03_STATUS/latest_action.json`
+- `03_STATUS/blockers.json`
 
 ## Secret Policy
 

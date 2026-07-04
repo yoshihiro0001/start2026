@@ -463,16 +463,16 @@
           <p class="sub">HumanはPurpose、違和感、承認に集中する。start2026は現在位置、不足情報、Preview導線をまとめ、認知負荷を下げる。</p>
         </div>
         <div class="summary">
-          <div class="summary-card"><div class="label">Overall Readiness</div><div class="value">35%</div></div>
-          <div class="summary-card"><div class="label">Current Mission</div><div class="value">Evolution Gauge</div></div>
+          <div class="summary-card"><div class="label">Overall Readiness</div><div class="value">38%</div></div>
+          <div class="summary-card"><div class="label">Current Mission</div><div class="value">Console Update Loop</div></div>
           <div class="summary-card"><div class="label">Domain</div><div class="value">fashionhoteljoy.com</div></div>
         </div>
       </div>
       <aside class="next">
         <div>
           <div class="label">Human Next Action</div>
-          <h2>スマホでPreviewを開いて確認する。</h2>
-          <p>GitHub Pages URLは発行済み。スマホで開き、password 123456 でHuman Consoleへ入れるか確認します。</p>
+          <h2>Production Pathを選ぶ。</h2>
+          <p>GitHub Pages仮Previewのまま進めるか、Vercel / Cloudflare / Supabase構成へ進むかをDecision Briefで選びます。</p>
         </div>
         <span class="tag ok">1 action only</span>
       </aside>
@@ -482,7 +482,7 @@
       <article class="card">
         <div class="card-head"><h3>Waiting Human Input</h3><span class="tag warn">Human待ち</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">スマホPreview確認</div><div class="item-note">発行済みURLをスマホで開き、password 123456 で入れるか確認する。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Production Path選択</div><div class="item-note">GitHub Pages継続か、Vercel / Cloudflare / Supabase構成へ進むかを選ぶ。</div></div></li>
         </ul>
       </article>
 
@@ -498,6 +498,34 @@
         </div>
       </article>
 
+
+
+      <article class="card full">
+        <div class="card-head"><h3>Current Loop Status</h3><span class="tag ok">JSON source introduced</span></div>
+        <div class="benefit">
+          <div class="benefit-card"><div class="num">38%</div><div class="num-note">Overall Readiness。Status JSONを導入し、静的Consoleへ反映。</div></div>
+          <div class="benefit-card"><div class="num">3</div><div class="num-note">Status Source。readiness / latest_action / blockers を分離。</div></div>
+          <div class="benefit-card"><div class="num">1</div><div class="num-note">Human Next Action。Production Path選択だけに絞る。</div></div>
+          <div class="benefit-card"><div class="num">Medium</div><div class="num-note">本番環境までの距離。DB / API / Auth / Secret管理が未選定。</div></div>
+        </div>
+        <div class="rows" style="margin-top:16px">
+          <div class="row"><div class="row-key">Gauge Source</div><div class="row-val">03_STATUS/readiness.json。現在は静的反映。将来はHuman ConsoleがJSONを直接読む。</div></div>
+          <div class="row"><div class="row-key">Action Source</div><div class="row-val">03_STATUS/latest_action.json / 01_HUMAN_CONSOLE/Approved_Next_Action.md。</div></div>
+          <div class="row"><div class="row-key">Blocker Source</div><div class="row-val">03_STATUS/blockers.json。</div></div>
+          <div class="row"><div class="row-key">Next Approved Task</div><div class="row-val">GitHub Pages仮Previewから、より本番に近いPreview / Auth / DB / API構成を選定する。</div></div>
+        </div>
+      </article>
+
+      <article class="card full">
+        <div class="card-head"><h3>Production Path Status</h3><span class="tag warn">Decision needed</span></div>
+        <div class="rows">
+          <div class="row"><div class="row-key">Current Path</div><div class="row-val">GitHub Pages + simple client-side password gate。</div></div>
+          <div class="row"><div class="row-key">Distance to Production</div><div class="row-val">Medium-High。本番にはAuth / DB / API / Secret管理 / Preview保護が必要。</div></div>
+          <div class="row"><div class="row-key">Decision Brief</div><div class="row-val">06_DEPLOY/Production_Path_Decision_Brief.md</div></div>
+          <div class="row"><div class="row-key">候補</div><div class="row-val">GitHub Pages継続 / Vercel / Cloudflare Pages / Supabase連携 / 既存Laravel・HOTEL JOYサーバー連携。</div></div>
+          <div class="row"><div class="row-key">次にHumanが決めること</div><div class="row-val">GitHub Pages仮Previewのまま進めるか、Vercel / Cloudflare / Supabase構成へ進むか。</div></div>
+        </div>
+      </article>
 
       <article class="card full">
         <div class="card-head"><h3>Preview Deployment Status</h3><span class="tag ok">URL issued</span></div>
@@ -517,12 +545,12 @@
       </article>
 
       <article class="card full">
-        <div class="card-head"><h3>Current Coordinate</h3><span class="tag warn">Overall 35%</span></div>
+        <div class="card-head"><h3>Current Coordinate</h3><span class="tag warn">Overall 38%</span></div>
         <div class="benefit">
-          <div class="benefit-card"><div class="num">35%</div><div class="num-note">Overall Readiness。思想は強いが、Runtime / Deploy / Securityが弱い。</div></div>
-          <div class="benefit-card"><div class="num">40%</div><div class="num-note">Strategy / Profit Readiness。仮説はあるがMarket Evidence不足。</div></div>
+          <div class="benefit-card"><div class="num">38%</div><div class="num-note">Overall Readiness。Console更新ループのStatus JSONを導入。</div></div>
+          <div class="benefit-card"><div class="num">42%</div><div class="num-note">Strategy Loop。Production Path選定で実装ループへ接続中。</div></div>
           <div class="benefit-card"><div class="num">35%</div><div class="num-note">Deployment Readiness。GitHub Pages URLは発行済み。公開済み。</div></div>
-          <div class="benefit-card"><div class="num">40%</div><div class="num-note">Evidence Confidence。公式Docsは一部確認済み。制約と料金は未調査。</div></div>
+          <div class="benefit-card"><div class="num">45%</div><div class="num-note">Evidence Confidence。公式Docs URLとDecision Briefを記録済み。</div></div>
         </div>
       </article>
 
@@ -535,9 +563,9 @@
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Design System</div><div class="gauge-score">65%</div></div><div class="bar"><div class="fill" style="width:65%"></div></div><div class="gauge-note">Candidate / Mobile Studio検証。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Developer Factory</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Booting / Workflow未接続。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Runtime Intelligence</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">Not started / 実行時判断なし。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evidence System</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Early / Evidence DB未整備。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Strategy Loop</div><div class="gauge-score">40%</div></div><div class="bar"><div class="fill warn" style="width:40%"></div></div><div class="gauge-note">Discussion / Market Evidence不足。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Infrastructure</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Brief ready / Preview方式未確定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evidence System</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">JSON source / 手動反映。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Strategy Loop</div><div class="gauge-score">42%</div></div><div class="bar"><div class="fill warn" style="width:42%"></div></div><div class="gauge-note">Brief stage / Production Path接続中。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Infrastructure</div><div class="gauge-score">35%</div></div><div class="bar"><div class="fill danger" style="width:35%"></div></div><div class="gauge-note">Production Path Brief ready。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Deployment</div><div class="gauge-score">35%</div></div><div class="bar"><div class="fill danger" style="width:35%"></div></div><div class="gauge-note">URL issued / Pages built。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Security</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Policy only / Auth未決定。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Profit Validation</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Hypothesis / Paid Test未実施。</div></div>
@@ -561,9 +589,9 @@
       <article class="card">
         <div class="card-head"><h3>Top 3 Blockers</h3><span class="tag danger">優先順</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">スマホ実機確認待ち</div><div class="item-note">URLは公開済み。スマホで開き、password gateを確認する。</div></div></li>
-          <li class="item"><span class="icon warn">2</span><div><div class="item-title">Evidence System未整備</div><div class="item-note">判断理由を毎回更新する仕組みが弱い。</div></div></li>
-          <li class="item"><span class="icon warn">3</span><div><div class="item-title">AI Resource未最適化</div><div class="item-note">高性能AI / Codex / scriptの使い分けが未運用。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Production Path未選定</div><div class="item-note">GitHub Pages継続か、Vercel / Cloudflare / Supabaseへ進むか未決定。</div></div></li>
+          <li class="item"><span class="icon warn">2</span><div><div class="item-title">Console更新はまだ手動</div><div class="item-note">Status JSONは導入済みだが、HTMLへの反映はまだCodex更新。</div></div></li>
+          <li class="item"><span class="icon warn">3</span><div><div class="item-title">DB / API / Auth未選定</div><div class="item-note">本番に近い開発ループへ進むにはProduction Path決定が必要。</div></div></li>
         </ul>
       </article>
 
@@ -590,8 +618,8 @@
       <article class="card">
         <div class="card-head"><h3>Blockers</h3><span class="tag warn">接続Gap</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">スマホPreview未安定</div><div class="item-note">LAN / QR / Cloud previewの固定が必要。</div></div></li>
-          <li class="item"><span class="icon warn">2</span><div><div class="item-title">公開方式未選定</div><div class="item-note">短期はCloudflare Tunnel、安定運用はVercel / GitHub Pages候補。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Production Path未決定</div><div class="item-note">GitHub Pagesは静的Previewまで。本番寄りにはVercel / Cloudflare / Supabase検討が必要。</div></div></li>
+          <li class="item"><span class="icon warn">2</span><div><div class="item-title">本番Auth未選定</div><div class="item-note">123456 gateは仮Preview専用。重要情報には使わない。</div></div></li>
           <li class="item"><span class="icon danger">3</span><div><div class="item-title">Secretは保存禁止</div><div class="item-note">Secret / API Key / GitHub PAT / PasswordはGitへ保存しない。</div></div></li>
           <li class="item"><span class="icon warn">4</span><div><div class="item-title">仮Preview Password</div><div class="item-note">123456 は仮Preview専用。本番・外部共有・重要情報ありの画面では使用禁止。</div></div></li>
         </ul>
@@ -629,7 +657,7 @@
       <article class="card full">
         <div class="card-head"><h3>Next Best Action</h3><span class="tag ok">ROI最大</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon ok">→</span><div><div class="item-title">スマホでPreview URLを開き、password 123456で入れるか確認する。</div><div class="item-note">理由: Human Consoleの公開導線は作成済み。次は実機でTime to First Viewとpassword gateを確認する。</div></div></li>
+          <li class="item"><span class="icon ok">→</span><div><div class="item-title">GitHub Pages仮Previewのまま進めるか、Vercel / Cloudflare / Supabase構成へ進むかをDecision Briefで選ぶ。</div><div class="item-note">理由: 見られるConsoleはできた。次は更新ループを支えるProduction Pathを決める必要がある。</div></div></li>
         </ul>
       </article>
     </section>

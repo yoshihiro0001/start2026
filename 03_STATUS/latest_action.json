@@ -1,0 +1,12 @@
+{
+  "last_updated": "2026-07-05",
+  "human_next_action": "GitHub Pages仮Previewのまま進めるか、Vercel / Cloudflare / Supabase構成へ進むかをDecision Briefで選ぶ",
+  "one_action_only": true,
+  "approved_task": "GitHub Pages仮Previewから、より本番に近いPreview / Auth / DB / API構成を選定する",
+  "codex_next_task": "Production_Path_Decision_Brief.mdを元にProduction Pathを選べる状態へ進める",
+  "status": "Awaiting Human decision after brief review",
+  "related_files": [
+    "06_DEPLOY/Production_Path_Decision_Brief.md",
+    "01_HUMAN_CONSOLE/Approved_Next_Action.md"
+  ]
+}
