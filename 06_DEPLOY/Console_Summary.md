@@ -1,6 +1,6 @@
 # Console Summary: Infrastructure Decision
 
-Last updated: 2026-07-04
+Last updated: 2026-07-05
 Source brief: `06_DEPLOY/Infrastructure_Decision_Brief.md`
 
 ## Current Decision
@@ -20,7 +20,7 @@ Vercel または Cloudflare Pages + Supabaseで、本番App + API + DB + Auth。
 
 ## Human Next Action
 
-Previewは外部公開してよいかを決める。
+パスワード付きPreview導線を作る。
 
 ## Risk
 
@@ -37,16 +37,29 @@ Needs Research:
 - ドメイン管理サービス
 - DNS状態
 - HOTEL JOY本番の既存サーバー有無
-- Previewを外部公開してよいか
+- Preview外部公開は「パスワード付きならOK」
 
 ## Current Readiness
 
-- Production Readiness: 25%
-- Research Readiness: 45%
+- Overall Readiness: 35%
+- Purpose / Philosophy: 90%
+- Architecture: 85%
+- Human Console: 45%
+- Design System: 65%
+- Developer Factory: 30%
+- Runtime Intelligence: 5%
+- Evidence System: 25%
+- Strategy Loop: 40%
+- Infrastructure: 30%
+- Deployment: 15%
+- Security: 20%
+- Profit Validation: 20%
+- Automation: 10%
+- AI Resource Optimization: 5%
 - Evidence Confidence: 40%
-- Decision Confidence: 35%
-- Security Readiness: 20%
-- Deployment Readiness: 30%
+
+Current interpretation:
+Purpose / Architecture / Designは進んでいるが、Runtime / Deployment / Security / Profit Validation / Automation / AI Resource Optimizationが弱い。
 
 ## Evidence Completed
 
@@ -73,12 +86,12 @@ Needs Research:
 
 ## Next Research Needed
 
-パスワード付きPreviewを最小Human Costで実現する方法を調べる。
+パスワード付きPreview導線を最小Human Costで作る。
 
 ## Preview Password Policy
 
 Human判断:
-パスワード付きPreviewならOK。
+パスワード付きなら外部Preview OK。
 初期パスワードは `123456` で仮OK。
 
 ただし:
@@ -93,6 +106,30 @@ Secret / API Key / PAT は絶対にGitへ保存しない。
 詳細はBriefへ残す。
 EvidenceはURL / 日付 / 判断理由を残す。
 差分が出たらSummaryへ反映する。
+
+## AI Resource Status
+
+Current:
+AI Resource Optimizationは5%。
+まだ高性能AI / Codex / Cursor / script / Research Brainの使い分けは運用前。
+
+Policy:
+- High Reasoning: GPT / Claudeなど高性能AI
+- Code Execution: Codex / Cursor
+- Cheap Repetitive Task: 低コストAI / script
+- Search / Research: Web / official docs / Research Brain
+- Image / Design: Vision / Design Brain
+- Review / Critique: Meta Evaluation Brain
+
+Evaluation axis:
+Reasoning Depth / Accuracy Need / Cost / Speed / Risk / Privacy / Repeatability / Human Cognitive Load。
+
+## Next Highest ROI Action
+
+Human Consoleをスマホで安定して開ける、パスワード付きPreview導線を作る。
+
+Reason:
+Human Consoleが司令塔なので、スマホで常時開けることが全体のHuman Cognitive Loadを最も下げる。
 
 ## Related Brief
 

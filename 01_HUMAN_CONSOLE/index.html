@@ -363,16 +363,16 @@
           <p class="sub">HumanはPurpose、違和感、承認に集中する。start2026は現在位置、不足情報、Preview導線をまとめ、認知負荷を下げる。</p>
         </div>
         <div class="summary">
-          <div class="summary-card"><div class="label">Current Mission</div><div class="value">Human Console</div></div>
-          <div class="summary-card"><div class="label">Current Stage</div><div class="value">Factory Level 0</div></div>
+          <div class="summary-card"><div class="label">Overall Readiness</div><div class="value">35%</div></div>
+          <div class="summary-card"><div class="label">Current Mission</div><div class="value">Evolution Gauge</div></div>
           <div class="summary-card"><div class="label">Domain</div><div class="value">fashionhoteljoy.com</div></div>
         </div>
       </div>
       <aside class="next">
         <div>
           <div class="label">Human Next Action</div>
-          <h2>Previewは外部公開してよいかを決める。</h2>
-          <p>Decision Briefの次の判断です。Yes / No / パスワード付きならOK のどれかだけ決めれば進めます。</p>
+          <h2>パスワード付きPreview導線を作る。</h2>
+          <p>Human判断は「パスワード付きなら外部Preview OK」。次はスマホで常時開ける司令塔を作ります。</p>
         </div>
         <span class="tag ok">1 action only</span>
       </aside>
@@ -382,7 +382,7 @@
       <article class="card">
         <div class="card-head"><h3>Waiting Human Input</h3><span class="tag warn">Human待ち</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Preview外部公開の可否</div><div class="item-note">Yes / No / パスワード付きならOK。これだけ決めればLevel 1 Previewへ進める。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">パスワード付きPreview導線</div><div class="item-note">初期パスワードは123456で仮OK。本番・重要情報ありでは使用禁止。</div></div></li>
         </ul>
       </article>
 
@@ -399,17 +399,34 @@
       </article>
 
       <article class="card full">
-        <div class="card-head"><h3>Readiness Gauges</h3><span class="tag warn">仮スコア</span></div>
-        <div class="gauge-grid">
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Production Readiness</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">本番DB / Server / Authが未決定。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Research Readiness</div><div class="gauge-score">45%</div></div><div class="bar"><div class="fill warn" style="width:45%"></div></div><div class="gauge-note">主要候補の公式Docsは確認済み。制約と料金は未調査。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evidence Confidence</div><div class="gauge-score">40%</div></div><div class="bar"><div class="fill warn" style="width:40%"></div></div><div class="gauge-note">Evidence URLはあるが、価格・DNS・認証方式は不足。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Decision Confidence</div><div class="gauge-score">35%</div></div><div class="bar"><div class="fill warn" style="width:35%"></div></div><div class="gauge-note">外部公開可否が未決定のためPreview方式を確定できない。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Security Readiness</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Secret管理方針は記録済み。本番Auth / access制限は未決定。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Deployment Readiness</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Git pushは可能。Preview / deploy先は未選定。</div></div>
+        <div class="card-head"><h3>Current Coordinate</h3><span class="tag warn">Overall 35%</span></div>
+        <div class="benefit">
+          <div class="benefit-card"><div class="num">35%</div><div class="num-note">Overall Readiness。思想は強いが、Runtime / Deploy / Securityが弱い。</div></div>
+          <div class="benefit-card"><div class="num">40%</div><div class="num-note">Strategy / Profit Readiness。仮説はあるがMarket Evidence不足。</div></div>
+          <div class="benefit-card"><div class="num">30%</div><div class="num-note">Deployment Readiness。Git pushは可能。Preview方式は未選定。</div></div>
+          <div class="benefit-card"><div class="num">40%</div><div class="num-note">Evidence Confidence。公式Docsは一部確認済み。制約と料金は未調査。</div></div>
         </div>
       </article>
 
+      <article class="card full">
+        <div class="card-head"><h3>Category Readiness Grid</h3><span class="tag warn">現在座標</span></div>
+        <div class="gauge-grid">
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Purpose / Philosophy</div><div class="gauge-score">90%</div></div><div class="bar"><div class="fill" style="width:90%"></div></div><div class="gauge-note">Strong / 実案件で矛盾確認。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Architecture</div><div class="gauge-score">85%</div></div><div class="bar"><div class="fill" style="width:85%"></div></div><div class="gauge-note">Strong / 概念統合が課題。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Console</div><div class="gauge-score">45%</div></div><div class="bar"><div class="fill warn" style="width:45%"></div></div><div class="gauge-note">Prototype / スマホ常時Preview未安定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Design System</div><div class="gauge-score">65%</div></div><div class="bar"><div class="fill" style="width:65%"></div></div><div class="gauge-note">Candidate / Mobile Studio検証。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Developer Factory</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Booting / Workflow未接続。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Runtime Intelligence</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">Not started / 実行時判断なし。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evidence System</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Early / Evidence DB未整備。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Strategy Loop</div><div class="gauge-score">40%</div></div><div class="bar"><div class="fill warn" style="width:40%"></div></div><div class="gauge-note">Discussion / Market Evidence不足。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Infrastructure</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Brief ready / Preview方式未確定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Deployment</div><div class="gauge-score">15%</div></div><div class="bar"><div class="fill danger" style="width:15%"></div></div><div class="gauge-note">Not ready / Deploy先未選定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Security</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Policy only / Auth未決定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Profit Validation</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Hypothesis / Paid Test未実施。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Automation</div><div class="gauge-score">10%</div></div><div class="bar"><div class="fill danger" style="width:10%"></div></div><div class="gauge-note">Not started / API未整備。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">AI Resource Optimization</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">Not started / AI選定ルール未運用。</div></div>
+        </div>
+      </article>
       <article class="card wide">
         <div class="card-head"><h3>Missing Information</h3><span class="tag danger">本番前に必要</span></div>
         <ul class="stack">
@@ -421,6 +438,26 @@
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">Secret / API Key保管方針未確定</div><div class="item-note">GitHub PATやAPI Keyは保存禁止。.env / GitHub Secrets / password managerへ分離する。</div></div></li>
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">未調査Evidence</div><div class="item-note">料金プラン、ドメイン管理サービス、DNS状態、HOTEL JOY本番の既存サーバー有無、パスワード付きPreview、各Previewサービスの制約、Basic認証やアクセス制限。</div></div></li>
         </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Top 3 Blockers</h3><span class="tag danger">優先順</span></div>
+        <ul class="stack">
+          <li class="item"><span class="icon danger">1</span><div><div class="item-title">パスワード付きPreview未実装</div><div class="item-note">Human Consoleをスマホで常時開けない。</div></div></li>
+          <li class="item"><span class="icon warn">2</span><div><div class="item-title">Evidence System未整備</div><div class="item-note">判断理由を毎回更新する仕組みが弱い。</div></div></li>
+          <li class="item"><span class="icon warn">3</span><div><div class="item-title">AI Resource未最適化</div><div class="item-note">高性能AI / Codex / scriptの使い分けが未運用。</div></div></li>
+        </ul>
+      </article>
+
+      <article class="card wide">
+        <div class="card-head"><h3>AI Resource Status</h3><span class="tag warn">Optimization 5%</span></div>
+        <div class="rows">
+          <div class="row"><div class="row-key">High Reasoning</div><div class="row-val">Strategy / Architecture / Reviewに使う。</div></div>
+          <div class="row"><div class="row-key">Code Execution</div><div class="row-val">Codex / Cursorで編集、実装、Git操作。</div></div>
+          <div class="row"><div class="row-key">Cheap Repetitive</div><div class="row-val">定型変換、分類、整形はscript / 低コストAIへ移す。</div></div>
+          <div class="row"><div class="row-key">Research</div><div class="row-val">公式Docs / Web / Research Brainで最新情報を確認。</div></div>
+          <div class="row"><div class="row-key">Meta Evaluation</div><div class="row-val">出力品質、リスク、Evidence不足を批判的に確認。</div></div>
+        </div>
       </article>
 
       <article class="card wide">
@@ -474,7 +511,7 @@
       <article class="card full">
         <div class="card-head"><h3>Next Best Action</h3><span class="tag ok">ROI最大</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Previewは外部公開してよいかを決める。</div><div class="item-note">理由: 外部公開可否が決まると、GitHub Pages / Vercel / Cloudflare Tunnelのどれを使うか決められる。</div></div></li>
+          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Human Consoleをスマホで安定して開ける、パスワード付きPreview導線を作る。</div><div class="item-note">理由: Human Consoleが司令塔なので、スマホで常時開けることが全体のHuman Cognitive Loadを最も下げる。</div></div></li>
         </ul>
       </article>
     </section>
