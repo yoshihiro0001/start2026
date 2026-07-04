@@ -3,21 +3,21 @@
   "top_blockers": [
     {
       "rank": 1,
-      "name": "Vercel / Supabase not created",
-      "impact": "Human Console cannot yet become DB-backed",
-      "next_action": "Human approves project creation"
+      "name": "Supabase project not created",
+      "impact": "Task Queue / Approval Inbox cannot persist data yet",
+      "next_action": "Human creates Supabase project"
     },
     {
       "rank": 2,
-      "name": "Auth / RLS not configured",
-      "impact": "Important data cannot be safely stored",
-      "next_action": "Define Supabase RLS and auth policy"
+      "name": "Vercel project not created",
+      "impact": "Human Console cannot run as app/API preview yet",
+      "next_action": "Human creates/imports Vercel project"
     },
     {
       "rank": 3,
-      "name": "Secrets not configured",
-      "impact": "AI API / DB backend cannot run safely",
-      "next_action": "Use Vercel env vars / Supabase project settings; never commit secrets"
+      "name": "Auth / RLS not configured",
+      "impact": "Important data cannot be safely stored",
+      "next_action": "Define Supabase Auth and RLS before real data"
     }
   ],
   "resolved_recently": [

@@ -463,7 +463,7 @@
           <p class="sub">HumanはPurpose、違和感、承認に集中する。start2026は現在位置、不足情報、Preview導線をまとめ、認知負荷を下げる。</p>
         </div>
         <div class="summary">
-          <div class="summary-card"><div class="label">Overall Readiness</div><div class="value">42%</div></div>
+          <div class="summary-card"><div class="label">Overall Readiness</div><div class="value">43%</div></div>
           <div class="summary-card"><div class="label">Current Mission</div><div class="value">Vercel + Supabase</div></div>
           <div class="summary-card"><div class="label">Domain</div><div class="value">fashionhoteljoy.com</div></div>
         </div>
@@ -471,8 +471,8 @@
       <aside class="next">
         <div>
           <div class="label">Human Next Action</div>
-          <h2>Vercel / Supabase作成を承認する。</h2>
-          <p>本格開発の主軸はVercel + Supabase。GitHub Pagesは仮Previewとして残します。</p>
+          <h2>Supabase / Vercel projectを作成する。</h2>
+          <p>承認済み。次は実Projectを作り、Task Queue / Approval Inboxの保存先を用意します。</p>
         </div>
         <span class="tag ok">1 action only</span>
       </aside>
@@ -482,7 +482,7 @@
       <article class="card">
         <div class="card-head"><h3>Waiting Human Input</h3><span class="tag warn">Human待ち</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel / Supabase作成承認</div><div class="item-note">DB / Auth / API / Realtime / AI API連携へ進むため、最小接続を承認する。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Supabase / Vercel project作成</div><div class="item-note">スマホ承認とTask保存のため、実Projectを作成する。</div></div></li>
         </ul>
       </article>
 
@@ -500,10 +500,28 @@
 
 
 
+
+      <article class="card full">
+        <div class="card-head"><h3>Implementation Setup Status</h3><span class="tag warn">準備完了 / 未接続</span></div>
+        <div class="benefit">
+          <div class="benefit-card"><div class="num">0%</div><div class="num-note">Supabase Status。Project未作成。</div></div>
+          <div class="benefit-card"><div class="num">0%</div><div class="num-note">Vercel Status。Project未作成。</div></div>
+          <div class="benefit-card"><div class="num">10%</div><div class="num-note">Approval Inbox。設計のみ作成済み。</div></div>
+          <div class="benefit-card"><div class="num">5%</div><div class="num-note">Task Queue。Schemaのみ作成済み。</div></div>
+        </div>
+        <div class="rows" style="margin-top:16px">
+          <div class="row"><div class="row-key">Approval Inbox Status</div><div class="row-val">Design documented: 01_HUMAN_CONSOLE/Approval_Inbox_Design.md</div></div>
+          <div class="row"><div class="row-key">Task Queue Status</div><div class="row-val">Schema documented: 04_BACKEND/Task_Queue_Schema.md</div></div>
+          <div class="row"><div class="row-key">Supabase Status</div><div class="row-val">0%。Project未作成。URL / anon key / service_role keyは未登録。</div></div>
+          <div class="row"><div class="row-key">Vercel Status</div><div class="row-val">0%。Project未作成。Environment Variables未登録。</div></div>
+          <div class="row"><div class="row-key">Next Action</div><div class="row-val">Supabase project / Vercel projectを作成する。</div></div>
+        </div>
+      </article>
+
       <article class="card full">
         <div class="card-head"><h3>Current Loop Status</h3><span class="tag ok">JSON source introduced</span></div>
         <div class="benefit">
-          <div class="benefit-card"><div class="num">42%</div><div class="num-note">Overall Readiness。Vercel + Supabase方向を選定。</div></div>
+          <div class="benefit-card"><div class="num">43%</div><div class="num-note">Overall Readiness。Setup checklistとSchemaを追加。</div></div>
           <div class="benefit-card"><div class="num">3</div><div class="num-note">Status Source。readiness / latest_action / blockers を分離。</div></div>
           <div class="benefit-card"><div class="num">1</div><div class="num-note">Human Next Action。Production Path選択だけに絞る。</div></div>
           <div class="benefit-card"><div class="num">Medium</div><div class="num-note">本番環境までの距離。主軸は決定、Project作成と接続が未完了。</div></div>
@@ -512,7 +530,7 @@
           <div class="row"><div class="row-key">Gauge Source</div><div class="row-val">03_STATUS/readiness.json。現在は静的反映。将来はHuman ConsoleがJSONを直接読む。</div></div>
           <div class="row"><div class="row-key">Action Source</div><div class="row-val">03_STATUS/latest_action.json / 01_HUMAN_CONSOLE/Approved_Next_Action.md。</div></div>
           <div class="row"><div class="row-key">Blocker Source</div><div class="row-val">03_STATUS/blockers.json。</div></div>
-          <div class="row"><div class="row-key">Next Approved Task</div><div class="row-val">Vercel + Supabaseの最小接続へ進む。</div></div>
+          <div class="row"><div class="row-key">Next Approved Task</div><div class="row-val">Supabase project / Vercel projectを作成する。</div></div>
         </div>
       </article>
 
@@ -523,7 +541,7 @@
           <div class="row"><div class="row-key">Distance to Production</div><div class="row-val">Medium。構成方針は決定。Vercel / Supabase作成、Auth、RLS、Secret管理が未完了。</div></div>
           <div class="row"><div class="row-key">Decision Brief</div><div class="row-val">06_DEPLOY/Production_Path_Decision_Brief.md</div></div>
           <div class="row"><div class="row-key">GitHub Pages</div><div class="row-val">Temporary Preview only。静的確認用として残すが、本格開発の主軸にはしない。</div></div>
-          <div class="row"><div class="row-key">次にHumanが決めること</div><div class="row-val">Vercel / Supabase作成を承認する。</div></div>
+          <div class="row"><div class="row-key">次にHumanがやること</div><div class="row-val">Supabase project / Vercel projectを作成する。</div></div>
         </div>
       </article>
 
@@ -561,9 +579,9 @@
       </article>
 
       <article class="card full">
-        <div class="card-head"><h3>Current Coordinate</h3><span class="tag warn">Overall 42%</span></div>
+        <div class="card-head"><h3>Current Coordinate</h3><span class="tag warn">Overall 43%</span></div>
         <div class="benefit">
-          <div class="benefit-card"><div class="num">42%</div><div class="num-note">Overall Readiness。Vercel + Supabase方針で本格開発へ進む準備。</div></div>
+          <div class="benefit-card"><div class="num">43%</div><div class="num-note">Overall Readiness。Vercel + Supabase接続準備を追加。</div></div>
           <div class="benefit-card"><div class="num">48%</div><div class="num-note">Strategy Loop。10億円Goal前提でDB-backed構成を優先。</div></div>
           <div class="benefit-card"><div class="num">35%</div><div class="num-note">Deployment Readiness。GitHub Pages URLは発行済み。公開済み。</div></div>
           <div class="benefit-card"><div class="num">45%</div><div class="num-note">Evidence Confidence。公式Docs URLとDecision Briefを記録済み。</div></div>
@@ -578,6 +596,11 @@
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Console</div><div class="gauge-score">45%</div></div><div class="bar"><div class="fill warn" style="width:45%"></div></div><div class="gauge-note">Prototype / スマホ常時Preview未安定。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Design System</div><div class="gauge-score">65%</div></div><div class="bar"><div class="fill" style="width:65%"></div></div><div class="gauge-note">Candidate / Mobile Studio検証。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Developer Factory</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Booting / Workflow未接続。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Supabase</div><div class="gauge-score">0%</div></div><div class="bar"><div class="fill danger" style="width:0%"></div></div><div class="gauge-note">Not created / Project未作成。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Vercel</div><div class="gauge-score">0%</div></div><div class="bar"><div class="fill danger" style="width:0%"></div></div><div class="gauge-note">Not created / Project未作成。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Approval Inbox</div><div class="gauge-score">10%</div></div><div class="bar"><div class="fill danger" style="width:10%"></div></div><div class="gauge-note">Design only / DB未接続。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Task Queue</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">Schema only / Table未作成。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Smartphone Command Loop</div><div class="gauge-score">10%</div></div><div class="bar"><div class="fill danger" style="width:10%"></div></div><div class="gauge-note">Workflow only / 入力導線未接続。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Runtime Intelligence</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">Not started / 実行時判断なし。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evidence System</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">JSON source / 手動反映。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Strategy Loop</div><div class="gauge-score">48%</div></div><div class="bar"><div class="fill warn" style="width:48%"></div></div><div class="gauge-note">10億円Goal / DB-backed path。</div></div>
@@ -605,8 +628,8 @@
       <article class="card">
         <div class="card-head"><h3>Top 3 Blockers</h3><span class="tag danger">優先順</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel / Supabase未作成</div><div class="item-note">方針は決定。次はHuman承認後にProject作成と接続へ進む。</div></div></li>
-          <li class="item"><span class="icon warn">2</span><div><div class="item-title">Console更新はまだ手動</div><div class="item-note">Status JSONは導入済みだが、HTMLへの反映はまだCodex更新。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Supabase project未作成</div><div class="item-note">Task Queue / Approval Inboxの保存先がまだ無い。</div></div></li>
+          <li class="item"><span class="icon warn">2</span><div><div class="item-title">Vercel project未作成</div><div class="item-note">Human ConsoleをApp/API化するPreview環境がまだ無い。</div></div></li>
           <li class="item"><span class="icon warn">3</span><div><div class="item-title">DB / API / Auth未接続</div><div class="item-note">Supabase schema案は作成済み。実Project接続は未実施。</div></div></li>
         </ul>
       </article>
@@ -634,7 +657,7 @@
       <article class="card">
         <div class="card-head"><h3>Blockers</h3><span class="tag warn">接続Gap</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel / Supabase接続待ち</div><div class="item-note">本格開発の主軸はVercel + Supabase。Project作成とSecret管理が未完了。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Supabase / Vercel接続待ち</div><div class="item-note">Project作成、env vars、Auth/RLS、deployが未完了。</div></div></li>
           <li class="item"><span class="icon warn">2</span><div><div class="item-title">本番Auth未選定</div><div class="item-note">123456 gateは仮Preview専用。重要情報には使わない。</div></div></li>
           <li class="item"><span class="icon danger">3</span><div><div class="item-title">Secretは保存禁止</div><div class="item-note">Secret / API Key / GitHub PAT / PasswordはGitへ保存しない。</div></div></li>
           <li class="item"><span class="icon warn">4</span><div><div class="item-title">仮Preview Password</div><div class="item-note">123456 は仮Preview専用。本番・外部共有・重要情報ありの画面では使用禁止。</div></div></li>
@@ -673,7 +696,7 @@
       <article class="card full">
         <div class="card-head"><h3>Next Best Action</h3><span class="tag ok">ROI最大</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Vercel / Supabase作成を承認する。</div><div class="item-note">理由: 見られるConsoleからDB-backedな開発ループへ進める最小接続になる。</div></div></li>
+          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Supabase project / Vercel projectを作成する。</div><div class="item-note">理由: スマホ承認、Task Queue、DB-backed gauge更新を始めるための最小条件。</div></div></li>
         </ul>
       </article>
     </section>
