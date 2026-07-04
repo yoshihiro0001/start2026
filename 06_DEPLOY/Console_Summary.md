@@ -1,16 +1,16 @@
 # Console Summary: Infrastructure Decision
 
 Last updated: 2026-07-05
-Source brief: `06_DEPLOY/Infrastructure_Decision_Brief.md`
+Source brief: `06_DEPLOY/Infrastructure_Decision_Brief.md` / `06_DEPLOY/Preview_Deployment_Decision.md`
 
 ## Current Decision
 
-Human Consoleをスマホで安定して開けるため、最小Preview環境を決める。
+Human Consoleをスマホで安定して開けるため、仮Preview環境を作成してURLを発行する。
 
 ## Recommendation
 
 Level 1:
-GitHub Pages または Vercel static preview。
+GitHub Pages + simple client-side password gate。
 
 Level 2:
 Vercel または Cloudflare Pagesで常時Preview + Human Console。
@@ -20,11 +20,12 @@ Vercel または Cloudflare Pages + Supabaseで、本番App + API + DB + Auth。
 
 ## Human Next Action
 
-パスワード付きPreview導線を作る。
+Preview環境を作成してURLを発行する。
 
 ## Risk
 
 Previewを外部公開すると、Human Consoleや開発中UIが外部から見える可能性がある。
+今回のpassword gateはclient-sideの仮保護であり、本番保護ではない。
 Secret / API Key / GitHub PAT / Password は絶対にGitへ保存しない。
 
 ## Evidence Status
@@ -38,6 +39,7 @@ Needs Research:
 - DNS状態
 - HOTEL JOY本番の既存サーバー有無
 - Preview外部公開は「パスワード付きならOK」
+- GitHub Pages + simple password gateを仮Preview方式として採用
 
 ## Current Readiness
 
@@ -51,7 +53,7 @@ Needs Research:
 - Evidence System: 25%
 - Strategy Loop: 40%
 - Infrastructure: 30%
-- Deployment: 15%
+- Deployment: 25%
 - Security: 20%
 - Profit Validation: 20%
 - Automation: 10%
@@ -59,7 +61,7 @@ Needs Research:
 - Evidence Confidence: 40%
 
 Current interpretation:
-Purpose / Architecture / Designは進んでいるが、Runtime / Deployment / Security / Profit Validation / Automation / AI Resource Optimizationが弱い。
+Purpose / Architecture / Designは進んでいるが、Runtime / Security / Profit Validation / Automation / AI Resource Optimizationが弱い。Deploymentはpassword gate追加により25%へ進んだが、GitHub Pages URLは未発行。
 
 ## Evidence Completed
 
@@ -73,20 +75,20 @@ Purpose / Architecture / Designは進んでいるが、Runtime / Deployment / Se
 - ドメイン管理サービス
 - DNS状態
 - HOTEL JOY本番の既存サーバー有無
-- パスワード付きPreviewの最適方法
+- GitHub Pagesの有効化状態
 - Vercel / Cloudflare / GitHub Pages の現在の制約
 - Basic認証やアクセス制限の方法
 
 ## Decision Confidence
 
-35%。
+40%。
 
 理由:
-主要候補の公式Docsは一部確認済みだが、外部公開可否、料金、DNS、アクセス制限、既存サーバー有無が未確定。
+仮Preview方式はGitHub Pages + simple password gateに決定済み。ただしGitHub Pages URL、DNS、料金、アクセス制限、既存サーバー有無は未確定。
 
 ## Next Research Needed
 
-パスワード付きPreview導線を最小Human Costで作る。
+GitHub Pagesを有効化し、Human ConsoleのPreview URLを発行する。
 
 ## Preview Password Policy
 
@@ -126,11 +128,30 @@ Reasoning Depth / Accuracy Need / Cost / Speed / Risk / Privacy / Repeatability 
 
 ## Next Highest ROI Action
 
-Human Consoleをスマホで安定して開ける、パスワード付きPreview導線を作る。
+Human Consoleをスマホで安定して開ける、Preview環境を作成してURLを発行する。
 
 Reason:
-Human Consoleが司令塔なので、スマホで常時開けることが全体のHuman Cognitive Loadを最も下げる。
+password gateは追加済み。次はGitHub Pages URLを確定し、スマホで常時開ける状態にすることがHuman Cognitive Loadを最も下げる。
 
 ## Related Brief
 
 `06_DEPLOY/Infrastructure_Decision_Brief.md`
+
+
+## Preview Deployment Summary
+
+Selected method:
+GitHub Pages + simple client-side password gate.
+
+Password Protected:
+Yes.
+
+Temporary Password:
+`123456`
+
+Preview URL:
+Pending. Expected candidate after GitHub Pages is enabled:
+`https://yoshihiro0001.github.io/start2026/`
+
+Important:
+This is temporary non-sensitive preview only. It is not production auth.
