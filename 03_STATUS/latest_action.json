@@ -1,12 +1,13 @@
 {
   "last_updated": "2026-07-05",
-  "human_next_action": "GitHub Pages仮Previewのまま進めるか、Vercel / Cloudflare / Supabase構成へ進むかをDecision Briefで選ぶ",
+  "human_next_action": "Vercel / Supabase作成を承認する",
   "one_action_only": true,
-  "approved_task": "GitHub Pages仮Previewから、より本番に近いPreview / Auth / DB / API構成を選定する",
-  "codex_next_task": "Production_Path_Decision_Brief.mdを元にProduction Pathを選べる状態へ進める",
-  "status": "Awaiting Human decision after brief review",
+  "approved_task": "Vercel + Supabaseの最小接続へ進む",
+  "codex_next_task": "Vercel project and Supabase project connection planを実装可能な単位へ分解する",
+  "status": "Awaiting Human approval for Vercel / Supabase creation",
   "related_files": [
     "06_DEPLOY/Production_Path_Decision_Brief.md",
-    "01_HUMAN_CONSOLE/Approved_Next_Action.md"
+    "04_BACKEND/Supabase_Minimum_Schema.md",
+    "02_WORKFLOWS/Smartphone_Command_Loop.md"
   ]
 }

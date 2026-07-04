@@ -3,68 +3,87 @@
   "source": "03_STATUS/readiness.json",
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
-    "current_percent": 38,
-    "status": "Prototype moving into loop operation",
-    "blocker": "Production path is not selected",
-    "next_action": "Choose whether to continue GitHub Pages preview or move to Vercel / Cloudflare / Supabase path",
-    "confidence": "45%"
+    "current_percent": 42,
+    "status": "Production path direction selected",
+    "blocker": "Vercel / Supabase projects are not created or connected yet",
+    "next_action": "Approve Vercel + Supabase minimum connection",
+    "confidence": "55%"
   },
   "categories": [
     {
       "name": "Overall Readiness",
-      "current_percent": 38,
-      "status": "Early loop",
-      "blocker": "Production path undecided",
-      "next_action": "Select production path",
-      "confidence": "45%"
+      "current_percent": 42,
+      "status": "Production path direction selected",
+      "blocker": "Vercel / Supabase not connected",
+      "next_action": "Approve Vercel + Supabase minimum connection",
+      "confidence": "55%"
     },
     {
       "name": "Deployment",
-      "current_percent": 35,
-      "status": "GitHub Pages preview published",
-      "blocker": "Temporary gate only",
-      "next_action": "Decide next production path",
+      "current_percent": 45,
+      "status": "Vercel + Supabase path selected",
+      "blocker": "Vercel project not created",
+      "next_action": "Create/connect Vercel project",
       "confidence": "55%"
     },
     {
       "name": "Security",
-      "current_percent": 20,
-      "status": "Policy only",
-      "blocker": "Real auth not selected",
-      "next_action": "Choose password/auth strategy",
-      "confidence": "35%"
+      "current_percent": 30,
+      "status": "Auth direction improved",
+      "blocker": "Real auth and RLS not configured",
+      "next_action": "Create Supabase auth/RLS plan",
+      "confidence": "45%"
     },
     {
       "name": "Runtime Intelligence",
-      "current_percent": 5,
-      "status": "Not started",
-      "blocker": "No runtime data layer",
-      "next_action": "Keep static until production path selected",
-      "confidence": "25%"
+      "current_percent": 10,
+      "status": "DB-backed path identified",
+      "blocker": "No database connection yet",
+      "next_action": "Create Supabase minimum schema",
+      "confidence": "35%"
     },
     {
       "name": "Evidence System",
-      "current_percent": 30,
-      "status": "JSON source introduced",
-      "blocker": "Manual update",
-      "next_action": "Use JSON as status source",
+      "current_percent": 35,
+      "status": "Evidence table planned",
+      "blocker": "Evidence still file-based",
+      "next_action": "Create evidence table in Supabase later",
       "confidence": "45%"
     },
     {
       "name": "AI Resource Optimization",
-      "current_percent": 5,
-      "status": "Policy only",
-      "blocker": "No routing automation",
-      "next_action": "Defer until workflow loop is stable",
-      "confidence": "25%"
+      "current_percent": 10,
+      "status": "AI API path identified",
+      "blocker": "No backend route for AI calls",
+      "next_action": "Use Vercel backend route later",
+      "confidence": "35%"
     },
     {
       "name": "Strategy Loop",
-      "current_percent": 42,
-      "status": "Discussion + brief stage",
-      "blocker": "Market evidence not connected",
-      "next_action": "Connect production path to strategy loop",
-      "confidence": "45%"
+      "current_percent": 48,
+      "status": "Production path aligned with 10億円Goal",
+      "blocker": "Market/profit validation still separate",
+      "next_action": "Connect task queue to strategy loop later",
+      "confidence": "55%"
+    },
+    {
+      "name": "Infrastructure",
+      "current_percent": 45,
+      "status": "Recommended path: Vercel + Supabase",
+      "blocker": "Projects not created",
+      "next_action": "Approve project creation",
+      "confidence": "55%"
+    },
+    {
+      "name": "Automation",
+      "current_percent": 15,
+      "status": "Future task queue defined",
+      "blocker": "No queue table yet",
+      "next_action": "Create tasks table later",
+      "confidence": "35%"
     }
-  ]
+  ],
+  "next_highest_roi_action": "Vercel + Supabaseの最小接続",
+  "recommended_production_path": "Vercel + Supabase",
+  "github_pages_role": "Temporary static preview only"
 }

@@ -3,21 +3,21 @@
   "top_blockers": [
     {
       "rank": 1,
-      "name": "Production path undecided",
-      "impact": "Human Console can be viewed, but cannot yet run app/API/DB loops",
-      "next_action": "Choose GitHub Pages / Vercel / Cloudflare / Supabase direction"
+      "name": "Vercel / Supabase not created",
+      "impact": "Human Console cannot yet become DB-backed",
+      "next_action": "Human approves project creation"
     },
     {
       "rank": 2,
-      "name": "Temporary password gate only",
-      "impact": "123456 gate is not real security",
-      "next_action": "Move to real auth before important information"
+      "name": "Auth / RLS not configured",
+      "impact": "Important data cannot be safely stored",
+      "next_action": "Define Supabase RLS and auth policy"
     },
     {
       "rank": 3,
-      "name": "DB/API not selected",
-      "impact": "Console updates are still manual/static",
-      "next_action": "Select backend path after production decision"
+      "name": "Secrets not configured",
+      "impact": "AI API / DB backend cannot run safely",
+      "next_action": "Use Vercel env vars / Supabase project settings; never commit secrets"
     }
   ],
   "resolved_recently": [

@@ -2,40 +2,34 @@
 
 Last updated: 2026-07-05
 
-## Approval
+## Approval State
 
-Human approved moving from "viewable Human Console" toward "Human Console that drives the development loop".
-
-## Current Preview
+Human selected the production direction:
 
 ```text
-URL: https://yoshihiro0001.github.io/start2026/
-Temporary password: 123456
+Vercel + Supabase
 ```
+
+GitHub Pages remains temporary static preview only.
 
 ## Codex Next Task
 
-GitHub Pages仮Previewから、より本番に近いPreview / Auth / DB / API構成を選定する。
-
-Current decision target:
-
-```text
-GitHub Pages continuation
-vs
-Vercel / Cloudflare / Supabase path
-```
+Prepare the minimum Vercel + Supabase connection path.
 
 ## Human Next Action
 
-GitHub Pages仮Previewのまま進めるか、Vercel / Cloudflare / Supabase構成へ進むかをDecision Briefで選ぶ。
+Vercel / Supabase作成を承認する。
+
+## Why
+
+Human wants the most extensible DB-backed structure for the 10億円Goal, with DB / Auth / API / Realtime / AI API integration available from the beginning.
 
 ## Related Files
 
 - `06_DEPLOY/Production_Path_Decision_Brief.md`
-- `02_WORKFLOWS/Console_Update_Loop.md`
+- `02_WORKFLOWS/Smartphone_Command_Loop.md`
+- `04_BACKEND/Supabase_Minimum_Schema.md`
 - `03_STATUS/readiness.json`
-- `03_STATUS/latest_action.json`
-- `03_STATUS/blockers.json`
 
 ## Secret Policy
 
@@ -46,10 +40,16 @@ Never commit:
 - GitHub PAT
 - API Key
 - Password for production
-- DB URL
+- DB URL if private
+- Supabase service_role key
 - Private token
 - Customer data
 - Sales/tax/private files
+
+## Supabase Key Policy
+
+- Supabase anon key may be public only after exposure and RLS rules are confirmed.
+- Supabase service_role key must never be committed or exposed to browser code.
 
 ## Safety Note
 
