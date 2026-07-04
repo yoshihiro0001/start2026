@@ -89,17 +89,16 @@ GitHub Pages + simple gate is chosen because:
 
 ## Unconfirmed Items
 
-- Whether GitHub Pages is enabled for `yoshihiro0001/start2026`.
-- Whether the repository is public or private.
-- Whether GitHub Pages deployment from `main` root is already allowed.
-- Whether the final preview URL will be `https://yoshihiro0001.github.io/start2026/`.
+- Whether the GitHub Pages build has finished and is accessible from smartphone.
+- Whether the repository should remain public for this temporary preview.
 - Whether `fashionhoteljoy.com` DNS is managed by Cloudflare or another provider.
+- Whether the next secure step should be Cloudflare Access or Vercel Authentication.
 
 ---
 
 ## Next Action
 
-Enable GitHub Pages for `yoshihiro0001/start2026` from the `main` branch root, then open:
+GitHub Pages has been enabled from the `main` branch root. Open the preview URL on smartphone and enter password `123456`:
 
 ```text
 https://yoshihiro0001.github.io/start2026/
