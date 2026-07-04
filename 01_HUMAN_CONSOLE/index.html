@@ -6,23 +6,23 @@
   <title>Human Console | start2026</title>
   <style>
     :root {
-      --bg: #101329;
-      --bg-soft: #151936;
-      --surface: #202442;
-      --surface-raised: #2b2f52;
-      --line: rgba(255, 255, 255, 0.1);
-      --text: #f7f8ff;
-      --muted: #aeb4cf;
-      --quiet: #747b98;
-      --accent: #1299f2;
-      --accent-soft: rgba(18, 153, 242, 0.16);
-      --success: #42d392;
-      --warning: #ffd166;
+      --bg: #0f1328;
+      --panel: #1a1f3b;
+      --panel-2: #24294b;
+      --panel-3: #2d3358;
+      --text: #f8f9ff;
+      --muted: #aeb5d0;
+      --quiet: #76809d;
+      --line: rgba(255,255,255,.10);
+      --accent: #139af2;
+      --accent-2: #6cc8ff;
+      --ok: #42d392;
+      --warn: #ffd166;
       --danger: #ff6b7a;
-      --radius-lg: 28px;
-      --radius-md: 20px;
-      --radius-sm: 14px;
-      --shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+      --radius-xl: 30px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --shadow: 0 26px 80px rgba(0,0,0,.32);
       --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
@@ -31,132 +31,124 @@
     body {
       margin: 0;
       min-height: 100vh;
-      background:
-        radial-gradient(circle at top left, rgba(18, 153, 242, 0.18), transparent 34rem),
-        linear-gradient(180deg, #11142b 0%, var(--bg) 100%);
       color: var(--text);
       font-family: var(--font);
+      background:
+        radial-gradient(circle at 14% 0%, rgba(19,154,242,.22), transparent 34rem),
+        radial-gradient(circle at 90% 18%, rgba(66,211,146,.10), transparent 26rem),
+        linear-gradient(180deg, #12162e 0%, var(--bg) 100%);
       letter-spacing: 0;
     }
 
     a { color: inherit; text-decoration: none; }
 
-    .shell {
-      width: min(1180px, calc(100% - 32px));
+    .wrap {
+      width: min(1160px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 32px 0 48px;
+      padding: 30px 0 52px;
     }
 
-    .hero {
+    .top {
       display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
+      grid-template-columns: 1.24fr .76fr;
       gap: 18px;
-      align-items: stretch;
       margin-bottom: 18px;
     }
 
-    .panel {
-      background: rgba(32, 36, 66, 0.86);
+    .hero, .next {
       border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-xl);
       box-shadow: var(--shadow);
+      min-width: 0;
     }
 
-    .main-status {
+    .hero {
       padding: 30px;
+      background: rgba(26,31,59,.88);
+      min-height: 330px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 28px;
-      min-height: 300px;
+      gap: 30px;
     }
 
-    .eyebrow {
+    .pill {
       display: inline-flex;
       width: fit-content;
       align-items: center;
       gap: 8px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: var(--accent-soft);
-      color: #9fdbff;
+      background: rgba(19,154,242,.15);
+      color: #9edbff;
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 850;
     }
 
     h1 {
       margin: 18px 0 0;
-      font-size: clamp(34px, 5vw, 64px);
-      line-height: 0.95;
-      font-weight: 900;
+      font-size: clamp(34px, 5vw, 66px);
+      line-height: .96;
+      font-weight: 950;
     }
 
-    .hero-copy {
-      max-width: 640px;
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.75;
+    .sub {
+      max-width: 700px;
       margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75;
     }
 
-    .mission-row {
+    .summary {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
     }
 
-    .metric {
-      min-width: 0;
+    .summary-card {
       padding: 16px;
-      border-radius: var(--radius-md);
-      background: rgba(255, 255, 255, 0.045);
-      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.08);
+      min-width: 0;
     }
 
-    .metric-label {
+    .label {
       color: var(--quiet);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 850;
       text-transform: uppercase;
     }
 
-    .metric-value {
+    .value {
       margin-top: 8px;
       font-size: 20px;
-      font-weight: 900;
+      font-weight: 950;
       overflow-wrap: anywhere;
     }
 
-    .action-card {
-      padding: 26px;
-      background: linear-gradient(160deg, var(--accent), #0f7ee0);
-      border-radius: var(--radius-lg);
-      color: #fff;
-      min-height: 300px;
+    .next {
+      padding: 28px;
+      background: linear-gradient(160deg, #139af2 0%, #0f78d7 100%);
+      min-height: 330px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 0 24px 70px rgba(18, 153, 242, 0.26);
     }
 
-    .action-card .label {
-      font-size: 13px;
-      font-weight: 900;
-      opacity: 0.86;
-      text-transform: uppercase;
-    }
-
-    .action-card .action {
-      font-size: clamp(28px, 3vw, 40px);
-      line-height: 1.12;
+    .next .label { color: rgba(255,255,255,.78); }
+    .next h2 {
+      margin: 14px 0;
+      font-size: clamp(28px, 3.4vw, 42px);
+      line-height: 1.1;
       font-weight: 950;
-      margin: 16px 0;
     }
-
-    .action-card .reason {
+    .next p {
+      margin: 0;
+      color: rgba(255,255,255,.84);
       font-size: 15px;
-      line-height: 1.7;
-      color: rgba(255, 255, 255, 0.86);
+      line-height: 1.72;
     }
 
     .grid {
@@ -168,369 +160,240 @@
     .card {
       grid-column: span 4;
       padding: 22px;
-      border-radius: var(--radius-lg);
-      background: rgba(32, 36, 66, 0.88);
+      border-radius: var(--radius-xl);
+      background: rgba(26,31,59,.88);
       border: 1px solid var(--line);
       min-width: 0;
     }
+    .wide { grid-column: span 8; }
+    .full { grid-column: 1 / -1; }
 
-    .card.wide { grid-column: span 8; }
-    .card.full { grid-column: 1 / -1; }
-
-    .card-header {
+    .card-head {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 18px;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
     }
 
-    h2 {
+    h3 {
       margin: 0;
       font-size: 20px;
       line-height: 1.25;
-      font-weight: 900;
+      font-weight: 950;
     }
 
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+    .tag {
+      white-space: nowrap;
       padding: 7px 10px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.07);
       color: var(--muted);
+      background: rgba(255,255,255,.07);
       font-size: 12px;
-      font-weight: 800;
-      white-space: nowrap;
+      font-weight: 850;
     }
+    .tag.ok { color: var(--ok); background: rgba(66,211,146,.12); }
+    .tag.warn { color: var(--warn); background: rgba(255,209,102,.12); }
+    .tag.danger { color: var(--danger); background: rgba(255,107,122,.12); }
 
-    .badge.ok { color: var(--success); background: rgba(66, 211, 146, 0.12); }
-    .badge.warn { color: var(--warning); background: rgba(255, 209, 102, 0.12); }
-    .badge.wait { color: #9fdbff; background: rgba(18, 153, 242, 0.14); }
-
-    .list {
-      display: grid;
-      gap: 12px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+    ul { list-style: none; padding: 0; margin: 0; }
+    .stack { display: grid; gap: 12px; }
 
     .item {
       display: flex;
       gap: 12px;
       align-items: flex-start;
       padding: 14px;
-      border-radius: var(--radius-md);
-      background: rgba(255, 255, 255, 0.045);
-      border: 1px solid rgba(255, 255, 255, 0.065);
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.07);
     }
 
-    .check, .dot {
-      width: 28px;
-      height: 28px;
-      flex: 0 0 28px;
+    .icon {
+      width: 30px;
+      height: 30px;
+      flex: 0 0 30px;
       display: grid;
       place-items: center;
-      border-radius: 10px;
-      background: var(--accent-soft);
-      color: #9fdbff;
+      border-radius: 11px;
+      background: rgba(19,154,242,.16);
+      color: #9edbff;
+      font-size: 14px;
       font-weight: 950;
-      font-size: 15px;
     }
+    .icon.warn { background: rgba(255,209,102,.14); color: var(--warn); }
+    .icon.danger { background: rgba(255,107,122,.13); color: var(--danger); }
+    .icon.ok { background: rgba(66,211,146,.13); color: var(--ok); }
 
-    .dot.warn { background: rgba(255, 209, 102, 0.12); color: var(--warning); }
-    .dot.ok { background: rgba(66, 211, 146, 0.12); color: var(--success); }
-    .dot.danger { background: rgba(255, 107, 122, 0.12); color: var(--danger); }
+    .item-title { font-size: 15px; line-height: 1.45; font-weight: 900; }
+    .item-note { margin-top: 4px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 
-    .item-title {
-      font-weight: 850;
-      font-size: 15px;
-      line-height: 1.5;
+    .rows { display: grid; gap: 0; }
+    .row {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
     }
+    .row:last-child { border-bottom: 0; }
+    .row-key { color: var(--quiet); font-size: 13px; font-weight: 850; }
+    .row-val { color: var(--text); font-size: 14px; line-height: 1.55; overflow-wrap: anywhere; }
 
-    .item-note {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.55;
-      margin-top: 3px;
-    }
-
-    .link-grid {
+    .links {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
     }
-
-    .link-card {
-      display: block;
-      min-width: 0;
+    .link {
       padding: 16px;
-      border-radius: var(--radius-md);
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+      border-radius: var(--radius-lg);
+      background: var(--panel-2);
+      border: 1px solid rgba(255,255,255,.08);
+      transition: transform .16s ease, border-color .16s ease, background .16s ease;
+      min-width: 0;
     }
+    .link:hover { transform: translateY(-2px); border-color: rgba(19,154,242,.58); background: #2a315a; }
+    .link-title { font-size: 16px; font-weight: 950; }
+    .link-note { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
 
-    .link-card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(18, 153, 242, 0.55);
-      background: rgba(18, 153, 242, 0.1);
-    }
-
-    .link-title {
-      font-size: 16px;
-      font-weight: 900;
-    }
-
-    .link-path {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.45;
-      overflow-wrap: anywhere;
-    }
-
-    .status-table {
-      display: grid;
-      gap: 10px;
-    }
-
-    .status-row {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 14px;
-      align-items: center;
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.075);
-    }
-
-    .status-row:last-child { border-bottom: 0; }
-
-    .key {
-      color: var(--quiet);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .value {
-      font-size: 14px;
-      color: var(--text);
-      overflow-wrap: anywhere;
-    }
-
-    .evidence-strip {
+    .benefit {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
     }
-
-    .evidence {
+    .benefit-card {
       padding: 16px;
-      border-radius: var(--radius-md);
-      background: var(--surface-raised);
-      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--panel-3);
+      border: 1px solid rgba(255,255,255,.08);
     }
+    .num { font-size: 32px; line-height: 1; font-weight: 950; }
+    .num-note { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.45; }
 
-    .evidence-number {
-      font-size: 30px;
-      font-weight: 950;
-      color: #fff;
-    }
-
-    .evidence-label {
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.45;
-    }
-
-    .footer-note {
-      margin-top: 18px;
+    .footer {
+      text-align: center;
       color: var(--quiet);
       font-size: 13px;
       line-height: 1.7;
-      text-align: center;
+      margin-top: 18px;
     }
 
     @media (max-width: 920px) {
-      .hero { grid-template-columns: 1fr; }
-      .card, .card.wide { grid-column: 1 / -1; }
-      .link-grid, .evidence-strip { grid-template-columns: 1fr; }
+      .top { grid-template-columns: 1fr; }
+      .card, .wide { grid-column: 1 / -1; }
+      .links, .benefit { grid-template-columns: 1fr; }
     }
-
-    @media (max-width: 620px) {
-      .shell { width: min(100% - 22px, 1180px); padding: 18px 0 34px; }
-      .main-status, .action-card, .card { border-radius: 24px; padding: 18px; }
-      .mission-row { grid-template-columns: 1fr; }
-      .status-row { grid-template-columns: 1fr; gap: 4px; }
-      .card-header { align-items: flex-start; flex-direction: column; gap: 10px; }
-      .hero-copy { font-size: 15px; }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 22px, 1160px); padding: 18px 0 34px; }
+      .hero, .next, .card { padding: 18px; border-radius: 24px; }
+      .summary { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 1fr; gap: 4px; }
+      .card-head { flex-direction: column; }
+      .sub { font-size: 15px; }
     }
   </style>
 </head>
 <body>
-  <main class="shell">
-    <section class="hero">
-      <div class="panel main-status">
+  <main class="wrap">
+    <section class="top">
+      <div class="hero">
         <div>
-          <span class="eyebrow">start2026 / Human Console</span>
-          <h1>今日やることだけ見る。</h1>
-          <p class="hero-copy">HumanはPurpose、違和感、承認に集中する。AI Development Factoryは、現在位置・不足情報・Preview導線を整理し、Human Costを下げる。</p>
+          <span class="pill">AI Development Factory / Human Console</span>
+          <h1>今やることだけ見る。</h1>
+          <p class="sub">HumanはPurpose、違和感、承認に集中する。start2026は現在位置、不足情報、Preview導線をまとめ、認知負荷を下げる。</p>
         </div>
-        <div class="mission-row" aria-label="Current mission summary">
-          <div class="metric">
-            <div class="metric-label">Current Mission</div>
-            <div class="metric-value">Human Console</div>
-          </div>
-          <div class="metric">
-            <div class="metric-label">Current Stage</div>
-            <div class="metric-value">Level 0 / Static</div>
-          </div>
-          <div class="metric">
-            <div class="metric-label">Focus</div>
-            <div class="metric-value">迷いを減らす</div>
-          </div>
+        <div class="summary">
+          <div class="summary-card"><div class="label">Current Mission</div><div class="value">Human Console</div></div>
+          <div class="summary-card"><div class="label">Current Stage</div><div class="value">Factory Level 0</div></div>
+          <div class="summary-card"><div class="label">Domain</div><div class="value">fashionhoteljoy.com</div></div>
         </div>
       </div>
-
-      <aside class="action-card" aria-label="Next best action">
+      <aside class="next">
         <div>
-          <div class="label">Next Best Action</div>
-          <div class="action">この画面を開いて、次に見る場所が分かるか確認する。</div>
-          <div class="reason">今の最優先は新機能ではなく、Humanが毎回「どこを見るか」で止まらない導線を作ることです。</div>
+          <div class="label">Human Next Action</div>
+          <h2>この画面を見て、次に必要な情報が分かるか確認する。</h2>
+          <p>Human Next Actionは必ず1つだけ。複数候補を出すと迷いが増えるため、Console側で絞る。</p>
         </div>
-        <div class="badge ok">Human Action: 1つだけ</div>
+        <span class="tag ok">1 action only</span>
       </aside>
     </section>
 
     <section class="grid">
       <article class="card">
-        <div class="card-header">
-          <h2>Waiting Human Input</h2>
-          <span class="badge wait">Human待ち</span>
-        </div>
-        <ul class="list">
-          <li class="item">
-            <span class="dot warn">?</span>
-            <div>
-              <div class="item-title">使用中ドメインと管理サービス</div>
-              <div class="item-note">分からなければ Unknown でOK。Preview公開方式の判断に使います。</div>
-            </div>
-          </li>
-          <li class="item">
-            <span class="dot warn">?</span>
-            <div>
-              <div class="item-title">Preview方式の希望</div>
-              <div class="item-note">任せる / GitHub Pages / Vercel / Cloudflare Tunnel のどれか。迷うなら「任せる」。</div>
-            </div>
-          </li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <div class="card-header">
-          <h2>Missing Information</h2>
-          <span class="badge warn">Unknownあり</span>
-        </div>
-        <ul class="list">
-          <li class="item"><span class="dot warn">1</span><div><div class="item-title">Domain</div><div class="item-note">本番URL / Preview URL / QR導線に必要。</div></div></li>
-          <li class="item"><span class="dot warn">2</span><div><div class="item-title">Cloud Preview</div><div class="item-note">スマホ確認を安定させるために必要。</div></div></li>
-          <li class="item"><span class="dot warn">3</span><div><div class="item-title">API / Secret保管</div><div class="item-note">今は不要。将来のExecution OSで必要。</div></div></li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <div class="card-header">
-          <h2>Developer Status</h2>
-          <span class="badge ok">Preview Ready</span>
-        </div>
-        <div class="status-table">
-          <div class="status-row"><div class="key">Git</div><div class="value">start2026 repository setup in progress</div></div>
-          <div class="status-row"><div class="key">Commit</div><div class="value">Human Console initial prototype</div></div>
-          <div class="status-row"><div class="key">Push</div><div class="value">GitHub main target</div></div>
-          <div class="status-row"><div class="key">Preview</div><div class="value">Local static HTML</div></div>
-        </div>
-      </article>
-
-      <article class="card wide">
-        <div class="card-header">
-          <h2>Reality Connection</h2>
-          <span class="badge">使える導線だけ表示</span>
-        </div>
-        <div class="status-table">
-          <div class="status-row"><div class="key">Preview URL</div><div class="value">file:///Users/kashiharayoshihiro/Library/Mobile%20Documents/com~apple~CloudDocs/system/start2026/01_HUMAN_CONSOLE/index.html</div></div>
-          <div class="status-row"><div class="key">Smartphone URL</div><div class="value">Setup required: local server / LAN / QR は次フェーズで安定化</div></div>
-          <div class="status-row"><div class="key">Localhost</div><div class="value">python3 -m http.server 8081 --bind 0.0.0.0</div></div>
-          <div class="status-row"><div class="key">Deploy URL</div><div class="value">Unknown: GitHub Pages / Vercel / Cloudflare Tunnelから選定</div></div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-header">
-          <h2>Current Stage</h2>
-          <span class="badge ok">Stage 1 / 5</span>
-        </div>
-        <ul class="list">
-          <li class="item"><span class="check">✓</span><div><div class="item-title">MrBrain Architecture</div><div class="item-note">思想・正本・Factory設計は整理済み。</div></div></li>
-          <li class="item"><span class="check">→</span><div><div class="item-title">Human Console</div><div class="item-note">今ここ。Humanが入口で迷わない状態を作る。</div></div></li>
-          <li class="item"><span class="dot">3</span><div><div class="item-title">Preview Delivery</div><div class="item-note">次にスマホ確認導線を安定化する。</div></div></li>
+        <div class="card-head"><h3>Waiting Human Input</h3><span class="tag warn">Human待ち</span></div>
+        <ul class="stack">
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Preview方式の希望</div><div class="item-note">任せる / GitHub Pages / Vercel / Cloudflare Tunnel。迷う場合は「任せる」で進める。</div></div></li>
         </ul>
       </article>
 
       <article class="card wide">
-        <div class="card-header">
-          <h2>Artifacts</h2>
-          <span class="badge">最新成果物</span>
+        <div class="card-head"><h3>Missing Information</h3><span class="tag danger">本番前に必要</span></div>
+        <ul class="stack">
+          <li class="item"><span class="icon danger">!</span><div><div class="item-title">本番DB未定</div><div class="item-note">App + API + DB + Authへ進む前に選定が必要。</div></div></li>
+          <li class="item"><span class="icon danger">!</span><div><div class="item-title">サーバー未定</div><div class="item-note">Preview / Production deploy方式が未確定。</div></div></li>
+          <li class="item"><span class="icon warn">?</span><div><div class="item-title">Preview方式未定</div><div class="item-note">Local / LAN / Cloud preview のどこを標準にするか未定。</div></div></li>
+          <li class="item"><span class="icon warn">?</span><div><div class="item-title">GitHub Pages / Vercel / Cloudflare Tunnel 未選定</div><div class="item-note">短期確認か、常時Previewか、本番寄り運用かで選ぶ。</div></div></li>
+          <li class="item"><span class="icon warn">?</span><div><div class="item-title">ドメイン接続未設定</div><div class="item-note">fashionhoteljoy.com は記録済み。DNS / preview接続は未設定。</div></div></li>
+          <li class="item"><span class="icon warn">?</span><div><div class="item-title">Secret / API Key保管方針未確定</div><div class="item-note">GitHub PATやAPI Keyは保存禁止。.env / GitHub Secrets / password managerへ分離する。</div></div></li>
+        </ul>
+      </article>
+
+      <article class="card wide">
+        <div class="card-head"><h3>Preview Links</h3><span class="tag ok">Local Ready</span></div>
+        <div class="links">
+          <a class="link" href="file:///Users/kashiharayoshihiro/Library/Mobile%20Documents/com~apple~CloudDocs/system/start2026/01_HUMAN_CONSOLE/index.html"><div class="link-title">Human Console</div><div class="link-note">この画面。最初に開く司令塔。</div></a>
+          <a class="link" href="file:///Users/kashiharayoshihiro/Library/Mobile%20Documents/com~apple~CloudDocs/MrBrain/05_DESIGN_SYSTEM/developer_dashboard/index.html"><div class="link-title">Developer Dashboard</div><div class="link-note">最新Artifact、変更点、Preview状態を見る。</div></a>
+          <a class="link" href="file:///Users/kashiharayoshihiro/Library/Mobile%20Documents/com~apple~CloudDocs/MrBrain/05_DESIGN_SYSTEM/mobile_design_studio/index.html"><div class="link-title">Mobile Design Studio</div><div class="link-note">スマホ全画面のDesign Candidateを見る。</div></a>
         </div>
-        <div class="link-grid">
-          <a class="link-card" href="file:///Users/kashiharayoshihiro/Library/Mobile%20Documents/com~apple~CloudDocs/MrBrain/05_DESIGN_SYSTEM/playground/index.html">
-            <div class="link-title">Design Playground</div>
-            <div class="link-path">Design Token / Component Candidate確認</div>
-          </a>
-          <a class="link-card" href="file:///Users/kashiharayoshihiro/Library/Mobile%20Documents/com~apple~CloudDocs/MrBrain/05_DESIGN_SYSTEM/developer_dashboard/index.html">
-            <div class="link-title">Developer Dashboard</div>
-            <div class="link-path">最新Artifactと変更点確認</div>
-          </a>
-          <a class="link-card" href="file:///Users/kashiharayoshihiro/Library/Mobile%20Documents/com~apple~CloudDocs/MrBrain/05_DESIGN_SYSTEM/mobile_design_studio/index.html">
-            <div class="link-title">Mobile Design Studio</div>
-            <div class="link-path">スマホ全画面Preview候補</div>
-          </a>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Blockers</h3><span class="tag warn">接続Gap</span></div>
+        <ul class="stack">
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">スマホPreview未安定</div><div class="item-note">LAN / QR / Cloud previewの固定が必要。</div></div></li>
+          <li class="item"><span class="icon warn">2</span><div><div class="item-title">公開方式未選定</div><div class="item-note">短期はCloudflare Tunnel、安定運用はVercel / GitHub Pages候補。</div></div></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Latest Commit</h3><span class="tag">Git</span></div>
+        <div class="rows">
+          <div class="row"><div class="row-key">Repository</div><div class="row-val">yoshihiro0001/start2026</div></div>
+          <div class="row"><div class="row-key">Branch</div><div class="row-val">main</div></div>
+          <div class="row"><div class="row-key">Status</div><div class="row-val">This page is updated by Codex and pushed to GitHub.</div></div>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <div class="card-head"><h3>Developer Status</h3><span class="tag ok">Factory booting</span></div>
+        <div class="rows">
+          <div class="row"><div class="row-key">Git</div><div class="row-val">Initialized</div></div>
+          <div class="row"><div class="row-key">Remote</div><div class="row-val">https://github.com/yoshihiro0001/start2026.git</div></div>
+          <div class="row"><div class="row-key">Push</div><div class="row-val">Enabled</div></div>
+          <div class="row"><div class="row-key">Preview</div><div class="row-val">Local static HTML. Smartphone preview requires local server / LAN / QR setup.</div></div>
         </div>
       </article>
 
       <article class="card full">
-        <div class="card-header">
-          <h2>Evidence</h2>
-          <span class="badge ok">Human Cost削減</span>
-        </div>
-        <div class="evidence-strip">
-          <div class="evidence"><div class="evidence-number">1</div><div class="evidence-label">Humanが見る入口を1画面に集約</div></div>
-          <div class="evidence"><div class="evidence-number">3</div><div class="evidence-label">Design / Dashboard / Studioへの迷いを減らす</div></div>
-          <div class="evidence"><div class="evidence-number">40%</div><div class="evidence-label">体感Human Cost削減見込み</div></div>
-          <div class="evidence"><div class="evidence-number">0</div><div class="evidence-label">Next Best Actionの選択肢迷い</div></div>
+        <div class="card-head"><h3>Evidence</h3><span class="tag ok">Human Cost削減</span></div>
+        <div class="benefit">
+          <div class="benefit-card"><div class="num">1</div><div class="num-note">Humanが見る入口を1つに集約</div></div>
+          <div class="benefit-card"><div class="num">0</div><div class="num-note">Next Actionの選択肢迷い</div></div>
+          <div class="benefit-card"><div class="num">40%</div><div class="num-note">体感Human Cost削減見込み</div></div>
+          <div class="benefit-card"><div class="num">3</div><div class="num-note">Preview / Blocker / Missing Infoを同時把握</div></div>
         </div>
       </article>
 
       <article class="card full">
-        <div class="card-header">
-          <h2>Next Recommendation</h2>
-          <span class="badge wait">ROI最大の次改善</span>
-        </div>
-        <ul class="list">
-          <li class="item">
-            <span class="dot ok">→</span>
-            <div>
-              <div class="item-title">Human Consoleをスマホで安定して開けるPreview導線を作る。</div>
-              <div class="item-note">理由: Consoleを作ってもスマホで見られなければHuman Experienceが止まるため。Local server / LAN / QR / Cloud previewのどれで一発表示できるかを次に固定する。</div>
-            </div>
-          </li>
+        <div class="card-head"><h3>Next Best Action</h3><span class="tag ok">ROI最大</span></div>
+        <ul class="stack">
+          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Human Consoleをスマホで安定して開けるPreview導線を作る。</div><div class="item-note">理由: Consoleが司令塔なら、スマホで一発表示できることがHuman Cognitive Load削減に最も効く。</div></div></li>
         </ul>
       </article>
     </section>
 
-    <p class="footer-note">Human Console is not a developer dashboard. It is the front door for Purpose, current position, missing information, and the single next action.</p>
+    <p class="footer">Human Console is the command screen for Purpose, current position, missing information, and one next action. Secrets are never stored here.</p>
   </main>
 </body>
 </html>
