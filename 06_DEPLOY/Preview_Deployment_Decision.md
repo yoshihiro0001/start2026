@@ -89,7 +89,7 @@ GitHub Pages + simple gate is chosen because:
 
 ## Unconfirmed Items
 
-- Whether the GitHub Pages build has finished and is accessible from smartphone.
+- Whether the GitHub Pages URL opens correctly on smartphone.
 - Whether the repository should remain public for this temporary preview.
 - Whether `fashionhoteljoy.com` DNS is managed by Cloudflare or another provider.
 - Whether the next secure step should be Cloudflare Access or Vercel Authentication.

@@ -131,7 +131,7 @@ Reasoning Depth / Accuracy Need / Cost / Speed / Risk / Privacy / Repeatability 
 Human Consoleをスマホで安定して開ける、スマホでPreview URLを開き、password 123456で入れるか確認する。
 
 Reason:
-Preview URLは発行済み。次はスマホ実機で開けることを確認し、Human Consoleを常時入口にする。
+Preview URLは公開済み。次はスマホ実機で開けることを確認し、Human Consoleを常時入口にする。
 
 ## Related Brief
 
