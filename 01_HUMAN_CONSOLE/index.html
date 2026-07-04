@@ -257,6 +257,65 @@
     .link-title { font-size: 16px; font-weight: 950; }
     .link-note { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
 
+    .gauge-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .gauge {
+      padding: 16px;
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.08);
+      min-width: 0;
+    }
+
+    .gauge-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .gauge-name {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1.35;
+    }
+
+    .gauge-score {
+      color: var(--text);
+      font-size: 22px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .bar {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+    }
+
+    .fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+
+    .fill.warn { background: linear-gradient(90deg, #ffd166, #ff9f43); }
+    .fill.danger { background: linear-gradient(90deg, #ff6b7a, #ff9f9f); }
+
+    .gauge-note {
+      margin-top: 9px;
+      color: var(--quiet);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
     .benefit {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -282,7 +341,7 @@
     @media (max-width: 920px) {
       .top { grid-template-columns: 1fr; }
       .card, .wide { grid-column: 1 / -1; }
-      .links, .benefit { grid-template-columns: 1fr; }
+      .links, .benefit, .gauge-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       .wrap { width: min(100% - 22px, 1160px); padding: 18px 0 34px; }
@@ -339,6 +398,18 @@
         </div>
       </article>
 
+      <article class="card full">
+        <div class="card-head"><h3>Readiness Gauges</h3><span class="tag warn">仮スコア</span></div>
+        <div class="gauge-grid">
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Production Readiness</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">本番DB / Server / Authが未決定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Research Readiness</div><div class="gauge-score">45%</div></div><div class="bar"><div class="fill warn" style="width:45%"></div></div><div class="gauge-note">主要候補の公式Docsは確認済み。制約と料金は未調査。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evidence Confidence</div><div class="gauge-score">40%</div></div><div class="bar"><div class="fill warn" style="width:40%"></div></div><div class="gauge-note">Evidence URLはあるが、価格・DNS・認証方式は不足。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Decision Confidence</div><div class="gauge-score">35%</div></div><div class="bar"><div class="fill warn" style="width:35%"></div></div><div class="gauge-note">外部公開可否が未決定のためPreview方式を確定できない。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Security Readiness</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Secret管理方針は記録済み。本番Auth / access制限は未決定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Deployment Readiness</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Git pushは可能。Preview / deploy先は未選定。</div></div>
+        </div>
+      </article>
+
       <article class="card wide">
         <div class="card-head"><h3>Missing Information</h3><span class="tag danger">本番前に必要</span></div>
         <ul class="stack">
@@ -348,7 +419,7 @@
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">GitHub Pages / Vercel / Cloudflare Tunnel 未選定</div><div class="item-note">短期確認か、常時Previewか、本番寄り運用かで選ぶ。</div></div></li>
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">ドメイン接続未設定</div><div class="item-note">fashionhoteljoy.com は記録済み。DNS / preview接続は未設定。</div></div></li>
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">Secret / API Key保管方針未確定</div><div class="item-note">GitHub PATやAPI Keyは保存禁止。.env / GitHub Secrets / password managerへ分離する。</div></div></li>
-          <li class="item"><span class="icon warn">?</span><div><div class="item-title">未調査Evidence</div><div class="item-note">料金プラン、ドメイン管理サービス、DNS状態、HOTEL JOY本番の既存サーバー有無。</div></div></li>
+          <li class="item"><span class="icon warn">?</span><div><div class="item-title">未調査Evidence</div><div class="item-note">料金プラン、ドメイン管理サービス、DNS状態、HOTEL JOY本番の既存サーバー有無、パスワード付きPreview、各Previewサービスの制約、Basic認証やアクセス制限。</div></div></li>
         </ul>
       </article>
 
@@ -367,6 +438,7 @@
           <li class="item"><span class="icon warn">1</span><div><div class="item-title">スマホPreview未安定</div><div class="item-note">LAN / QR / Cloud previewの固定が必要。</div></div></li>
           <li class="item"><span class="icon warn">2</span><div><div class="item-title">公開方式未選定</div><div class="item-note">短期はCloudflare Tunnel、安定運用はVercel / GitHub Pages候補。</div></div></li>
           <li class="item"><span class="icon danger">3</span><div><div class="item-title">Secretは保存禁止</div><div class="item-note">Secret / API Key / GitHub PAT / PasswordはGitへ保存しない。</div></div></li>
+          <li class="item"><span class="icon warn">4</span><div><div class="item-title">仮Preview Password</div><div class="item-note">123456 は仮Preview専用。本番・外部共有・重要情報ありの画面では使用禁止。</div></div></li>
         </ul>
       </article>
 
