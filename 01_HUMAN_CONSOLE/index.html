@@ -312,8 +312,8 @@
       <aside class="next">
         <div>
           <div class="label">Human Next Action</div>
-          <h2>この画面を見て、次に必要な情報が分かるか確認する。</h2>
-          <p>Human Next Actionは必ず1つだけ。複数候補を出すと迷いが増えるため、Console側で絞る。</p>
+          <h2>Previewは外部公開してよいかを決める。</h2>
+          <p>Decision Briefの次の判断です。Yes / No / パスワード付きならOK のどれかだけ決めれば進めます。</p>
         </div>
         <span class="tag ok">1 action only</span>
       </aside>
@@ -323,8 +323,20 @@
       <article class="card">
         <div class="card-head"><h3>Waiting Human Input</h3><span class="tag warn">Human待ち</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Preview方式の希望</div><div class="item-note">任せる / GitHub Pages / Vercel / Cloudflare Tunnel。迷う場合は「任せる」で進める。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Preview外部公開の可否</div><div class="item-note">Yes / No / パスワード付きならOK。これだけ決めればLevel 1 Previewへ進める。</div></div></li>
         </ul>
+      </article>
+
+      <article class="card wide">
+        <div class="card-head"><h3>Infrastructure Decision Summary</h3><span class="tag ok">Brief反映</span></div>
+        <div class="rows">
+          <div class="row"><div class="row-key">Current Decision</div><div class="row-val">Human Consoleをスマホで安定して開けるため、最小Preview環境を決める。</div></div>
+          <div class="row"><div class="row-key">Level 1</div><div class="row-val">GitHub Pages または Vercel static preview。</div></div>
+          <div class="row"><div class="row-key">Level 2</div><div class="row-val">Vercel または Cloudflare Pagesで常時Preview + Human Console。</div></div>
+          <div class="row"><div class="row-key">Level 3</div><div class="row-val">Vercel または Cloudflare Pages + Supabaseで、本番App + API + DB + Auth。</div></div>
+          <div class="row"><div class="row-key">Recommended Preview</div><div class="row-val">GitHub Pages / Vercel static preview。</div></div>
+          <div class="row"><div class="row-key">Summary Source</div><div class="row-val">06_DEPLOY/Console_Summary.md</div></div>
+        </div>
       </article>
 
       <article class="card wide">
@@ -336,6 +348,7 @@
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">GitHub Pages / Vercel / Cloudflare Tunnel 未選定</div><div class="item-note">短期確認か、常時Previewか、本番寄り運用かで選ぶ。</div></div></li>
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">ドメイン接続未設定</div><div class="item-note">fashionhoteljoy.com は記録済み。DNS / preview接続は未設定。</div></div></li>
           <li class="item"><span class="icon warn">?</span><div><div class="item-title">Secret / API Key保管方針未確定</div><div class="item-note">GitHub PATやAPI Keyは保存禁止。.env / GitHub Secrets / password managerへ分離する。</div></div></li>
+          <li class="item"><span class="icon warn">?</span><div><div class="item-title">未調査Evidence</div><div class="item-note">料金プラン、ドメイン管理サービス、DNS状態、HOTEL JOY本番の既存サーバー有無。</div></div></li>
         </ul>
       </article>
 
@@ -353,6 +366,7 @@
         <ul class="stack">
           <li class="item"><span class="icon warn">1</span><div><div class="item-title">スマホPreview未安定</div><div class="item-note">LAN / QR / Cloud previewの固定が必要。</div></div></li>
           <li class="item"><span class="icon warn">2</span><div><div class="item-title">公開方式未選定</div><div class="item-note">短期はCloudflare Tunnel、安定運用はVercel / GitHub Pages候補。</div></div></li>
+          <li class="item"><span class="icon danger">3</span><div><div class="item-title">Secretは保存禁止</div><div class="item-note">Secret / API Key / GitHub PAT / PasswordはGitへ保存しない。</div></div></li>
         </ul>
       </article>
 
@@ -388,7 +402,7 @@
       <article class="card full">
         <div class="card-head"><h3>Next Best Action</h3><span class="tag ok">ROI最大</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Human Consoleをスマホで安定して開けるPreview導線を作る。</div><div class="item-note">理由: Consoleが司令塔なら、スマホで一発表示できることがHuman Cognitive Load削減に最も効く。</div></div></li>
+          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Previewは外部公開してよいかを決める。</div><div class="item-note">理由: 外部公開可否が決まると、GitHub Pages / Vercel / Cloudflare Tunnelのどれを使うか決められる。</div></div></li>
         </ul>
       </article>
     </section>

@@ -37,3 +37,23 @@ fashionhoteljoy.com
 
 Never commit GitHub PAT, API keys, passwords, tokens, or private credentials.
 Use `.env`, GitHub Secrets, or a password manager for secrets.
+
+
+## Console Summary Rule
+
+When a Decision Brief is updated, update the related `Console_Summary.md` in the same area.
+
+Human Console should display only the Summary, not the full Brief.
+The goal is to minimize what Human needs to read.
+
+Current deploy summary:
+
+```text
+06_DEPLOY/Console_Summary.md
+```
+
+Current deploy brief:
+
+```text
+06_DEPLOY/Infrastructure_Decision_Brief.md
+```
