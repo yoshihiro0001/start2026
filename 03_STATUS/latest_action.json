@@ -1,13 +1,16 @@
 {
   "last_updated": "2026-07-05",
-  "human_next_action": "Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする",
+  "human_next_action": "Vercel 2FAを完了する",
   "one_action_only": true,
-  "approved_task": "Evolution Factory identity and Vercel Hobby onboarding approved",
-  "codex_next_task": "Wait for Human to provide Vercel Project URL after import",
-  "status": "Human setup guide and identity registry ready; awaiting Vercel import",
+  "approved_task": "Use Human Navigator to complete Vercel 2FA",
+  "codex_next_task": "Wait for Human to complete 2FA and provide Vercel Project URL after GitHub Import",
+  "status": "Vercel onboarding is at 2FA step; Human Navigator guide is active",
   "related_files": [
-    "03_STATUS/identity.json",
+    "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md",
     "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
-    "06_DEPLOY/Security_Roadmap.md"
-  ]
+    "99_LEARNING/Reality_Navigation_Log.md"
+  ],
+  "current_reality_step": "Vercel 2FA Setup",
+  "current_screen": "Authenticator App QR Code",
+  "detected_task": "Scan QR with authenticator app and enter 6-digit code on Mac"
 }

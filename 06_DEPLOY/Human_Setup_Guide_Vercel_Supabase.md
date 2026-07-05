@@ -43,6 +43,7 @@ Suggested values:
 | Input | Suggested Value | Copy |
 |---|---|---|
 | Vercel Project Name | Evolution Factory / evolution-factory | `evolution-factory` |
+| Vercel Team URL | evolution-factory-jp | `evolution-factory-jp` |
 | Supabase Project Name | Evolution Factory / evolution-factory | `evolution-factory` |
 | GitHub Repository | yoshihiro0001/start2026 | `yoshihiro0001/start2026` |
 | Environment | preview | `preview` |
@@ -61,16 +62,43 @@ Steps:
 
 1. VercelにGoogleログインする。
 2. Hobby / Personal projectで開始する。
-3. GitHub連携を確認する。
-4. Repository `yoshihiro0001/start2026` をImportする。
-5. Project nameは `evolution-factory` を推奨する。
-6. Frameworkは静的HTMLならOther、またはVercelの自動判定に任せる。
-7. Deployする。
-8. 発行されたURLをHuman Consoleへ反映する。
+3. Team URLを聞かれたら `evolution-factory-jp` を使う。
+4. 2FAが出た場合は、Human Navigator Guideに従って完了する。
+5. GitHub連携を確認する。
+6. Repository `yoshihiro0001/start2026` をImportする。
+7. Project nameは `evolution-factory` を推奨する。
+8. Frameworkは静的HTMLならOther、またはVercelの自動判定に任せる。
+9. Deployする。
+10. 発行されたURLをHuman Consoleへ反映する。
 
 注意:
 Hobbyは検証用。
 商用化、顧客データ、本番DB、外部ユーザー利用へ進む時はPro以上を再検討する。
+
+---
+
+## Vercel 2FAで止まった場合
+
+Human Navigator Guide:
+
+```text
+06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md
+```
+
+Current Screen:
+Authenticator App QR Code
+
+Humanがやること:
+
+1. Google AuthenticatorまたはiPhone標準パスワードアプリを開く。
+2. MacのVercel画面に出ているQRコードをスキャンする。
+3. 認証アプリに表示された6桁コードをMacのVercel入力欄へ入れる。
+4. QRが読めない場合は、Vercel画面の英数字キーを認証アプリへ手入力する。
+5. Recovery Codeが表示されたらPassword Managerへ保存する。
+6. 次はGitHub repo importへ進む。
+
+注意:
+Recovery Code、英数字キー、SecretはGit / Chat / MrBrain本文へ保存しない。
 
 ---
 

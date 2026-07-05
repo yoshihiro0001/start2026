@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Human Console | start2026</title>
+  <title>Human Console | Evolution Factory</title>
   <style>
     :root {
       --bg: #0f1328;
@@ -463,7 +463,7 @@
           <p class="sub">HumanはPurpose、違和感、承認に集中する。start2026は現在位置、不足情報、Preview導線をまとめ、認知負荷を下げる。</p>
         </div>
         <div class="summary">
-          <div class="summary-card"><div class="label">Overall Readiness</div><div class="value">45%</div></div>
+          <div class="summary-card"><div class="label">Overall Readiness</div><div class="value">46%</div></div>
           <div class="summary-card"><div class="label">Current Mission</div><div class="value">Evolution Factory</div></div>
           <div class="summary-card"><div class="label">Domain</div><div class="value">fashionhoteljoy.com</div></div>
         </div>
@@ -471,8 +471,8 @@
       <aside class="next">
         <div>
           <div class="label">Human Next Action</div>
-          <h2>Vercel HobbyでImportする。</h2>
-          <p>Evolution Factory projectとして、GitHub repo yoshihiro0001/start2026 をVercelへImportします。</p>
+          <h2>Vercel 2FAを完了する。</h2>
+          <p>認証アプリでQRを読み取り、表示された6桁コードをMacのVercel画面へ入力します。</p>
         </div>
         <span class="tag ok">1 action only</span>
       </aside>
@@ -482,7 +482,7 @@
       <article class="card">
         <div class="card-head"><h3>Waiting Human Input</h3><span class="tag warn">Human待ち</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel HobbyでGitHub repoをImport</div><div class="item-note">Project nameは evolution-factory 推奨。Hobby / Development onlyで開始する。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel 2FAを完了</div><div class="item-note">Google AuthenticatorまたはiPhone標準パスワードでQRを読み、6桁コードをMacへ入力する。</div></div></li>
         </ul>
       </article>
 
@@ -495,6 +495,22 @@
           <div class="row"><div class="row-key">Level 3</div><div class="row-val">Vercel または Cloudflare Pages + Supabaseで、本番App + API + DB + Auth。</div></div>
           <div class="row"><div class="row-key">Recommended Preview</div><div class="row-val">GitHub Pages / Vercel static preview。</div></div>
           <div class="row"><div class="row-key">Summary Source</div><div class="row-val">06_DEPLOY/Console_Summary.md</div></div>
+        </div>
+      </article>
+
+      <article class="card full">
+        <div class="card-head"><h3>Human Navigator</h3><span class="tag warn">Vercel 2FA</span></div>
+        <div class="rows">
+          <div class="row"><div class="row-key">Current Reality Step</div><div class="row-val">Vercel 2FA Setup</div></div>
+          <div class="row"><div class="row-key">Current Screen</div><div class="row-val">Authenticator App QR Code</div></div>
+          <div class="row"><div class="row-key">Detected Task</div><div class="row-val">認証アプリでQRを読み取り、6桁コードをMacへ入力する。</div></div>
+          <div class="row"><div class="row-key">Exact Next Action</div><div class="row-val">Google Authenticatorを開く → ＋ → QRコードをスキャン → 表示された6桁をMacのVercel入力欄へ入力する。</div></div>
+          <div class="row"><div class="row-key">Required App / Tool</div><div class="row-val">Google Authenticator または iPhone標準パスワードアプリ。</div></div>
+          <div class="row"><div class="row-key">Download Link</div><div class="row-val"><a href="https://apps.apple.com/app/google-authenticator/id388497605">Google Authenticator on App Store</a> / iPhone標準パスワードアプリは追加ダウンロード不要。</div></div>
+          <div class="row"><div class="row-key">What Happens Next</div><div class="row-val">Vercelが6桁コードを確認し、Recovery Code保存またはGitHub Import画面へ進む。</div></div>
+          <div class="row"><div class="row-key">If Failed</div><div class="row-val">QRが読めない場合は、Vercel画面上の英数字キーをコピーし、認証アプリへ手入力する。</div></div>
+          <div class="row"><div class="row-key">Completion Check</div><div class="row-val">Vercelの2FA設定が完了し、次のGitHub Import画面へ進む。</div></div>
+          <div class="row"><div class="row-key">Official Guide</div><div class="row-val">詳細: 06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md</div></div>
         </div>
       </article>
 
@@ -542,7 +558,7 @@
         <div class="card-head"><h3>Implementation Setup Status</h3><span class="tag warn">準備完了 / 未接続</span></div>
         <div class="benefit">
           <div class="benefit-card"><div class="num">0%</div><div class="num-note">Supabase Status。Project未作成。</div></div>
-          <div class="benefit-card"><div class="num">0%</div><div class="num-note">Vercel Status。Project未作成。</div></div>
+          <div class="benefit-card"><div class="num">12%</div><div class="num-note">Vercel Status。2FA setup in progress。</div></div>
           <div class="benefit-card"><div class="num">10%</div><div class="num-note">Approval Inbox。設計のみ作成済み。</div></div>
           <div class="benefit-card"><div class="num">5%</div><div class="num-note">Task Queue。Schemaのみ作成済み。</div></div>
         </div>
@@ -550,24 +566,24 @@
           <div class="row"><div class="row-key">Approval Inbox Status</div><div class="row-val">Design documented: 01_HUMAN_CONSOLE/Approval_Inbox_Design.md</div></div>
           <div class="row"><div class="row-key">Task Queue Status</div><div class="row-val">Schema documented: 04_BACKEND/Task_Queue_Schema.md</div></div>
           <div class="row"><div class="row-key">Supabase Status</div><div class="row-val">0%。Project未作成。URL / anon key / service_role keyは未登録。</div></div>
-          <div class="row"><div class="row-key">Vercel Status</div><div class="row-val">0%。Project未作成。Environment Variables未登録。</div></div>
-          <div class="row"><div class="row-key">Next Action</div><div class="row-val">Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする。</div></div>
+          <div class="row"><div class="row-key">Vercel Status</div><div class="row-val">2FA step。Authenticator QR Code画面で停止中。Environment Variables未登録。</div></div>
+          <div class="row"><div class="row-key">Next Action</div><div class="row-val">Vercel 2FAを完了し、次のGitHub Import画面へ進む。</div></div>
         </div>
       </article>
 
       <article class="card full">
         <div class="card-head"><h3>Current Loop Status</h3><span class="tag ok">JSON source introduced</span></div>
         <div class="benefit">
-          <div class="benefit-card"><div class="num">45%</div><div class="num-note">Overall Readiness。Identity RegistryとSecurity Roadmapを追加。</div></div>
+          <div class="benefit-card"><div class="num">46%</div><div class="num-note">Overall Readiness。Human NavigatorをVercel 2FAに反映。</div></div>
           <div class="benefit-card"><div class="num">3</div><div class="num-note">Status Source。readiness / latest_action / blockers を分離。</div></div>
-          <div class="benefit-card"><div class="num">1</div><div class="num-note">Human Next Action。Production Path選択だけに絞る。</div></div>
+          <div class="benefit-card"><div class="num">1</div><div class="num-note">Human Next Action。Vercel 2FA完了だけに絞る。</div></div>
           <div class="benefit-card"><div class="num">Medium</div><div class="num-note">本番環境までの距離。主軸は決定、Project作成と接続が未完了。</div></div>
         </div>
         <div class="rows" style="margin-top:16px">
           <div class="row"><div class="row-key">Gauge Source</div><div class="row-val">03_STATUS/readiness.json。現在は静的反映。将来はHuman ConsoleがJSONを直接読む。</div></div>
           <div class="row"><div class="row-key">Action Source</div><div class="row-val">03_STATUS/latest_action.json / 01_HUMAN_CONSOLE/Approved_Next_Action.md。</div></div>
           <div class="row"><div class="row-key">Blocker Source</div><div class="row-val">03_STATUS/blockers.json。</div></div>
-          <div class="row"><div class="row-key">Next Approved Task</div><div class="row-val">Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする。</div></div>
+          <div class="row"><div class="row-key">Next Approved Task</div><div class="row-val">Vercel 2FAを完了し、次のGitHub Import画面へ進む。</div></div>
         </div>
       </article>
 
@@ -578,7 +594,7 @@
           <div class="row"><div class="row-key">Distance to Production</div><div class="row-val">Medium。構成方針は決定。Vercel / Supabase作成、Auth、RLS、Secret管理が未完了。</div></div>
           <div class="row"><div class="row-key">Decision Brief</div><div class="row-val">06_DEPLOY/Production_Path_Decision_Brief.md</div></div>
           <div class="row"><div class="row-key">GitHub Pages</div><div class="row-val">Temporary Preview only。静的確認用として残すが、本格開発の主軸にはしない。</div></div>
-          <div class="row"><div class="row-key">次にHumanがやること</div><div class="row-val">Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする。</div></div>
+          <div class="row"><div class="row-key">次にHumanがやること</div><div class="row-val">Vercel 2FAを完了し、次のGitHub Import画面へ進む。</div></div>
         </div>
       </article>
 
@@ -591,7 +607,7 @@
           <div class="benefit-card"><div class="num">Hobby</div><div class="num-note">Vercel Plan Status。Development onlyで開始。</div></div>
           <div class="benefit-card"><div class="num">Prototype</div><div class="num-note">Current Security Level。本番・重要情報なし。</div></div>
           <div class="benefit-card"><div class="num">Pro?</div><div class="num-note">Commercial Upgrade Trigger。収益化 / 顧客データ / 本番DB / 外部ユーザー利用。</div></div>
-          <div class="benefit-card"><div class="num">Next</div><div class="num-note">Next Security Action。VercelにGitHub repoをImportする。</div></div>
+          <div class="benefit-card"><div class="num">Next</div><div class="num-note">Next Security Action。Vercel 2FAを完了する。</div></div>
         </div>
         <div class="rows" style="margin-top:16px">
           <div class="row"><div class="row-key">Security Roadmap</div><div class="row-val">06_DEPLOY/Security_Roadmap.md</div></div>
@@ -614,9 +630,10 @@
       <article class="card full">
         <div class="card-head"><h3>迷った時の答え</h3><span class="tag ok">Stop防止</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon ok">?</span><div><div class="item-title">Vercel / Supabaseを作ったことがない</div><div class="item-note">Human Setup Guideを見ればよい。まず空のstart2026だけ接続し、重要情報は入れない。</div></div></li>
+          <li class="item"><span class="icon ok">?</span><div><div class="item-title">Vercel 2FAで止まった</div><div class="item-note">Human Navigator → Vercel 2FA Guideを見る。Google Authenticatorを開き、QRを読み、6桁コードをMacへ入力する。</div></div></li>
+          <li class="item"><span class="icon ok">?</span><div><div class="item-title">Vercel / Supabaseを作ったことがない</div><div class="item-note">Human Setup Guideを見ればよい。まず空のEvolution Factoryだけ接続し、重要情報は入れない。</div></div></li>
           <li class="item"><span class="icon ok">?</span><div><div class="item-title">どの情報をCodexへ渡す？</div><div class="item-note">Vercel Project URL、Supabase Project URL、Supabase publishable / legacy anon keyのみ。Secret / service_role keyは渡さない。</div></div></li>
-          <li class="item"><span class="icon warn">!</span><div><div class="item-title">怖い</div><div class="item-note">まず空のstart2026だけ接続する。顧客情報、売上、税務、契約、個人情報は入れない。</div></div></li>
+          <li class="item"><span class="icon warn">!</span><div><div class="item-title">怖い</div><div class="item-note">まず空のEvolution Factoryだけ接続する。顧客情報、売上、税務、契約、個人情報は入れない。</div></div></li>
         </ul>
       </article>
 
@@ -640,7 +657,7 @@
         </div>
         <div class="rows" style="margin-top:16px">
           <div class="row"><div class="row-key">Backend Candidate</div><div class="row-val">Supabase: tasks / approvals / readiness_scores / blockers / evidence / ai_runs / learning_logs。</div></div>
-          <div class="row"><div class="row-key">Frontend Candidate</div><div class="row-val">Vercel: Human Console app / API routes / Preview / AI API gateway。</div></div>
+          <div class="row"><div class="row-key">Frontend Candidate</div><div class="row-val">Vercel: Human Console app / API routes / Preview / AI API gateway。現在は2FA設定中。</div></div>
           <div class="row"><div class="row-key">Security</div><div class="row-val">service_role keyは絶対にGit保存禁止。anon keyは公開範囲とRLS確認後のみ扱う。</div></div>
         </div>
       </article>
@@ -663,9 +680,9 @@
       </article>
 
       <article class="card full">
-        <div class="card-head"><h3>Current Coordinate</h3><span class="tag warn">Overall 45%</span></div>
+        <div class="card-head"><h3>Current Coordinate</h3><span class="tag warn">Overall 46%</span></div>
         <div class="benefit">
-          <div class="benefit-card"><div class="num">45%</div><div class="num-note">Overall Readiness。Identity / Naming / Security Roadmapを追加。</div></div>
+          <div class="benefit-card"><div class="num">46%</div><div class="num-note">Overall Readiness。Identity / Naming / Security Roadmap / Human Navigatorを追加。</div></div>
           <div class="benefit-card"><div class="num">48%</div><div class="num-note">Strategy Loop。10億円Goal前提でDB-backed構成を優先。</div></div>
           <div class="benefit-card"><div class="num">35%</div><div class="num-note">Deployment Readiness。GitHub Pages URLは発行済み。公開済み。</div></div>
           <div class="benefit-card"><div class="num">45%</div><div class="num-note">Evidence Confidence。公式Docs URLとDecision Briefを記録済み。</div></div>
@@ -677,12 +694,13 @@
         <div class="gauge-grid">
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Purpose / Philosophy</div><div class="gauge-score">90%</div></div><div class="bar"><div class="fill" style="width:90%"></div></div><div class="gauge-note">Strong / 実案件で矛盾確認。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Architecture</div><div class="gauge-score">85%</div></div><div class="bar"><div class="fill" style="width:85%"></div></div><div class="gauge-note">Strong / 概念統合が課題。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Console</div><div class="gauge-score">45%</div></div><div class="bar"><div class="fill warn" style="width:45%"></div></div><div class="gauge-note">Prototype / スマホ常時Preview未安定。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Console</div><div class="gauge-score">46%</div></div><div class="bar"><div class="fill warn" style="width:46%"></div></div><div class="gauge-note">Prototype / Human Navigator反映。スマホ常時Preview未安定。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Design System</div><div class="gauge-score">65%</div></div><div class="bar"><div class="fill" style="width:65%"></div></div><div class="gauge-note">Candidate / Mobile Studio検証。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Developer Factory</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Booting / Workflow未接続。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Identity Registry</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">identity.json created / URLs未入力。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Naming Strategy</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Evolution Factory selected / repo legacy。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Setup Intelligence</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Suggested values / Copy UI未実装。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Setup Intelligence</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Human Navigator added / Copy UI未実装。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Navigator</div><div class="gauge-score">15%</div></div><div class="bar"><div class="fill danger" style="width:15%"></div></div><div class="gauge-note">Vercel 2FA Guide active / Screen recognition未実装。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Security Roadmap</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Roadmap created / controls未実装。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evolution OS</div><div class="gauge-score">35%</div></div><div class="bar"><div class="fill danger" style="width:35%"></div></div><div class="gauge-note">Discussion / Workflow保存済み。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Understanding</div><div class="gauge-score">15%</div></div><div class="bar"><div class="fill danger" style="width:15%"></div></div><div class="gauge-note">Discussion only / Feedback未収集。</div></div>
@@ -691,7 +709,7 @@
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Agent Validation</div><div class="gauge-score">0%</div></div><div class="bar"><div class="fill danger" style="width:0%"></div></div><div class="gauge-note">Not started / 検証記録なし。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Gauge Auto Update</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">Static only / DB未接続。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Supabase</div><div class="gauge-score">0%</div></div><div class="bar"><div class="fill danger" style="width:0%"></div></div><div class="gauge-note">Not created / Project未作成。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Vercel</div><div class="gauge-score">0%</div></div><div class="bar"><div class="fill danger" style="width:0%"></div></div><div class="gauge-note">Not created / Project未作成。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Vercel</div><div class="gauge-score">12%</div></div><div class="bar"><div class="fill danger" style="width:12%"></div></div><div class="gauge-note">2FA setup in progress / GitHub Import前。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Approval Inbox</div><div class="gauge-score">10%</div></div><div class="bar"><div class="fill danger" style="width:10%"></div></div><div class="gauge-note">Design only / DB未接続。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Task Queue</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">Schema only / Table未作成。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Smartphone Command Loop</div><div class="gauge-score">10%</div></div><div class="bar"><div class="fill danger" style="width:10%"></div></div><div class="gauge-note">Workflow only / 入力導線未接続。</div></div>
@@ -722,7 +740,7 @@
       <article class="card">
         <div class="card-head"><h3>Top 3 Blockers</h3><span class="tag danger">優先順</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel project未Import</div><div class="item-note">Evolution FactoryをVercel HobbyへImportする必要がある。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel 2FA setup</div><div class="item-note">認証アプリでQRを読み、6桁コードをMacへ入力する必要がある。</div></div></li>
           <li class="item"><span class="icon warn">2</span><div><div class="item-title">Supabase project未作成</div><div class="item-note">Task Queue / Approval Inboxの保存先がまだ無い。</div></div></li>
           <li class="item"><span class="icon warn">3</span><div><div class="item-title">DB / API / Auth未接続</div><div class="item-note">Supabase schema案は作成済み。実Project接続は未実施。</div></div></li>
         </ul>
@@ -790,7 +808,7 @@
       <article class="card full">
         <div class="card-head"><h3>Next Best Action</h3><span class="tag ok">ROI最大</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする。</div><div class="item-note">理由: 名前と入力値で止まらないようSuggested Valueを用意済み。まずVercel Previewを作る。</div></div></li>
+          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Vercel 2FAを完了し、次のGitHub Import画面へ進む。</div><div class="item-note">理由: 2FA完了がGitHub ImportとVercel Preview作成の前提。Human Navigatorで手順を短く表示済み。</div></div></li>
         </ul>
       </article>
     </section>

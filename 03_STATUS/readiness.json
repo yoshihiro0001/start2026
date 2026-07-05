@@ -3,36 +3,36 @@
   "source": "03_STATUS/readiness.json",
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
-    "current_percent": 45,
-    "status": "Evolution Factory identity and security roadmap added",
-    "blocker": "Vercel project is not imported yet",
-    "next_action": "Vercel HobbyでEvolution Factory projectを作成しGitHub repoをImportする",
-    "confidence": "60%"
+    "current_percent": 46,
+    "status": "Human Navigator active for Vercel 2FA",
+    "blocker": "Vercel 2FA setup is not completed",
+    "next_action": "Vercel 2FAを完了する",
+    "confidence": "62%"
   },
   "categories": [
     {
       "name": "Overall Readiness",
-      "current_percent": 45,
-      "status": "Identity + security roadmap added",
-      "blocker": "Vercel not imported",
-      "next_action": "Import repo to Vercel Hobby",
-      "confidence": "60%"
+      "current_percent": 46,
+      "status": "Human Navigator active",
+      "blocker": "Vercel 2FA not completed",
+      "next_action": "Complete Vercel 2FA",
+      "confidence": "62%"
     },
     {
       "name": "Deployment",
       "current_percent": 45,
-      "status": "Vercel path approved",
-      "blocker": "Vercel project not created",
-      "next_action": "Create Vercel project",
-      "confidence": "55%"
+      "status": "Vercel path approved; 2FA in progress",
+      "blocker": "Vercel 2FA not completed",
+      "next_action": "Complete Vercel 2FA",
+      "confidence": "58%"
     },
     {
       "name": "Security",
       "current_percent": 36,
-      "status": "Roadmap created",
-      "blocker": "Auth/RLS/secrets not configured",
-      "next_action": "Import repo to Vercel; keep secrets out of Git",
-      "confidence": "50%"
+      "status": "2FA setup in progress",
+      "blocker": "Recovery codes not saved yet",
+      "next_action": "Complete 2FA and save recovery codes outside Git",
+      "confidence": "55%"
     },
     {
       "name": "Runtime Intelligence",
@@ -70,9 +70,9 @@
       "name": "Infrastructure",
       "current_percent": 45,
       "status": "Recommended path: Vercel + Supabase",
-      "blocker": "Projects not created",
-      "next_action": "Approve project creation",
-      "confidence": "55%"
+      "blocker": "Vercel 2FA / project import not completed",
+      "next_action": "Complete Vercel 2FA",
+      "confidence": "58%"
     },
     {
       "name": "Automation",
@@ -92,11 +92,11 @@
     },
     {
       "name": "Vercel",
-      "current_percent": 5,
-      "status": "Hobby approved / not imported",
-      "blocker": "Project not created",
-      "next_action": "Import GitHub repo",
-      "confidence": "45%"
+      "current_percent": 12,
+      "status": "2FA setup in progress",
+      "blocker": "Authenticator code source unclear",
+      "next_action": "Scan QR with authenticator app and enter 6-digit code",
+      "confidence": "55%"
     },
     {
       "name": "Approval Inbox",
@@ -188,25 +188,37 @@
     },
     {
       "name": "Human Setup Intelligence",
-      "current_percent": 20,
-      "status": "Suggested values added",
-      "blocker": "No copy UI yet",
-      "next_action": "Use setup guide manually",
-      "confidence": "45%"
+      "current_percent": 30,
+      "status": "Human Navigator added for Vercel 2FA",
+      "blocker": "No live screen recognition yet",
+      "next_action": "Use Vercel 2FA Guide manually",
+      "confidence": "55%"
     },
     {
       "name": "Security Roadmap",
-      "current_percent": 25,
-      "status": "Roadmap documented",
-      "blocker": "Security controls not implemented",
-      "next_action": "Import repo to Vercel Hobby",
+      "current_percent": 30,
+      "status": "2FA guidance added",
+      "blocker": "2FA not completed",
+      "next_action": "Complete Vercel 2FA and save recovery codes",
+      "confidence": "55%"
+    },
+    {
+      "name": "Human Navigator",
+      "current_percent": 15,
+      "status": "Active for Vercel 2FA setup",
+      "blocker": "Manual guidance only; no screen recognition automation yet",
+      "next_action": "Complete Vercel 2FA using Human Navigator guide",
       "confidence": "50%"
     }
   ],
-  "next_highest_roi_action": "Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする",
+  "next_highest_roi_action": "Vercel 2FAを完了し、GitHub Import画面へ進む",
   "recommended_production_path": "Vercel + Supabase",
   "github_pages_role": "Temporary static preview only",
   "human_setup_guide": "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
   "project_name": "Evolution Factory",
-  "identity_source": "03_STATUS/identity.json"
+  "identity_source": "03_STATUS/identity.json",
+  "human_navigator_status": "active",
+  "current_reality_step": "Vercel 2FA Setup",
+  "current_screen": "Authenticator App QR Code",
+  "human_navigator_guide": "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md"
 }
