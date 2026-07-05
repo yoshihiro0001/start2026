@@ -46,3 +46,35 @@ Current Screen Navigation / Official Guide / Required App / Recovery Guide
 
 Learning:
 Security setup requires Human Navigator. Docs URLだけではなく、現在画面、押すボタン、必要なアプリ、Recovery、完了条件まで出す。
+
+
+---
+
+## 2026-07-06 / Supabase Project Setup
+
+Service: Supabase
+
+Screen: New Organization / New Project / Dashboard
+
+Stop Point:
+HumanがGitHubのsupabase/supabase repoを開いてしまった。
+
+Resolution:
+Supabase Dashboard → Start your project → Organization作成 → Project作成。
+
+Evidence:
+- Organization: evolution-factory
+- Project: evolution-factory
+- Project URL: https://fxqvhcryitmgsemlojme.supabase.co
+- Region: Oceania (Sydney) / ap-southeast-2
+- Compute: Nano
+- Status: Healthy
+- Repository: No repository connected
+- Last migration: No migrations
+- Last backup: No backups
+
+Learning:
+Humanには現在画面ごとのExact Inputが必要。Docsや抽象手順だけでは、GitHub repoとSupabase Dashboardのように似た名前の場所で迷う。
+
+Next Reuse:
+Vercel Environment Variables、Supabase API Settings、GitHub repository connection、RLS setupでCurrent Screen / Exact Click / Copy allowed / Copy prohibitedを出す。

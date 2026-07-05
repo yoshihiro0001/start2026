@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "source": "03_STATUS/current_state_summary.json",
   "purpose": "Purposeを実現するために、人間の認知負荷を最小化し、最高の体験で現実を変え続けるAI組織を構築する。",
   "system": {
@@ -9,14 +9,14 @@
     "temporary_preview_password": "123456",
     "password_note": "仮Preview専用。本番・重要情報ありでは使用禁止。"
   },
-  "current_mission": "Security Foundation / Trust Rule / AI Routing Evidence",
-  "current_stage": "Constitution and handoff protocol created; production setup still incomplete",
-  "overall_health": "46%",
-  "current_highest_risk": "Recovery未整備",
-  "current_highest_trust_risk": "AI能力比較が未完了のままBrowser AI選定がPending",
-  "human_next_action": "Supabaseログイン後、Project作成に進むか承認する",
+  "current_mission": "Supabase to Vercel connection + Security Foundation",
+  "current_stage": "Supabase project created; Vercel env vars not configured",
+  "overall_health": "52%",
+  "current_highest_risk": "service_role / secret key / DB passwordの誤共有",
+  "current_highest_trust_risk": "RLS未設計のままanon/publishable keyを使うこと",
+  "human_next_action": "Supabase Project Settings / APIでProject URLとanon/publishable keyを確認する",
   "one_action_only": true,
-  "next_rule_fix": "AI Capability RegistryのOfficial Docs確認を完了する",
+  "next_rule_fix": "service_role / secret keyをコピーしない運用を守り、RLS前に本番データを入れない",
   "active_rules": [
     "Rule 01 Official Docs Required",
     "Rule 02 AI Routing Requires Evidence",
@@ -58,10 +58,15 @@
   "console_mode": "CEO Console",
   "north_star": "AI Operating Companyを作る",
   "current_objective": "Browser Automation / AI RoutingをEvidence付きで確定する",
-  "current_bottleneck": "AI Capability Registryが未監査",
-  "current_sprint": "AI Capability Research + Security Foundation",
-  "next_human_decision": "Supabaseログイン後、Project作成に進むか承認する",
-  "trust_status": "低〜中。AI能力比較が未完了",
-  "audit_status": "未完了。Official Docs確認が必要",
-  "current_system_review_score": "62/100"
+  "current_bottleneck": "Environment Variables未設定",
+  "current_sprint": "Supabase to Vercel connection + Security Foundation",
+  "next_human_decision": "Supabase Project URL / anon or publishable keyを取得し、Vercel Environment Variablesへ接続する準備に進む",
+  "trust_status": "Medium: Supabase created, key handling/RLS/env vars pending",
+  "audit_status": "Partial: Supabase evidence saved; Env vars/RLS pending",
+  "current_system_review_score": "68/100",
+  "supabase_project_url": "https://fxqvhcryitmgsemlojme.supabase.co",
+  "supabase_created": true,
+  "supabase_connected_to_vercel": false,
+  "env_vars_configured": false,
+  "github_connected_to_supabase": false
 }

@@ -1,6 +1,6 @@
 # Human Setup Guide: Vercel + Supabase
 
-Last updated: 2026-07-05
+Last updated: 2026-07-06
 
 ## Purpose
 
@@ -14,7 +14,7 @@ Goal:
 ## Human Next Action
 
 ```text
-Vercel / Supabase project作成を進める。
+Supabase Project Settings / APIでProject URLとanon/publishable keyを確認する。
 ```
 
 
@@ -44,10 +44,12 @@ Suggested values:
 |---|---|---|
 | Vercel Project Name | Evolution Factory / evolution-factory | `evolution-factory` |
 | Vercel Team URL | evolution-factory-jp | `evolution-factory-jp` |
-| Supabase Project Name | Evolution Factory / evolution-factory | `evolution-factory` |
+| Supabase Organization | evolution-factory | `evolution-factory` |
+| Supabase Project Name | evolution-factory | `evolution-factory` |
+| Supabase Project URL | https://fxqvhcryitmgsemlojme.supabase.co | `https://fxqvhcryitmgsemlojme.supabase.co` |
 | GitHub Repository | yoshihiro0001/start2026 | `yoshihiro0001/start2026` |
 | Environment | preview | `preview` |
-| Region | Japanまたは近い地域 | `Japan or nearby` |
+| Region | Oceania (Sydney) / ap-southeast-2 | `ap-southeast-2` |
 
 ---
 
@@ -148,16 +150,29 @@ HumanがCodexへ渡さないもの:
 
 ---
 
-## Supabase 最短手順
+## Supabase 現在状態
 
-1. Supabaseにログインする。
-2. New projectを作る。
-3. Project name: `start2026`
-4. Region: Japanまたは近い地域を選ぶ。
-5. Database passwordを作成し、Password Managerへ保存する。
-6. Project URLを取得する。
-7. Publishable key または legacy anon keyを取得する。
-8. Secret key または legacy service_role keyは確認しても、絶対にGitへ保存しない。
+作成済み:
+
+- Organization: `evolution-factory`
+- Project: `evolution-factory`
+- Project URL: `https://fxqvhcryitmgsemlojme.supabase.co`
+- Status: Healthy
+- Region: Oceania (Sydney) / ap-southeast-2
+- Compute: Nano
+- GitHub repository: No repository connected
+- Last migration: No migrations
+- Last backup: No backups
+
+## Supabase 次の最短手順
+
+1. Supabase DashboardでProject `evolution-factory` を開く。
+2. 左下またはサイドバーの Settings を開く。
+3. API を開く。
+4. Project URLを確認する。
+5. Publishable key または legacy anon keyを確認する。
+6. Secret key または legacy service_role keyはコピーしない。
+7. DB password / service_role / secret keyはGit・Chat・Markdownへ保存しない。
 
 HumanがCodexへ渡してよい可能性があるもの:
 

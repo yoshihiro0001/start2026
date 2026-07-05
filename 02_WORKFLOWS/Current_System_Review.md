@@ -35,3 +35,35 @@ Next Review Date: 2026-07-12
 - AI Control CenterへAI詳細を移せているか
 - Decision Quality JSONとConsole表示がズレていないか
 - Official Docs / AI Capability Registryの監査が進んだか
+
+
+---
+
+## 2026-07-06 Review / Supabase Project Created
+
+Score: 68 / 100
+
+What improved:
+- CEO Console化は進んだ。
+- Supabase Organization / Project作成が完了し、Realityが前進した。
+- Project URLはEvidenceとして保存できた。
+
+Biggest Gap:
+Guided ExecutionはまだHumanが現場で止まる度に後追いになっている。
+
+Current Bottleneck:
+Environment Variables未設定。Supabase Project URL / anon or publishable keyを確認し、Vercelへ接続する準備が必要。
+
+Highest ROI Fix:
+Supabase → Vercel接続GuideをCEO Console上で完結させる。
+
+Next Required Improvement:
+Current ScreenごとのExact Input表示を増やす。特にSupabase Settings / API、Vercel Environment Variables、RLS設定。
+
+Security Review:
+- DB passwordはBitwarden保存のみ。
+- service_role / secret keyはGit / Chat / Markdownへ保存禁止。
+- anon / publishable keyは公開前提だが、RLS設計とセットで扱う。
+- RLS未設計のまま本番データを入れない。
+
+Next Review Date: 2026-07-12

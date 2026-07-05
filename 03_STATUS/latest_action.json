@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-05",
-  "human_next_action": "Supabaseログイン後、Project作成に進むか承認する",
+  "last_updated": "2026-07-06",
+  "human_next_action": "Supabase Project URL / anon or publishable keyを確認し、Vercel Environment Variablesへ接続する準備を進める",
   "one_action_only": true,
   "approved_task": "Security Foundation Sprint started",
-  "codex_next_task": "Wait for Human to confirm Google Account Recovery / Password Manager status",
-  "status": "Security Foundation Sprint active; Human Risk is now tracked",
+  "codex_next_task": "Wait for Human to provide public Project URL / anon or publishable key only; never request service_role or secret key",
+  "status": "Supabase project created; Environment Variables not configured",
   "related_files": [
     "SECURITY/README.md",
     "SECURITY/Google_Account.md",
@@ -35,11 +35,13 @@
     "03_STATUS/current_state_summary.json",
     "02_WORKFLOWS/Decision_Quality_Pipeline.md",
     "02_WORKFLOWS/Current_System_Review.md",
-    "03_STATUS/decision_quality.json"
+    "03_STATUS/decision_quality.json",
+    "04_EVIDENCE/Supabase_Project_Setup.md",
+    "99_LEARNING/Reality_Navigation_Log.md"
   ],
-  "current_reality_step": "Security Foundation / Google Account Recovery",
-  "current_screen": "Google Security Checkup / Recovery settings",
-  "detected_task": "Run Google Security Checkup and confirm recovery settings",
+  "current_reality_step": "Supabase Project Created",
+  "current_screen": "Supabase Dashboard / Project Settings / API",
+  "detected_task": "Confirm Project URL and anon/publishable key; do not copy service_role / secret key",
   "knowledge_status": "Knowledge Compression Loop added; registry created",
   "architecture_audit_status": "Route & Connection Audit designed; Multi-Codex discussion saved",
   "ai_control_center_status": "AI Capability Registry / AI Routing Rule / Docs Research Plan added; recommended AI remains Pending Research for browser/security setup",
@@ -49,7 +51,11 @@
   "handoff_protocol_status": "AI_Handoff_Protocol / Thinking_Rules_Quickstart / Operating Manual / current_state_summary created",
   "console_mode": "CEO Console",
   "decision_quality_status": "Decision Quality Pipeline created; CEO Console top view added",
-  "next_human_decision": "Supabaseログイン後、Project作成に進むか承認する",
-  "current_bottleneck": "AI Capability Registryが未監査",
-  "current_sprint": "AI Capability Research + Security Foundation"
+  "next_human_decision": "Supabase Project Settings / APIでProject URLとanon/publishable keyを確認する",
+  "current_bottleneck": "Environment Variables未設定",
+  "current_sprint": "Supabase to Vercel connection + Security Foundation",
+  "supabase_created": true,
+  "supabase_connected_to_vercel": false,
+  "env_vars_configured": false,
+  "github_connected_to_supabase": false
 }

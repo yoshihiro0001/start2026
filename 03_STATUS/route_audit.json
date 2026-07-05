@@ -1,13 +1,13 @@
 {
-  "last_checked": "2026-07-05",
-  "thinking_route_health": "30%",
-  "evidence_route_health": "35%",
-  "human_console_route_health": "40%",
+  "last_checked": "2026-07-06",
+  "thinking_route_health": "40%",
+  "evidence_route_health": "45%",
+  "human_console_route_health": "48%",
   "ai_control_center_route_health": "10%",
   "knowledge_connection_health": "35%",
-  "security_route_health": "35%",
-  "top_gap": "AI Control Center information is still mostly summarized inside Human Console; dedicated AI view is minimal only",
-  "next_route_fix": "Complete Official Docs checks for AI Capability Registry and link AI Control Center to task-specific docs/evidence",
+  "security_route_health": "42%",
+  "top_gap": "Guided Execution still follows Human stop points instead of predicting Current Screen exact inputs ahead of time",
+  "next_route_fix": "Add Supabase Settings / API exact input guidance and Vercel Environment Variables path",
   "checks": [
     {
       "route": "Human Console -> Security Guide",
@@ -58,6 +58,11 @@
       "route": "Evolution Factory entry",
       "status": "human-first",
       "evidence": "Human Console remains default; AI Control Center may become secondary when workers need it"
+    },
+    {
+      "route": "CEO Console -> Supabase Evidence -> Vercel Env Vars",
+      "status": "partial",
+      "evidence": "Supabase Project Setup evidence created; env vars still not configured"
     }
   ],
   "periodic_review": {

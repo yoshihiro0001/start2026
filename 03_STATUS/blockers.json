@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "top_blockers": [
     {
       "rank": 1,
-      "name": "Recovery未整備",
-      "impact": "Google / GitHub / Vercel / Supabaseの上流Identityを失う可能性がある",
-      "next_action": "Google Account Security Checkup and Recoveryを完了する"
+      "name": "Environment Variables未設定",
+      "impact": "Vercel / Supabase / Task Queue / Approval Inboxがまだ接続できない",
+      "next_action": "Supabase Project URL / anon or publishable keyを確認し、Vercelへ接続する準備を進める"
     },
     {
       "rank": 2,
-      "name": "Vercel 2FA setup",
-      "impact": "Human cannot proceed to GitHub Import until 2FA is completed",
-      "next_action": "Open authenticator app, scan QR, enter 6-digit code on Mac, save recovery codes"
+      "name": "RLS未設計",
+      "impact": "anon/publishable keyを使う前提でも、本番データを入れると危険",
+      "next_action": "本番データ投入前にRLS設計を作る"
     },
     {
       "rank": 3,
-      "name": "Secrets not configured",
-      "impact": "API / DB cannot be safely connected",
-      "next_action": "Keep real values out of Git; use env vars later"
+      "name": "Secrets handling未確定",
+      "impact": "service_role / secret key / DB passwordの誤共有リスクがある",
+      "next_action": "service_role / secret keyをGit・Chat・Markdownに保存しない運用を維持する"
     }
   ],
   "resolved_recently": [
@@ -43,7 +43,12 @@
     "Thinking Constitution created",
     "Trust Rules extracted from existing discussions",
     "Route Audit created",
-    "Minimal AI Control Center created"
+    "Minimal AI Control Center created",
+    "Vercel registration completed",
+    "Vercel 2FA completed",
+    "Supabase Organization created",
+    "Supabase Project created",
+    "Supabase Project URL recorded as public-safe evidence"
   ],
   "knowledge_blocker": {
     "name": "No automated Knowledge Audit yet",
@@ -74,5 +79,10 @@
     "name": "Routes are still mostly document references",
     "impact": "Human Console can point to files, but not all routes are clickable or automatically validated",
     "next_action": "Run weekly Route Audit and convert high-use routes into clickable cards"
+  },
+  "supabase_blocker": {
+    "name": "Vercel Environment Variables not configured",
+    "impact": "Evolution Factory cannot use Supabase until public URL/key and server secrets are configured in the proper environment",
+    "next_action": "Get Project URL and anon/publishable key; do not copy service_role / secret key into chat or Git"
   }
 }

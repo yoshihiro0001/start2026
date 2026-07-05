@@ -1,46 +1,46 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "source": "03_STATUS/readiness.json",
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
-    "current_percent": 46,
-    "status": "Security Foundation Sprint started",
-    "blocker": "Recovery is not fully configured",
-    "next_action": "Google Account Recoveryを完成させる",
-    "confidence": "60%"
+    "current_percent": 52,
+    "status": "Supabase project created; Vercel/Supabase connection pending",
+    "blocker": "Environment Variables未設定",
+    "next_action": "Supabase Project URL / anon or publishable keyを確認する",
+    "confidence": "62%"
   },
   "categories": [
     {
       "name": "Overall Readiness",
-      "current_percent": 46,
-      "status": "Human Navigator active",
-      "blocker": "Vercel 2FA not completed",
-      "next_action": "Complete Vercel 2FA",
+      "current_percent": 52,
+      "status": "Supabase project created",
+      "blocker": "Environment Variables未設定",
+      "next_action": "Confirm Project URL and anon/publishable key",
       "confidence": "62%"
     },
     {
       "name": "Deployment",
-      "current_percent": 45,
-      "status": "Vercel path approved; 2FA in progress",
-      "blocker": "Vercel 2FA not completed",
-      "next_action": "Complete Vercel 2FA",
-      "confidence": "58%"
+      "current_percent": 50,
+      "status": "Vercel registered / 2FA complete; Supabase project created",
+      "blocker": "Vercel env vars not configured",
+      "next_action": "Prepare Vercel Environment Variables",
+      "confidence": "60%"
     },
     {
       "name": "Security",
-      "current_percent": 22,
-      "status": "Security Foundation Sprint started",
-      "blocker": "Recovery / Secrets / Password Manager not confirmed",
-      "next_action": "Complete Google Account Recovery",
-      "confidence": "45%"
+      "current_percent": 30,
+      "status": "Security notes added for Supabase key handling",
+      "blocker": "RLS not designed; secrets not configured",
+      "next_action": "Do not copy service_role / secret key; design RLS before real data",
+      "confidence": "48%"
     },
     {
       "name": "Runtime Intelligence",
-      "current_percent": 12,
-      "status": "DB schema documented",
-      "blocker": "No database connection yet",
-      "next_action": "Create Supabase project",
-      "confidence": "35%"
+      "current_percent": 18,
+      "status": "DB platform exists",
+      "blocker": "No schema/migrations/API connection yet",
+      "next_action": "Configure env vars before DB-backed status",
+      "confidence": "40%"
     },
     {
       "name": "Evidence System",
@@ -68,11 +68,11 @@
     },
     {
       "name": "Infrastructure",
-      "current_percent": 45,
-      "status": "Recommended path: Vercel + Supabase",
-      "blocker": "Vercel 2FA / project import not completed",
-      "next_action": "Complete Vercel 2FA",
-      "confidence": "58%"
+      "current_percent": 58,
+      "status": "Vercel + Supabase path now has a live Supabase project",
+      "blocker": "No Vercel/Supabase connection yet",
+      "next_action": "Connect public Supabase values to Vercel env vars",
+      "confidence": "62%"
     },
     {
       "name": "Automation",
@@ -84,34 +84,34 @@
     },
     {
       "name": "Supabase",
-      "current_percent": 0,
-      "status": "Not created",
-      "blocker": "Project not created",
-      "next_action": "Create after Vercel or in parallel",
-      "confidence": "40%"
+      "current_percent": 45,
+      "status": "Project created and healthy",
+      "blocker": "URL/key not connected to Vercel; RLS not designed",
+      "next_action": "Open Settings / API and confirm public URL/key",
+      "confidence": "65%"
     },
     {
       "name": "Vercel",
-      "current_percent": 12,
-      "status": "2FA setup in progress",
-      "blocker": "Authenticator code source unclear",
-      "next_action": "Scan QR with authenticator app and enter 6-digit code",
-      "confidence": "55%"
+      "current_percent": 35,
+      "status": "Registration and 2FA completed",
+      "blocker": "Environment Variables not configured",
+      "next_action": "Prepare env vars after Supabase API screen check",
+      "confidence": "60%"
     },
     {
       "name": "Approval Inbox",
-      "current_percent": 10,
-      "status": "Design documented",
-      "blocker": "No DB connection",
-      "next_action": "Create approvals table after Supabase project",
+      "current_percent": 12,
+      "status": "Design exists; DB platform created",
+      "blocker": "No tables / env vars / API",
+      "next_action": "Connect Supabase later",
       "confidence": "45%"
     },
     {
       "name": "Task Queue",
-      "current_percent": 5,
-      "status": "Schema documented",
-      "blocker": "No tasks table",
-      "next_action": "Create tasks table after Supabase project",
+      "current_percent": 8,
+      "status": "Schema exists; DB platform created",
+      "blocker": "No tasks table / env vars",
+      "next_action": "Connect Supabase later",
       "confidence": "45%"
     },
     {
@@ -164,11 +164,11 @@
     },
     {
       "name": "Gauge Auto Update",
-      "current_percent": 5,
-      "status": "Static reflection only",
-      "blocker": "No DB-backed gauge update",
-      "next_action": "Connect readiness_scores later",
-      "confidence": "25%"
+      "current_percent": 8,
+      "status": "DB platform exists",
+      "blocker": "No readiness_scores table / API",
+      "next_action": "Connect Supabase later",
+      "confidence": "30%"
     },
     {
       "name": "Identity Registry",
@@ -379,7 +379,7 @@
       "confidence": "35%"
     }
   ],
-  "next_highest_roi_action": "Google Account Recoveryを完成させる",
+  "next_highest_roi_action": "Supabase Project URL / anon or publishable keyを確認し、Vercel Environment Variablesへ接続する準備を進める",
   "recommended_production_path": "Vercel + Supabase",
   "github_pages_role": "Temporary static preview only",
   "human_setup_guide": "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
@@ -423,5 +423,19 @@
     "current_highest_trust_risk": "AI能力比較が未完了のままBrowser AI選定がPending",
     "next_rule_fix": "AI Capability RegistryのOfficial Docs確認を完了する",
     "thinking_route_health": "30%"
+  },
+  "supabase_status": {
+    "created": true,
+    "organization": "evolution-factory",
+    "project": "evolution-factory",
+    "project_url": "https://fxqvhcryitmgsemlojme.supabase.co",
+    "status": "Healthy",
+    "region": "Oceania (Sydney) / ap-southeast-2",
+    "compute": "Nano",
+    "github_connected": false,
+    "last_migration": "No migrations",
+    "last_backup": "No backups",
+    "connected_to_vercel": false,
+    "env_vars_configured": false
   }
 }
