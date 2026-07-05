@@ -15,11 +15,17 @@
     "03_STATUS/knowledge_registry.json",
     "02_WORKFLOWS/System_Architecture_Audit.md",
     "02_WORKFLOWS/Multi_Codex_Orchestration.md",
-    "03_STATUS/architecture_audit.json"
+    "03_STATUS/architecture_audit.json",
+    "02_WORKFLOWS/AI_Capability_Registry.md",
+    "02_WORKFLOWS/AI_Routing_Rule.md",
+    "03_STATUS/ai_capability_registry.json",
+    "06_DEPLOY/AI_Tool_Docs_Research_Plan.md"
   ],
   "current_reality_step": "Security Foundation / Google Account Recovery",
   "current_screen": "Google Security Checkup / Recovery settings",
   "detected_task": "Run Google Security Checkup and confirm recovery settings",
   "knowledge_status": "Knowledge Compression Loop added; registry created",
-  "architecture_audit_status": "Route & Connection Audit designed; Multi-Codex discussion saved"
+  "architecture_audit_status": "Route & Connection Audit designed; Multi-Codex discussion saved",
+  "ai_control_center_status": "AI Capability Registry / AI Routing Rule / Docs Research Plan added; recommended AI remains Pending Research for browser/security setup",
+  "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs"
 }

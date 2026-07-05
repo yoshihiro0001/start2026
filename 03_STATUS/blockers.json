@@ -37,7 +37,9 @@
     "Knowledge Registry created",
     "System Architecture Audit added",
     "Route & Connection Audit designed",
-    "Multi-Codex Orchestration discussion added"
+    "Multi-Codex Orchestration discussion added",
+    "AI Capability Registry created",
+    "AI Routing Rule documented"
   ],
   "knowledge_blocker": {
     "name": "No automated Knowledge Audit yet",
@@ -53,5 +55,10 @@
     "name": "Multi-Codex is premature",
     "impact": "Parallel workers could create conflicts without task queue, validation, branch rules, and trust scores",
     "next_action": "Focus on single-Codex Task Queue operation first"
+  },
+  "ai_routing_blocker": {
+    "name": "Browser-capable AI not verified",
+    "impact": "Security setup guidance could be routed to the wrong AI/tool if based on memory or assumption",
+    "next_action": "Compare official docs and actual account capabilities for ChatGPT / Codex / Gemini / Claude / Browser Agent"
   }
 }

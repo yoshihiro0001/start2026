@@ -1,0 +1,71 @@
+{
+  "last_updated": "2026-07-05",
+  "source": "03_STATUS/ai_capability_registry.json",
+  "note": "Scores are initial routing evidence, not final capability truth. Unknown remains unknown until official docs and current account behavior are verified.",
+  "items": {
+    "chatgpt": {
+      "plan": "Human-reported Pro top plan, approx 30000 JPY/month; exact plan/features pending account check",
+      "browser_score": "unknown",
+      "coding_score": 3,
+      "research_score": 4,
+      "security_score": 3,
+      "cost_score": 2,
+      "current_confidence": "45%",
+      "official_docs_checked": "partial",
+      "last_checked": "2026-07-05",
+      "recommendation": "Use for Architecture / Principle / Evolution Discussion; do not assume browser control until verified."
+    },
+    "codex": {
+      "plan": "OpenAI / ChatGPT side in use; exact limits pending account check",
+      "browser_score": "session-dependent",
+      "coding_score": 5,
+      "research_score": 3,
+      "security_score": 3,
+      "cost_score": 3,
+      "current_confidence": "65%",
+      "official_docs_checked": "partial",
+      "last_checked": "2026-07-05",
+      "recommendation": "Use for file edits, Git, implementation, deploy prep, and repo-context validation."
+    },
+    "gemini": {
+      "plan": "Human-reported paid middle plan, approx 1600 JPY/month; exact plan/features pending account check",
+      "browser_score": "unknown",
+      "coding_score": "unknown",
+      "research_score": 3,
+      "security_score": 2,
+      "cost_score": 4,
+      "current_confidence": "25%",
+      "official_docs_checked": "partial",
+      "last_checked": "2026-07-05",
+      "recommendation": "Do not route browser operation by assumption. Verify Gemini plan, Google Workspace integrations, and actual tool capability first."
+    },
+    "claude": {
+      "plan": "Human-reported Free",
+      "browser_score": "unknown; API computer-use docs exist but current Free UI capability unverified",
+      "coding_score": 3,
+      "research_score": 3,
+      "security_score": 3,
+      "cost_score": 5,
+      "current_confidence": "30%",
+      "official_docs_checked": "partial",
+      "last_checked": "2026-07-05",
+      "recommendation": "Candidate for review/critique or long document compression after plan and context limits are verified."
+    },
+    "browser_agent": {
+      "plan": "Tool-dependent: Codex browser / Chrome plugin / Computer Use / provider API",
+      "browser_score": "potentially high but unverified per tool/session",
+      "coding_score": 1,
+      "research_score": 3,
+      "security_score": 1,
+      "cost_score": "variable",
+      "current_confidence": "25%",
+      "official_docs_checked": "partial",
+      "last_checked": "2026-07-05",
+      "recommendation": "Use only with Human approval, official docs, constrained scope, and no secret storage."
+    }
+  },
+  "current_mission": "Google Account Security Setup",
+  "recommended_ai": "Pending Research",
+  "why": "Browser operation capability must be verified from official docs, current plan, and actual available tools.",
+  "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs."
+}

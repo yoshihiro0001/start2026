@@ -329,6 +329,30 @@
       "blocker": "Task Queue and Validation are not implemented",
       "next_action": "Do not parallelize yet",
       "confidence": "30%"
+    },
+    {
+      "name": "AI Capability Registry",
+      "current_percent": 15,
+      "status": "Initial registry created",
+      "blocker": "Official docs and account capability checks incomplete",
+      "next_action": "Research current plan and browser capabilities",
+      "confidence": "30%"
+    },
+    {
+      "name": "AI Routing Evidence",
+      "current_percent": 10,
+      "status": "Routing rule documented",
+      "blocker": "Browser-capable AI not verified",
+      "next_action": "Compare official docs and actual tools",
+      "confidence": "25%"
+    },
+    {
+      "name": "AI Control Center",
+      "current_percent": 10,
+      "status": "Human Console summary added",
+      "blocker": "No separate AI-facing surface yet",
+      "next_action": "Keep Human Console concise; split later if needed",
+      "confidence": "30%"
     }
   ],
   "next_highest_roi_action": "Google Account Recoveryを完成させる",
@@ -363,5 +387,11 @@
   "connection_health": "30%",
   "duplicate_risk": "Medium",
   "maintenance_cost": "Medium",
-  "architecture_audit_source": "03_STATUS/architecture_audit.json"
+  "architecture_audit_source": "03_STATUS/architecture_audit.json",
+  "ai_routing_status": {
+    "recommended_ai_for_current_mission": "Pending Research",
+    "evidence_status": "Official docs research plan created; capabilities not fully verified",
+    "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs",
+    "risk": "Security setup / browser operation should not be routed by assumption"
+  }
 }
