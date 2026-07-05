@@ -14,7 +14,7 @@
   "overall_health": "46%",
   "current_highest_risk": "Recovery未整備",
   "current_highest_trust_risk": "AI能力比較が未完了のままBrowser AI選定がPending",
-  "human_next_action": "Google Account Recoveryを完成させる",
+  "human_next_action": "Supabaseログイン後、Project作成に進むか承認する",
   "one_action_only": true,
   "next_rule_fix": "AI Capability RegistryのOfficial Docs確認を完了する",
   "active_rules": [
@@ -54,5 +54,14 @@
     "latest_action": "03_STATUS/latest_action.json",
     "blockers": "03_STATUS/blockers.json"
   },
-  "commit_policy": "Commit and push when requested; leave unrelated dirty files untouched."
+  "commit_policy": "Commit and push when requested; leave unrelated dirty files untouched.",
+  "console_mode": "CEO Console",
+  "north_star": "AI Operating Companyを作る",
+  "current_objective": "Browser Automation / AI RoutingをEvidence付きで確定する",
+  "current_bottleneck": "AI Capability Registryが未監査",
+  "current_sprint": "AI Capability Research + Security Foundation",
+  "next_human_decision": "Supabaseログイン後、Project作成に進むか承認する",
+  "trust_status": "低〜中。AI能力比較が未完了",
+  "audit_status": "未完了。Official Docs確認が必要",
+  "current_system_review_score": "62/100"
 }

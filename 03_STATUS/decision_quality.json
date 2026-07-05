@@ -1,0 +1,23 @@
+{
+  "last_updated": "2026-07-05",
+  "current_decision": "Supabaseログイン後、Project作成に進むか承認する",
+  "north_star": "AI Operating Companyを作る",
+  "current_objective": "Browser Automation / AI RoutingをEvidence付きで確定する",
+  "evidence_status": "Partial",
+  "official_docs_checked": "Not complete",
+  "capability_registry_checked": "Created but not audited",
+  "risk_checked": "Partial: Security Foundation active; Recovery still highest risk",
+  "audit_status": "Not complete: Official Docs confirmation required",
+  "confidence": "Low to Medium",
+  "next_human_decision": "Supabaseログイン後、Project作成に進むか承認する",
+  "current_bottleneck": "AI Capability Registryが未監査",
+  "current_sprint": "AI Capability Research + Security Foundation",
+  "trust_status": "Low to Medium: AI capability comparison incomplete",
+  "overall_health": "46%",
+  "current_system_review": {
+    "score": "62/100",
+    "biggest_gap": "Human ConsoleにAI途中経過とRegistry参照が混ざりすぎている",
+    "highest_roi_fix": "CEO Console上部をDecision Viewへ再設計し、AI詳細をAI Control Centerへ下げる",
+    "next_review_date": "2026-07-12"
+  }
+}

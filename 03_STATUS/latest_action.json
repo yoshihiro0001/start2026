@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-07-05",
-  "human_next_action": "Google Account Recoveryを完成させる",
+  "human_next_action": "Supabaseログイン後、Project作成に進むか承認する",
   "one_action_only": true,
   "approved_task": "Security Foundation Sprint started",
   "codex_next_task": "Wait for Human to confirm Google Account Recovery / Password Manager status",
@@ -32,7 +32,10 @@
     "00_CONSTITUTION/AI_Handoff_Protocol.md",
     "00_CONSTITUTION/Thinking_Rules_Quickstart.md",
     "00_CONSTITUTION/MrBrain_Operating_Manual.md",
-    "03_STATUS/current_state_summary.json"
+    "03_STATUS/current_state_summary.json",
+    "02_WORKFLOWS/Decision_Quality_Pipeline.md",
+    "02_WORKFLOWS/Current_System_Review.md",
+    "03_STATUS/decision_quality.json"
   ],
   "current_reality_step": "Security Foundation / Google Account Recovery",
   "current_screen": "Google Security Checkup / Recovery settings",
@@ -43,5 +46,10 @@
   "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs",
   "trust_rule_status": "Thinking Constitution / Trust Rules / Rule Audit / Route Audit added",
   "route_audit_status": "Route Audit created; AI Control Center minimally separated from Human Console",
-  "handoff_protocol_status": "AI_Handoff_Protocol / Thinking_Rules_Quickstart / Operating Manual / current_state_summary created"
+  "handoff_protocol_status": "AI_Handoff_Protocol / Thinking_Rules_Quickstart / Operating Manual / current_state_summary created",
+  "console_mode": "CEO Console",
+  "decision_quality_status": "Decision Quality Pipeline created; CEO Console top view added",
+  "next_human_decision": "Supabaseログイン後、Project作成に進むか承認する",
+  "current_bottleneck": "AI Capability Registryが未監査",
+  "current_sprint": "AI Capability Research + Security Foundation"
 }
