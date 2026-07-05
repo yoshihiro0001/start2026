@@ -297,6 +297,38 @@
       "blocker": "No recurring automation",
       "next_action": "Review registry weekly",
       "confidence": "40%"
+    },
+    {
+      "name": "Architecture Health",
+      "current_percent": 40,
+      "status": "Audit workflow created",
+      "blocker": "Manual sync and route drift risk",
+      "next_action": "Run route and connection audit weekly",
+      "confidence": "45%"
+    },
+    {
+      "name": "Route Health",
+      "current_percent": 35,
+      "status": "Some routes visible",
+      "blocker": "Guide links are still mostly text",
+      "next_action": "Check Human Console guide routes",
+      "confidence": "40%"
+    },
+    {
+      "name": "Connection Health",
+      "current_percent": 30,
+      "status": "Manual connections documented",
+      "blocker": "MrBrain and Factory are manually synchronized",
+      "next_action": "Check discussion-to-implementation links",
+      "confidence": "40%"
+    },
+    {
+      "name": "Multi-Codex Orchestration",
+      "current_percent": 5,
+      "status": "Discussion only",
+      "blocker": "Task Queue and Validation are not implemented",
+      "next_action": "Do not parallelize yet",
+      "confidence": "30%"
     }
   ],
   "next_highest_roi_action": "Google Account Recoveryを完成させる",
@@ -325,5 +357,11 @@
   "knowledge_health": "30%",
   "latest_compressed_knowledge": "Security Foundation Sprint / Human Navigator for Vercel 2FA / Vercel + Supabase Production Path",
   "outdated_knowledge_risk": "Medium",
-  "next_knowledge_audit": "2026-07-12"
+  "next_knowledge_audit": "2026-07-12",
+  "architecture_health": "40%",
+  "route_health": "35%",
+  "connection_health": "30%",
+  "duplicate_risk": "Medium",
+  "maintenance_cost": "Medium",
+  "architecture_audit_source": "03_STATUS/architecture_audit.json"
 }

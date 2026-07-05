@@ -12,10 +12,14 @@
     "SECURITY/Password_Manager.md",
     "06_DEPLOY/Security_Roadmap.md",
     "02_WORKFLOWS/Knowledge_Compression_Loop.md",
-    "03_STATUS/knowledge_registry.json"
+    "03_STATUS/knowledge_registry.json",
+    "02_WORKFLOWS/System_Architecture_Audit.md",
+    "02_WORKFLOWS/Multi_Codex_Orchestration.md",
+    "03_STATUS/architecture_audit.json"
   ],
   "current_reality_step": "Security Foundation / Google Account Recovery",
   "current_screen": "Google Security Checkup / Recovery settings",
   "detected_task": "Run Google Security Checkup and confirm recovery settings",
-  "knowledge_status": "Knowledge Compression Loop added; registry created"
+  "knowledge_status": "Knowledge Compression Loop added; registry created",
+  "architecture_audit_status": "Route & Connection Audit designed; Multi-Codex discussion saved"
 }

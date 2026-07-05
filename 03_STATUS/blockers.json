@@ -34,11 +34,24 @@
     "SECURITY registry files added",
     "Human Risk added as discussion metric",
     "Knowledge Compression Loop added",
-    "Knowledge Registry created"
+    "Knowledge Registry created",
+    "System Architecture Audit added",
+    "Route & Connection Audit designed",
+    "Multi-Codex Orchestration discussion added"
   ],
   "knowledge_blocker": {
     "name": "No automated Knowledge Audit yet",
     "impact": "Outdated docs or decisions may remain in use",
     "next_action": "Run Weekly Knowledge Audit manually until automation exists"
+  },
+  "architecture_audit_blocker": {
+    "name": "Manual route and status synchronization",
+    "impact": "Human Console, Status JSON, and guides can drift apart",
+    "next_action": "Run Weekly Route / Connection / Broken Links audit manually until automation exists"
+  },
+  "multi_codex_blocker": {
+    "name": "Multi-Codex is premature",
+    "impact": "Parallel workers could create conflicts without task queue, validation, branch rules, and trust scores",
+    "next_action": "Focus on single-Codex Task Queue operation first"
   }
 }

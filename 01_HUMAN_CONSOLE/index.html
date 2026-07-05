@@ -492,7 +492,7 @@
           <div class="benefit-card"><div class="num">20%</div><div class="num-note">Profit System</div></div>
           <div class="benefit-card"><div class="num">5%</div><div class="num-note">Trust</div></div>
           <div class="benefit-card"><div class="num">35%</div><div class="num-note">Evolution</div></div>
-          <div class="benefit-card"><div class="num">30%</div><div class="num-note">Knowledge</div></div>
+          <div class="benefit-card"><div class="num">40%</div><div class="num-note">Architecture</div></div>
         </div>
       </article>
 
@@ -503,6 +503,39 @@
         </ul>
       </article>
 
+
+
+      <article class="card full">
+        <div class="card-head"><h3>System Architecture Audit</h3><span class="tag warn">Audit 40%</span></div>
+        <div class="benefit">
+          <div class="benefit-card"><div class="num">40%</div><div class="num-note">Architecture Health。構造は見えているが手動同期が多い。</div></div>
+          <div class="benefit-card"><div class="num">35%</div><div class="num-note">Route Health。ConsoleからGuideへの導線は一部文字列中心。</div></div>
+          <div class="benefit-card"><div class="num">30%</div><div class="num-note">Connection Health。MrBrain DiscussionとFactory実装は手動接続。</div></div>
+          <div class="benefit-card"><div class="num">Medium</div><div class="num-note">Duplicate Risk。Registry / Guide / Workflowが増加中。</div></div>
+        </div>
+        <div class="rows" style="margin-top:16px">
+          <div class="row"><div class="row-key">Maintenance Cost</div><div class="row-val">Medium。Status JSONとindex表示のズレを定期確認する必要がある。</div></div>
+          <div class="row"><div class="row-key">Evolution Readiness</div><div class="row-val">35%。Learning / Knowledge / Auditはあるが自動接続は未実装。</div></div>
+          <div class="row"><div class="row-key">Next Cleanup Action</div><div class="row-val">Human ConsoleからSECURITY、Knowledge Registry、Setup Guides、Approved Next Actionへ行けるか確認する。</div></div>
+          <div class="row"><div class="row-key">Audit Source</div><div class="row-val">03_STATUS/architecture_audit.json / 02_WORKFLOWS/System_Architecture_Audit.md</div></div>
+        </div>
+      </article>
+
+      <article class="card full">
+        <div class="card-head"><h3>Multi-Codex Orchestration</h3><span class="tag warn">Discussion only</span></div>
+        <div class="benefit">
+          <div class="benefit-card"><div class="num">1</div><div class="num-note">Active Workers。現在は1体Codex運用のみ。</div></div>
+          <div class="benefit-card"><div class="num">High</div><div class="num-note">Conflict Risk。File Lock / Branch Rule未実装。</div></div>
+          <div class="benefit-card"><div class="num">None</div><div class="num-note">Review Status。Validation Layer未実装。</div></div>
+          <div class="benefit-card"><div class="num">0%</div><div class="num-note">Trust Score。Worker評価は未開始。</div></div>
+        </div>
+        <div class="rows" style="margin-top:16px">
+          <div class="row"><div class="row-key">Current Task</div><div class="row-val">複数Codexはまだ動かさない。まず1体CodexがTask Queueから安全に動ける状態を作る。</div></div>
+          <div class="row"><div class="row-key">Merge Waiting</div><div class="row-val">なし。Merge Rule / Rollback / Human Approval接続は未実装。</div></div>
+          <div class="row"><div class="row-key">Human Approval Needed</div><div class="row-val">将来のWorker Pool化前に、Task Queue / Validation / Merge Ruleの承認が必要。</div></div>
+          <div class="row"><div class="row-key">Discussion Source</div><div class="row-val">02_WORKFLOWS/Multi_Codex_Orchestration.md</div></div>
+        </div>
+      </article>
 
       <article class="card full">
         <div class="card-head"><h3>Knowledge Health</h3><span class="tag warn">Compression 30%</span></div>

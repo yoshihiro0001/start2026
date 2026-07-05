@@ -1,0 +1,52 @@
+{
+  "last_checked": "2026-07-05",
+  "next_review": "2026-07-12",
+  "architecture_health": "40%",
+  "route_health": "35%",
+  "connection_health": "30%",
+  "duplicate_risk": "Medium",
+  "maintenance_cost": "Medium",
+  "evolution_readiness": "35%",
+  "top_issue": "Status JSON and Human Console are manually synchronized",
+  "next_cleanup_action": "Check routes from Human Console to SECURITY, Knowledge Registry, Setup Guides, and Approved Next Action",
+  "audit_items": {
+    "route_health": "Human Console routes to guides and workflows",
+    "connection_health": "MrBrain discussions connect to Evolution Factory implementation",
+    "duplicate_concepts": "Find overlapping responsibility between registries, guides, and workflows",
+    "dead_files_unused_docs": "Archive candidates after 30 days unused if not canonical",
+    "overlapping_responsibilities": "Merge similar concepts before adding new ones",
+    "missing_links": "Detect broken or invisible routes",
+    "human_cost": "Does the structure reduce reading, searching, and decision work?",
+    "ai_cost": "Can AI reuse existing registry instead of re-researching?",
+    "security_risk": "Does the route expose secrets or bypass approval?",
+    "maintenance_cost": "How hard is it to keep current?",
+    "evolution_readiness": "Can the system improve without adding more concepts?"
+  },
+  "decision_rules": {
+    "add": "Existing structure cannot explain it and it clearly lowers Human Cost",
+    "merge": "Two or more parts have similar responsibility",
+    "archive": "Unused for 30 days and not canonical",
+    "promote": "Evidence appears 3+ times and reusability is high",
+    "delete": "Avoid; archive first"
+  },
+  "periodic_checks": {
+    "weekly": "Route / Connection / Broken Links",
+    "monthly": "Duplicate Concepts / Responsibility Overlap",
+    "quarterly": "Architecture Review / Security / Infrastructure"
+  },
+  "multi_codex_status": {
+    "status": "Discussion only / not active",
+    "active_workers": 1,
+    "future_worker_pool": [
+      "Implementation",
+      "Test",
+      "Research",
+      "Refactor",
+      "Security",
+      "Review",
+      "Merge"
+    ],
+    "current_blocker": "Task Queue and Validation Layer are not implemented",
+    "next_action": "Focus on single-Codex Task Queue operation first"
+  }
+}
