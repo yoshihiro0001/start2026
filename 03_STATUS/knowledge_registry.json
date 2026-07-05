@@ -1,0 +1,76 @@
+{
+  "last_updated": "2026-07-05",
+  "knowledge_health": {
+    "current_percent": 30,
+    "status": "Initial registry created",
+    "outdated_risk": "Medium",
+    "next_audit": "Weekly Knowledge Audit",
+    "confidence": "45%"
+  },
+  "audit_schedule": {
+    "weekly_knowledge_audit": "Every week: latest decisions / docs / evidence",
+    "monthly_architecture_review": "Every month: Architecture Discussion / merge / archive",
+    "quarterly_security_infrastructure_review": "Every quarter: Security / Vercel / Supabase / Cloudflare / Domain / Secrets",
+    "ai_model_capability_review": "Quarterly or major release: OpenAI / Anthropic / Codex / Cursor / NotebookLM / Vision"
+  },
+  "items": [
+    {
+      "title": "Security Foundation Sprint",
+      "source": "SECURITY/README.md; 06_DEPLOY/Security_Roadmap.md; MrBrain Architecture Review",
+      "category": "Security / Identity / Recovery",
+      "summary": "Evolution Factory must secure Identity, Recovery, Secrets, and Risk before deeper production work.",
+      "connected_to": [
+        "Human Console",
+        "Security Roadmap",
+        "Identity Registry",
+        "Evolution OS"
+      ],
+      "confidence": "45%",
+      "last_checked": "2026-07-05",
+      "next_review": "2026-07-12",
+      "status": "Active",
+      "action": "Complete Google Account Recovery and confirm Password Manager storage."
+    },
+    {
+      "title": "Human Navigator for Vercel 2FA",
+      "source": "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md; 99_LEARNING/Reality_Navigation_Log.md",
+      "category": "Human Navigation / Developer Experience",
+      "summary": "Docs alone are not enough; Human needs current screen, required app, exact next action, failure path, and completion check.",
+      "connected_to": [
+        "Human Console",
+        "Reality Navigation Log",
+        "Security Foundation"
+      ],
+      "confidence": "55%",
+      "last_checked": "2026-07-05",
+      "next_review": "2026-07-12",
+      "status": "Reusable Insight",
+      "action": "Reuse this format for GitHub, Supabase, Cloudflare, OpenAI, Anthropic, and Google setup screens."
+    },
+    {
+      "title": "Vercel + Supabase Production Path",
+      "source": "06_DEPLOY/Production_Path_Decision_Brief.md; 04_BACKEND/Supabase_Minimum_Schema.md",
+      "category": "Infrastructure / Deployment",
+      "summary": "GitHub Pages remains temporary preview only; Vercel + Supabase is the recommended app/API/DB/Auth path.",
+      "connected_to": [
+        "Production Path",
+        "Task Queue",
+        "Approval Inbox",
+        "Runtime Intelligence"
+      ],
+      "confidence": "50%",
+      "last_checked": "2026-07-05",
+      "next_review": "2026-07-19",
+      "status": "Pending Implementation",
+      "action": "After Security Foundation, import repo to Vercel and create Supabase project."
+    }
+  ],
+  "evaluation_axes": [
+    "confidence",
+    "freshness",
+    "reusability",
+    "human_cost_reduction",
+    "evidence_presence",
+    "update_necessity"
+  ]
+}

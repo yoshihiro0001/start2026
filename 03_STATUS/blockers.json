@@ -32,6 +32,13 @@
     "Human Navigator guide for Vercel 2FA added",
     "Security Foundation Sprint started",
     "SECURITY registry files added",
-    "Human Risk added as discussion metric"
-  ]
+    "Human Risk added as discussion metric",
+    "Knowledge Compression Loop added",
+    "Knowledge Registry created"
+  ],
+  "knowledge_blocker": {
+    "name": "No automated Knowledge Audit yet",
+    "impact": "Outdated docs or decisions may remain in use",
+    "next_action": "Run Weekly Knowledge Audit manually until automation exists"
+  }
 }

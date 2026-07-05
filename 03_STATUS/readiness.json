@@ -273,6 +273,30 @@
       "blocker": "Recovery storage not confirmed",
       "next_action": "Confirm password manager",
       "confidence": "35%"
+    },
+    {
+      "name": "Knowledge Health",
+      "current_percent": 30,
+      "status": "Initial registry created",
+      "blocker": "No automated audit yet",
+      "next_action": "Run weekly knowledge audit",
+      "confidence": "45%"
+    },
+    {
+      "name": "Knowledge Compression",
+      "current_percent": 25,
+      "status": "Workflow documented",
+      "blocker": "Manual compression only",
+      "next_action": "Use registry for new decisions",
+      "confidence": "45%"
+    },
+    {
+      "name": "Knowledge Audit",
+      "current_percent": 15,
+      "status": "Audit schedule defined",
+      "blocker": "No recurring automation",
+      "next_action": "Review registry weekly",
+      "confidence": "40%"
     }
   ],
   "next_highest_roi_action": "Google Account Recoveryを完成させる",
@@ -297,5 +321,9 @@
     "overall": "22%"
   },
   "current_highest_risk": "Recovery未整備",
-  "current_highest_roi": "Security Foundation後はSupabase接続。今はGoogle Account Recoveryを先に固める。"
+  "current_highest_roi": "Security Foundation後はSupabase接続。今はGoogle Account Recoveryを先に固める。",
+  "knowledge_health": "30%",
+  "latest_compressed_knowledge": "Security Foundation Sprint / Human Navigator for Vercel 2FA / Vercel + Supabase Production Path",
+  "outdated_knowledge_risk": "Medium",
+  "next_knowledge_audit": "2026-07-12"
 }

@@ -224,3 +224,35 @@ Humanが読む量を減らし、Next Highest Evolution Actionを1つに絞るな
 
 次に実装すべき最小機能:
 Task Queue / Approval Inbox / Readiness Gauge / Learning Logを1回だけ接続し、1つの改善でGaugeが変わる状態を作る。
+
+
+---
+
+## Knowledge Compression Connection
+
+Evolution LoopのLearningは、そのまま蓄積すると重くなる。
+
+そのため、Learning後にKnowledge Compressionを通す。
+
+```text
+Execution
+↓
+Learning
+↓
+Knowledge Compression
+↓
+Knowledge Connection
+↓
+Knowledge Audit
+↓
+Next Decision / Next Execution
+```
+
+Current registry:
+
+```text
+03_STATUS/knowledge_registry.json
+```
+
+Purpose:
+次回のHuman CostとAI Costを下げるため、Raw InformationをSummary / Decision / Evidence / Reusable Ruleへ圧縮する。

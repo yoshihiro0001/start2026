@@ -10,9 +10,12 @@
     "SECURITY/Google_Account.md",
     "SECURITY/Recovery_Codes.md",
     "SECURITY/Password_Manager.md",
-    "06_DEPLOY/Security_Roadmap.md"
+    "06_DEPLOY/Security_Roadmap.md",
+    "02_WORKFLOWS/Knowledge_Compression_Loop.md",
+    "03_STATUS/knowledge_registry.json"
   ],
   "current_reality_step": "Security Foundation / Google Account Recovery",
-  "current_screen": "Authenticator App QR Code",
-  "detected_task": "Run Google Security Checkup and confirm recovery settings"
+  "current_screen": "Google Security Checkup / Recovery settings",
+  "detected_task": "Run Google Security Checkup and confirm recovery settings",
+  "knowledge_status": "Knowledge Compression Loop added; registry created"
 }
