@@ -437,6 +437,8 @@
       .card-head { flex-direction: column; }
       .sub { font-size: 15px; }
     }
+    .ceo-minimal .grid > article:not(:first-child) { display: none; }
+    .ceo-minimal .hero .summary-card:nth-child(2) { display: none; }
   </style>
 </head>
 <body class="locked">
@@ -454,7 +456,7 @@
       <p class="lock-warning">Password: 123456 は仮Preview専用です。本番・重要情報ありでは使用禁止。Secret / API Key / PAT はGitへ保存しません。</p>
     </section>
   </div>
-  <main class="wrap">
+  <main class="wrap ceo-minimal">
     <section class="top">
       <div class="hero">
         <div>
@@ -482,19 +484,18 @@
       <article class="card full">
         <div class="card-head"><h3>CEO Action Panel</h3><span class="tag ok">Current Screen</span></div>
         <div class="benefit">
-          <div class="benefit-card"><div class="num">North Star</div><div class="num-note">AI Operating Companyを作る。</div></div>
           <div class="benefit-card"><div class="num">Objective</div><div class="num-note">Vercel Projectを作成しPreview URLを得る。</div></div>
           <div class="benefit-card"><div class="num">Bottleneck</div><div class="num-note">Vercel未Import。</div></div>
-          <div class="benefit-card"><div class="num">Knowledge</div><div class="num-note">55%。Compiler / Registry化開始。</div></div>
+          <div class="benefit-card"><div class="num">Next Action</div><div class="num-note">Import Projectを押す。</div></div>
+          <div class="benefit-card"><div class="num">Risk</div><div class="num-note">Secretは貼らない。</div></div>
         </div>
         <div class="rows" style="margin-top:16px">
+          <div class="row"><div class="row-key">Current Objective</div><div class="row-val">Vercel Projectを作成し、Preview URL発行へ進む。</div></div>
+          <div class="row"><div class="row-key">Current Bottleneck</div><div class="row-val">Vercel Project未作成 / 未Import。</div></div>
+          <div class="row"><div class="row-key">Next Human Action</div><div class="row-val">Vercelで Import Project を押し、yoshihiro0001/evolution-factory を選ぶ。</div></div>
           <div class="row"><div class="row-key">Current Screen</div><div class="row-val">Vercel Dashboard / Add New / Import Project</div></div>
           <div class="row"><div class="row-key">Exact Button</div><div class="row-val">Add New または Import Project</div></div>
-          <div class="row"><div class="row-key">Exact Input</div><div class="row-val">yoshihiro0001/evolution-factory</div></div>
           <div class="row"><div class="row-key">Do Not Paste</div><div class="row-val">service_role / secret key / DB password / Recovery Code / PAT</div></div>
-          <div class="row"><div class="row-key">Security Risk</div><div class="row-val">Secret誤保存。Import時点ではEnvironment Variablesを後回しにする。</div></div>
-          <div class="row"><div class="row-key">Production Readiness</div><div class="row-val">55%。Vercel Import後にPreview URLを記録する。</div></div>
-          <div class="row"><div class="row-key">Trust Status</div><div class="row-val">Medium。Repo / Supabase Evidenceは記録済み。Env Vars / RLSは未完了。</div></div>
         </div>
       </article>
 

@@ -125,3 +125,48 @@ Next Required Improvement:
 Vercel Import完了後、CEO ConsoleのLegacy PreviewをVercel Previewへ差し替え、Status JSONとRoute Auditを更新する。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / Knowledge Compiler First Workflow Audit
+
+Score: 78 / 100
+
+What improved:
+- 02_WORKFLOWS内の全Markdownを分類し、active / merge_candidate / duplicate_candidate / archive_candidate / reference_onlyを見える化した。
+- 削除は行わず、`99_ARCHIVE_CANDIDATES.md` にArchive候補として記録した。
+- CEO Consoleはminimal viewへ寄せ、上部表示をCurrent Objective / Current Bottleneck / Next Human Action / Current Screen / Exact Button / Do Not Pasteへ絞った。
+
+File Growth Risk:
+Workflowが17件まで増えており、放置するとAIもHumanもどれを読めばよいか迷う。今後は新規Workflow追加より、既存Workflowの統合とRegistry化を優先する。
+
+Merge Candidates:
+- `Knowledge_Compression_Loop.md` → `Knowledge_Compiler.md` へ統合候補。
+- `OS_Knowledge_Audit.md` → `System_Architecture_Audit.md` のKnowledge sectionへ統合候補。
+- `Console_Update_Loop.md` → `Guided_Execution.md` / Status JSON運用へ統合候補。
+- `Thinking_Route.md` / `AI_Routing_Rule.md` → `Decision_Quality_Pipeline.md` へ統合候補。
+
+Use Now:
+- `Guided_Execution.md`
+- `Knowledge_Compiler.md`
+- `Decision_Quality_Pipeline.md`
+- `Current_System_Review.md`
+- `System_Architecture_Audit.md`
+- `Evolution_Readiness_System.md`
+
+Reference Later:
+- `Top_Level_Strategy_Loop.md`
+- `Evolution_OS_Loop.md`
+- `Multi_Codex_Orchestration.md`
+- `Smartphone_Command_Loop.md`
+- `Approval_To_Codex_Loop.md`
+
+Archive Candidates:
+- `Knowledge_Compression_Loop.md` is duplicate_candidate because `Knowledge_Compiler.md` now covers its core responsibility.
+- `OS_Knowledge_Audit.md` is merge_candidate because `System_Architecture_Audit.md` already covers route / duplicate / maintenance audit.
+- No deletion. Archive only after Registry summary, 30 days non-use, and route audit confirmation.
+
+Current Human Action:
+Vercelで Import Project を押し、`yoshihiro0001/evolution-factory` を選ぶ。
+
+Next Review Date: 2026-07-12
