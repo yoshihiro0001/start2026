@@ -28,7 +28,11 @@
     "02_AI_CONTROL_CENTER/README.md",
     "02_AI_CONTROL_CENTER/index.html",
     "03_STATUS/trust_rules.json",
-    "03_STATUS/route_audit.json"
+    "03_STATUS/route_audit.json",
+    "00_CONSTITUTION/AI_Handoff_Protocol.md",
+    "00_CONSTITUTION/Thinking_Rules_Quickstart.md",
+    "00_CONSTITUTION/MrBrain_Operating_Manual.md",
+    "03_STATUS/current_state_summary.json"
   ],
   "current_reality_step": "Security Foundation / Google Account Recovery",
   "current_screen": "Google Security Checkup / Recovery settings",
@@ -38,5 +42,6 @@
   "ai_control_center_status": "AI Capability Registry / AI Routing Rule / Docs Research Plan added; recommended AI remains Pending Research for browser/security setup",
   "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs",
   "trust_rule_status": "Thinking Constitution / Trust Rules / Rule Audit / Route Audit added",
-  "route_audit_status": "Route Audit created; AI Control Center minimally separated from Human Console"
+  "route_audit_status": "Route Audit created; AI Control Center minimally separated from Human Console",
+  "handoff_protocol_status": "AI_Handoff_Protocol / Thinking_Rules_Quickstart / Operating Manual / current_state_summary created"
 }

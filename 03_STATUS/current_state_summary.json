@@ -1,0 +1,58 @@
+{
+  "last_updated": "2026-07-05",
+  "source": "03_STATUS/current_state_summary.json",
+  "purpose": "Purposeを実現するために、人間の認知負荷を最小化し、最高の体験で現実を変え続けるAI組織を構築する。",
+  "system": {
+    "mrbrain_role": "Architecture / 正本 / Learning",
+    "evolution_factory_role": "Workflow / Preview / Human Console / AI Control Center / Status",
+    "preview_url": "https://yoshihiro0001.github.io/start2026/",
+    "temporary_preview_password": "123456",
+    "password_note": "仮Preview専用。本番・重要情報ありでは使用禁止。"
+  },
+  "current_mission": "Security Foundation / Trust Rule / AI Routing Evidence",
+  "current_stage": "Constitution and handoff protocol created; production setup still incomplete",
+  "overall_health": "46%",
+  "current_highest_risk": "Recovery未整備",
+  "current_highest_trust_risk": "AI能力比較が未完了のままBrowser AI選定がPending",
+  "human_next_action": "Google Account Recoveryを完成させる",
+  "one_action_only": true,
+  "next_rule_fix": "AI Capability RegistryのOfficial Docs確認を完了する",
+  "active_rules": [
+    "Rule 01 Official Docs Required",
+    "Rule 02 AI Routing Requires Evidence",
+    "Rule 03 No Evidence, No Assertion",
+    "Rule 06 High Human Risk Requires Security",
+    "Rule 07 No Secrets In Git",
+    "Rule 10 Compress Human Console",
+    "Rule 11 Separate Human And AI Screens",
+    "Rule 20 Trust Is Earned"
+  ],
+  "ai_routing": {
+    "architecture_discussion": "ChatGPT-style high reasoning",
+    "file_edit_git_implementation": "Codex",
+    "browser_security_setup": "Pending Research",
+    "final_approval": "Human"
+  },
+  "handoff_reading_order": [
+    "03_STATUS/current_state_summary.json",
+    "00_CONSTITUTION/Thinking_Rules_Quickstart.md",
+    "00_CONSTITUTION/MrBrain_Operating_Manual.md",
+    "00_CONSTITUTION/AI_Handoff_Protocol.md"
+  ],
+  "prohibited": [
+    "Do not touch Kernel / Principle / AI_CONTEXT / AGENTS unless explicitly allowed",
+    "Do not commit Secret / API Key / PAT / service_role / Recovery Code",
+    "Do not assert current facts without official docs or uncertainty label",
+    "Do not expand Human Console with long docs",
+    "Do not route browser/security setup to an AI without evidence"
+  ],
+  "status_files": {
+    "trust_rules": "03_STATUS/trust_rules.json",
+    "route_audit": "03_STATUS/route_audit.json",
+    "ai_capability_registry": "03_STATUS/ai_capability_registry.json",
+    "readiness": "03_STATUS/readiness.json",
+    "latest_action": "03_STATUS/latest_action.json",
+    "blockers": "03_STATUS/blockers.json"
+  },
+  "commit_policy": "Commit and push when requested; leave unrelated dirty files untouched."
+}
