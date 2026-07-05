@@ -6,8 +6,8 @@
   "ai_control_center_route_health": "10%",
   "knowledge_connection_health": "50%",
   "security_route_health": "45%",
-  "top_gap": "CEO Console and Registry still sync manually; Vercel Import route is the active path",
-  "next_route_fix": "Complete Vercel Import and record Preview URL in current_state.json / CEO Console",
+  "top_gap": "Structure Freeze active; keep Human route to one action and avoid new files",
+  "next_route_fix": "Use Vercel_Project_Import_Guide.md and current_state.json as canonical route for next action",
   "checks": [
     {
       "route": "Human Console -> Security Guide",
@@ -83,11 +83,37 @@
       "route": "Current State -> CEO Console",
       "status": "manual",
       "evidence": "03_STATUS/current_state.json created; index.html still statically reflected"
+    },
+    {
+      "route": "Structure Freeze -> Canonical Sources -> CEO Console",
+      "status": "active",
+      "evidence": "00_CONSTITUTION/Structure_Freeze_Rule.md defines canonical files; CEO Console shows one next action"
     }
   ],
   "periodic_review": {
     "weekly": "Route / Connection / Broken Links / Rule Compliance",
     "monthly": "Duplicate Concepts / Responsibility Overlap / Dead Files",
     "quarterly": "Architecture Review / Security / Infrastructure / AI capability plan review"
-  }
+  },
+  "file_explosion_risk": "high",
+  "structure_freeze": "active",
+  "new_file_creation_allowed": false,
+  "next_cleanup_action": "Vercel Importを完了するまで新規Workflow/Registry/Guideを作らず、既存正本へ統合する",
+  "canonical_files": {
+    "thinking": "00_CONSTITUTION/Thinking_Constitution.md",
+    "trust": "00_CONSTITUTION/Trust_Rules.md",
+    "structure_freeze": "00_CONSTITUTION/Structure_Freeze_Rule.md",
+    "current_state": "03_STATUS/current_state.json",
+    "ceo_console": "01_HUMAN_CONSOLE/index.html",
+    "guided_execution": "02_WORKFLOWS/Guided_Execution.md",
+    "knowledge_compiler": "02_WORKFLOWS/Knowledge_Compiler.md",
+    "knowledge_registry": "03_STATUS/knowledge_registry.json",
+    "decision_quality": "02_WORKFLOWS/Decision_Quality_Pipeline.md",
+    "architecture_audit": "02_WORKFLOWS/System_Architecture_Audit.md",
+    "deploy_current": "06_DEPLOY/Vercel_Project_Import_Guide.md",
+    "deploy_support": "06_DEPLOY/Supabase_to_Vercel_Env_Guide.md",
+    "security": "SECURITY/README.md",
+    "supabase_evidence": "04_EVIDENCE/Supabase_Project_Setup.md"
+  },
+  "current_human_action": "Vercelで Import Project を押し、yoshihiro0001/evolution-factory を選ぶ"
 }

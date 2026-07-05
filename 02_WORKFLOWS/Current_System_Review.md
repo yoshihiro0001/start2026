@@ -170,3 +170,47 @@ Current Human Action:
 Vercelで Import Project を押し、`yoshihiro0001/evolution-factory` を選ぶ。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / Structure Freeze and File Explosion Audit
+
+Score: 80 / 100
+
+What improved:
+- Structure FreezeをACTIVEにした。
+- 新規Workflow / Registry / Guideは原則作成禁止にした。
+- 各領域のACTIVE_CANONICALを決め、1領域1正本へ寄せた。
+- 全対象ファイルをACTIVE_CANONICAL / ACTIVE_SUPPORT / MERGE_CANDIDATE / ARCHIVE_CANDIDATE / LEGACY / REFERENCE_ONLYとして分類した。
+
+File Explosion Risk:
+High。整理のためのファイルが増えすぎると、HumanもAIもどこを読めばよいか迷う。今は追加より統合を優先する。
+
+Canonical Direction:
+- Thinking: `00_CONSTITUTION/Thinking_Constitution.md`
+- Trust: `00_CONSTITUTION/Trust_Rules.md`
+- Current State: `03_STATUS/current_state.json`
+- CEO Console: `01_HUMAN_CONSOLE/index.html`
+- Guided Execution: `02_WORKFLOWS/Guided_Execution.md`
+- Knowledge: `02_WORKFLOWS/Knowledge_Compiler.md` + `03_STATUS/knowledge_registry.json`
+- Deploy: `06_DEPLOY/Vercel_Project_Import_Guide.md`
+- Security: `SECURITY/README.md`
+
+Merge Priority:
+- `Knowledge_Compression_Loop.md` → `Knowledge_Compiler.md`
+- `Console_Update_Loop.md` → `Guided_Execution.md` / `current_state.json`運用
+- `Decision_Quality_Pipeline.md` と `Thinking_Route.md` の責務重複確認
+- `Human_Setup_Guide_Vercel_Supabase.md` / `Security_Roadmap.md` / `SECURITY/*.md` の責務整理
+
+Operating Rule:
+Discussion / Workflow / Registry / Guide の責務を混ぜない。
+CEO ConsoleはHumanが次に押す場所だけを見る。
+AI向け詳細はAI Control Centerまたは正本ファイルへ下げる。
+
+Next Execution:
+次の実行はVercel Importであり、思想追加ではない。
+
+Current Human Action:
+Vercelで Import Project を押し、`yoshihiro0001/evolution-factory` を選ぶ。
+
+Next Review Date: 2026-07-12

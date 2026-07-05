@@ -24,5 +24,30 @@
     "PAT"
   ],
   "security_warning": "Import時点ではEnvironment Variablesへ秘密値を入れない。service_role / secret key / DB passwordは保存禁止。",
-  "legacy_preview_url": "https://yoshihiro0001.github.io/start2026/"
+  "legacy_preview_url": "https://yoshihiro0001.github.io/start2026/",
+  "file_explosion_risk": "HIGH",
+  "structure_freeze": "active",
+  "new_file_creation_allowed": false,
+  "next_cleanup_action": "Vercel Importを完了するまで新規Workflow/Registry/Guideを作らず、既存正本へ統合する",
+  "canonical_files": {
+    "thinking": "00_CONSTITUTION/Thinking_Constitution.md",
+    "trust": "00_CONSTITUTION/Trust_Rules.md",
+    "structure_freeze": "00_CONSTITUTION/Structure_Freeze_Rule.md",
+    "current_state": "03_STATUS/current_state.json",
+    "ceo_console": "01_HUMAN_CONSOLE/index.html",
+    "guided_execution": "02_WORKFLOWS/Guided_Execution.md",
+    "knowledge_compiler": "02_WORKFLOWS/Knowledge_Compiler.md",
+    "knowledge_registry": "03_STATUS/knowledge_registry.json",
+    "decision_quality": "02_WORKFLOWS/Decision_Quality_Pipeline.md",
+    "architecture_audit": "02_WORKFLOWS/System_Architecture_Audit.md",
+    "deploy_current": "06_DEPLOY/Vercel_Project_Import_Guide.md",
+    "deploy_support": "06_DEPLOY/Supabase_to_Vercel_Env_Guide.md",
+    "security": "SECURITY/README.md",
+    "supabase_evidence": "04_EVIDENCE/Supabase_Project_Setup.md"
+  },
+  "current_human_action": "Vercelで Import Project を押し、yoshihiro0001/evolution-factory を選ぶ",
+  "current_objective": "Vercel Projectを作成しPreview URLを得る",
+  "current_bottleneck": "Vercel Project未作成 / file explosion risk high",
+  "structure_freeze_status": "ACTIVE",
+  "current_canonical_source": "03_STATUS/current_state.json + 01_HUMAN_CONSOLE/index.html + 00_CONSTITUTION/Structure_Freeze_Rule.md"
 }

@@ -1,14 +1,14 @@
 {
-  "last_checked": "2026-07-05",
+  "last_checked": "2026-07-06",
   "next_review": "2026-07-12",
-  "architecture_health": "40%",
+  "architecture_health": "42%",
   "route_health": "35%",
   "connection_health": "30%",
-  "duplicate_risk": "Medium",
-  "maintenance_cost": "Medium",
+  "duplicate_risk": "High",
+  "maintenance_cost": "High until merge candidates are resolved",
   "evolution_readiness": "35%",
-  "top_issue": "Status JSON and Human Console are manually synchronized",
-  "next_cleanup_action": "Check routes from Human Console to SECURITY, Knowledge Registry, Setup Guides, and Approved Next Action",
+  "top_issue": "File explosion risk from too many workflows/guides/status files",
+  "next_cleanup_action": "Vercel Importを完了するまで新規Workflow/Registry/Guideを作らず、既存正本へ統合する",
   "audit_items": {
     "route_health": "Human Console routes to guides and workflows",
     "connection_health": "MrBrain discussions connect to Evolution Factory implementation",
@@ -56,5 +56,32 @@
   "knowledge_connection_health": "35%",
   "security_route_health": "35%",
   "top_gap": "AI Control Center is only minimally separated; official docs and evidence checks are not yet automated",
-  "next_route_fix": "Use Rule Audit before the next external-service setup and update trust_rules.json after result"
+  "next_route_fix": "Use Rule Audit before the next external-service setup and update trust_rules.json after result",
+  "file_explosion_risk": "high",
+  "structure_freeze": "active",
+  "new_file_creation_allowed": false,
+  "canonical_files": {
+    "thinking": "00_CONSTITUTION/Thinking_Constitution.md",
+    "trust": "00_CONSTITUTION/Trust_Rules.md",
+    "structure_freeze": "00_CONSTITUTION/Structure_Freeze_Rule.md",
+    "current_state": "03_STATUS/current_state.json",
+    "ceo_console": "01_HUMAN_CONSOLE/index.html",
+    "guided_execution": "02_WORKFLOWS/Guided_Execution.md",
+    "knowledge_compiler": "02_WORKFLOWS/Knowledge_Compiler.md",
+    "knowledge_registry": "03_STATUS/knowledge_registry.json",
+    "decision_quality": "02_WORKFLOWS/Decision_Quality_Pipeline.md",
+    "architecture_audit": "02_WORKFLOWS/System_Architecture_Audit.md",
+    "deploy_current": "06_DEPLOY/Vercel_Project_Import_Guide.md",
+    "deploy_support": "06_DEPLOY/Supabase_to_Vercel_Env_Guide.md",
+    "security": "SECURITY/README.md",
+    "supabase_evidence": "04_EVIDENCE/Supabase_Project_Setup.md"
+  },
+  "current_human_action": "Vercelで Import Project を押し、yoshihiro0001/evolution-factory を選ぶ",
+  "merge_candidates": [
+    "Knowledge_Compression_Loop.md -> Knowledge_Compiler.md",
+    "OS_Knowledge_Audit.md -> System_Architecture_Audit.md",
+    "Console_Update_Loop.md -> Guided_Execution.md / current_state.json operation",
+    "Thinking_Route.md + AI_Routing_Rule.md -> Decision_Quality_Pipeline.md",
+    "Human_Setup_Guide + Security_Roadmap + SECURITY/*.md responsibility cleanup"
+  ]
 }
