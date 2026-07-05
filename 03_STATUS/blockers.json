@@ -9,15 +9,15 @@
     },
     {
       "rank": 2,
-      "name": "Environment Variables未設定",
-      "impact": "Supabase cannot be used from Vercel until public env vars are configured",
-      "next_action": "After import, add NEXT_PUBLIC_SUPABASE_URL and anon/publishable key only"
+      "name": "Secret誤保存",
+      "impact": "service_role / secret key / DB password / PAT leak could compromise production foundation",
+      "next_action": "Import時点ではEnvironment Variablesを後回しにし、秘密値を貼らない"
     },
     {
       "rank": 3,
-      "name": "Secret誤保存 / RLS未設計",
-      "impact": "service_role / secret key / DB password leak or unsafe anon access could compromise data",
-      "next_action": "Do not store secrets in Git/Chat/Markdown; design RLS before real data"
+      "name": "Console情報過多 / Registry未接続",
+      "impact": "Human and AI may reread long docs or miss the current action",
+      "next_action": "Use Knowledge Compiler and keep CEO Console top to exact button/input only"
     }
   ],
   "resolved_recently": [
@@ -53,7 +53,13 @@
     "Local git remote updated to evolution-factory",
     "Vercel GitHub integration authorized",
     "Vercel dashboard reached",
-    "Supabase DB password saved in Bitwarden"
+    "Supabase DB password saved in Bitwarden",
+    "Knowledge Compiler created",
+    "Knowledge Registry expanded",
+    "Architecture Review Index created",
+    "Guided Execution workflow created",
+    "Current State Registry created",
+    "OS Knowledge Audit created"
   ],
   "knowledge_blocker": {
     "name": "No automated Knowledge Audit yet",
@@ -94,5 +100,15 @@
     "name": "Vercel Project not imported",
     "impact": "Production path cannot proceed beyond static legacy preview",
     "next_action": "Import yoshihiro0001/evolution-factory into Vercel"
+  },
+  "knowledge_compiler_blocker": {
+    "name": "Knowledge Compiler not automated",
+    "impact": "AI must still manually compress Discussion into Registry",
+    "next_action": "Use Knowledge_Compiler.md before adding new Discussion"
+  },
+  "guided_execution_blocker": {
+    "name": "Vercel Import not completed",
+    "impact": "Current Screen guide exists but has not produced a Vercel Preview URL",
+    "next_action": "Human presses Import Project and selects evolution-factory repo"
   }
 }

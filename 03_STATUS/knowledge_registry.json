@@ -1,68 +1,174 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "knowledge_health": {
-    "current_percent": 30,
-    "status": "Initial registry created",
+    "current_percent": 55,
+    "status": "Knowledge Compiler added; registry expanded into reusable categories",
     "outdated_risk": "Medium",
-    "next_audit": "Weekly Knowledge Audit",
-    "confidence": "45%"
+    "next_audit": "2026-07-12 Weekly Knowledge Audit",
+    "confidence": "58%"
   },
-  "audit_schedule": {
-    "weekly_knowledge_audit": "Every week: latest decisions / docs / evidence",
-    "monthly_architecture_review": "Every month: Architecture Discussion / merge / archive",
-    "quarterly_security_infrastructure_review": "Every quarter: Security / Vercel / Supabase / Cloudflare / Domain / Secrets",
-    "ai_model_capability_review": "Quarterly or major release: OpenAI / Anthropic / Codex / Cursor / NotebookLM / Vision"
-  },
+  "compiler_flow": "Discussion -> Summary -> Evidence -> Reusable Rule -> Registry -> CEO Console -> Learning",
   "items": [
     {
-      "title": "Security Foundation Sprint",
-      "source": "SECURITY/README.md; 06_DEPLOY/Security_Roadmap.md; MrBrain Architecture Review",
-      "category": "Security / Identity / Recovery",
-      "summary": "Evolution Factory must secure Identity, Recovery, Secrets, and Risk before deeper production work.",
+      "title": "Thinking Constitution",
+      "category": "Thinking Constitution",
+      "summary": "AIはPurpose、Evidence、Risk、Routeを確認してから動く。公式Docsが必要な領域では断定しない。",
+      "source_file": "00_CONSTITUTION/Thinking_Constitution.md",
       "connected_to": [
-        "Human Console",
-        "Security Roadmap",
-        "Identity Registry",
-        "Evolution OS"
+        "trust_rules.json",
+        "CEO Console",
+        "AI Handoff"
       ],
-      "confidence": "45%",
-      "last_checked": "2026-07-05",
+      "reusable_rule": "Official Docs Required / No Evidence, No Assertion",
+      "evidence_status": "Partial",
+      "confidence": "60%",
+      "last_checked": "2026-07-06",
       "next_review": "2026-07-12",
-      "status": "Active",
-      "action": "Complete Google Account Recovery and confirm Password Manager storage."
+      "status": "active"
     },
     {
-      "title": "Human Navigator for Vercel 2FA",
-      "source": "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md; 99_LEARNING/Reality_Navigation_Log.md",
-      "category": "Human Navigation / Developer Experience",
-      "summary": "Docs alone are not enough; Human needs current screen, required app, exact next action, failure path, and completion check.",
+      "title": "Human Experience",
+      "category": "Human Experience",
+      "summary": "Humanが迷わず、安心して、最小認知負荷でReality Changeへ進む体験を最上位評価にする。",
+      "source_file": "AI_Workspace_OS_Architecture_Review.md",
       "connected_to": [
-        "Human Console",
-        "Reality Navigation Log",
-        "Security Foundation"
+        "CEO Console",
+        "Guided Execution"
       ],
+      "reusable_rule": "Human Cost must pay back",
+      "evidence_status": "Partial",
       "confidence": "55%",
-      "last_checked": "2026-07-05",
+      "last_checked": "2026-07-06",
       "next_review": "2026-07-12",
-      "status": "Reusable Insight",
-      "action": "Reuse this format for GitHub, Supabase, Cloudflare, OpenAI, Anthropic, and Google setup screens."
+      "status": "active"
     },
     {
-      "title": "Vercel + Supabase Production Path",
-      "source": "06_DEPLOY/Production_Path_Decision_Brief.md; 04_BACKEND/Supabase_Minimum_Schema.md",
-      "category": "Infrastructure / Deployment",
-      "summary": "GitHub Pages remains temporary preview only; Vercel + Supabase is the recommended app/API/DB/Auth path.",
+      "title": "Human State",
+      "category": "Human State",
+      "summary": "Humanが何をしたいかだけでなく、今どんな状態かでPreview、Guide、質問量を変える。",
+      "source_file": "AI_Workspace_OS_Architecture_Review.md",
       "connected_to": [
-        "Production Path",
-        "Task Queue",
-        "Approval Inbox",
-        "Runtime Intelligence"
+        "CEO Console",
+        "Human Navigator"
       ],
+      "reusable_rule": "Ask the minimum question from current state",
+      "evidence_status": "Partial",
       "confidence": "50%",
-      "last_checked": "2026-07-05",
-      "next_review": "2026-07-19",
-      "status": "Pending Implementation",
-      "action": "After Security Foundation, import repo to Vercel and create Supabase project."
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "active"
+    },
+    {
+      "title": "Reality Connection",
+      "category": "Reality Connection",
+      "summary": "CapabilityをRealityへつなぐAPI、Browser、QR、LAN、Cloud、Human Agentなどの接続知識。",
+      "source_file": "AI_Workspace_OS_Architecture_Review.md",
+      "connected_to": [
+        "Guided Execution",
+        "Connection Guides"
+      ],
+      "reusable_rule": "Discover implementation before building",
+      "evidence_status": "Partial",
+      "confidence": "55%",
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "active"
+    },
+    {
+      "title": "Guided Execution",
+      "category": "Guided Execution",
+      "summary": "Current ScreenごとにExact Button、Exact Input、Do Not Touch、Completion Checkまで案内する。",
+      "source_file": "02_WORKFLOWS/Guided_Execution.md",
+      "connected_to": [
+        "CEO Console",
+        "Reality Navigation Log"
+      ],
+      "reusable_rule": "Guide from current screen",
+      "evidence_status": "Active evidence from Vercel 2FA / Supabase setup",
+      "confidence": "62%",
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "active"
+    },
+    {
+      "title": "CEO Console",
+      "category": "CEO Console",
+      "summary": "HumanはAIの途中経過を追わず、North Star、Bottleneck、Next Action、Risk、Auditだけを見る。",
+      "source_file": "01_HUMAN_CONSOLE/index.html",
+      "connected_to": [
+        "decision_quality.json",
+        "current_state.json"
+      ],
+      "reusable_rule": "Compress Human Console",
+      "evidence_status": "Active",
+      "confidence": "58%",
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "active"
+    },
+    {
+      "title": "Security Foundation",
+      "category": "Security Foundation",
+      "summary": "Identity、2FA、Recovery、Secrets、Env Vars、RLSを段階的に固める。",
+      "source_file": "SECURITY/README.md",
+      "connected_to": [
+        "Security Roadmap",
+        "Guided Execution"
+      ],
+      "reusable_rule": "No Secrets In Git / High Human Risk Requires Security",
+      "evidence_status": "Active",
+      "confidence": "60%",
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "active"
+    },
+    {
+      "title": "AI Capability Routing",
+      "category": "AI Capability Routing",
+      "summary": "AI選定は公式Docs、契約プラン、能力、Cost、Risk、Securityで判断する。",
+      "source_file": "02_WORKFLOWS/AI_Capability_Registry.md",
+      "connected_to": [
+        "ai_capability_registry.json",
+        "AI Control Center"
+      ],
+      "reusable_rule": "AI Routing requires evidence",
+      "evidence_status": "Pending official docs research",
+      "confidence": "35%",
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "pending_evidence"
+    },
+    {
+      "title": "Knowledge Compression",
+      "category": "Knowledge Compression",
+      "summary": "Raw情報をSummary、Evidence、Rule、Registryへ圧縮して次回判断を軽くする。",
+      "source_file": "02_WORKFLOWS/Knowledge_Compiler.md",
+      "connected_to": [
+        "knowledge_registry.json",
+        "Architecture Review Index"
+      ],
+      "reusable_rule": "Compress knowledge before adding discussion",
+      "evidence_status": "Active",
+      "confidence": "58%",
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "active"
+    },
+    {
+      "title": "Evolution OS",
+      "category": "Evolution OS",
+      "summary": "Evidenceで自分自身を軽く、賢く、安く、美しく進化させるループ。",
+      "source_file": "02_WORKFLOWS/Evolution_OS_Loop.md",
+      "connected_to": [
+        "Readiness Gauge",
+        "Learning"
+      ],
+      "reusable_rule": "Evolution requires evidence and gauge change",
+      "evidence_status": "Partial",
+      "confidence": "50%",
+      "last_checked": "2026-07-06",
+      "next_review": "2026-07-12",
+      "status": "active"
     }
   ],
   "evaluation_axes": [

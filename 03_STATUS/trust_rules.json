@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-05",
-  "rule_compliance": "32%",
-  "evidence_status": "Partial",
+  "last_updated": "2026-07-06",
+  "rule_compliance": "36%",
+  "evidence_status": "Improving",
   "official_docs_check": "Required for current facts / AI capability / security / pricing / API / law / specs",
   "ai_routing_confidence": "Pending Research for browser/security setup",
-  "current_highest_trust_risk": "AI能力比較が未完了のままBrowser AI選定がPending",
-  "next_rule_fix": "AI Capability RegistryのOfficial Docs確認を完了する",
+  "current_highest_trust_risk": "Secret誤保存とConsole情報過多によりHumanが誤操作すること",
+  "next_rule_fix": "Use Guided Execution exact screen fields and Knowledge Compiler before adding new content",
   "items": [
     {
       "rule_id": "Rule 01",
@@ -92,20 +92,20 @@
       "title": "Guide From Current Screen",
       "status": "candidate",
       "confidence": "low",
-      "last_checked": "2026-07-05",
+      "last_checked": "2026-07-06",
       "evidence_required": "外部サービス設定は、Human NavigatorでCurrent Screen / Next Button / Required App / Completion Checkまで案内する。",
-      "current_gap": "Needs repeated project evidence and route audit",
-      "next_action": "Use in Rule Audit before execution"
+      "current_gap": "Manual guide only",
+      "next_action": "Use Guided_Execution.md for Vercel Import"
     },
     {
       "rule_id": "Rule 10",
       "title": "Compress Human Console",
       "status": "active",
       "confidence": "medium",
-      "last_checked": "2026-07-05",
+      "last_checked": "2026-07-06",
       "evidence_required": "Human Consoleは長文を表示せず、Current Mission / Risk / Gauge / Next Action / Approvalに圧縮する。",
-      "current_gap": "Needs stronger automated checks",
-      "next_action": "Use in Rule Audit before execution"
+      "current_gap": "Lower CEO Console still includes AI-facing detail",
+      "next_action": "Keep current screen / exact button / exact input at top"
     },
     {
       "rule_id": "Rule 11",
@@ -122,10 +122,10 @@
       "title": "Compress Knowledge",
       "status": "active",
       "confidence": "medium",
-      "last_checked": "2026-07-05",
+      "last_checked": "2026-07-06",
       "evidence_required": "KnowledgeはRawのまま放置せず、Summary / Decision / Evidence / Reusable Rule / Next Reviewへ圧縮する。",
-      "current_gap": "Needs stronger automated checks",
-      "next_action": "Use in Rule Audit before execution"
+      "current_gap": "Compiler exists but automation does not",
+      "next_action": "Update knowledge_registry after each major Discussion"
     },
     {
       "rule_id": "Rule 13",

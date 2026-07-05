@@ -1,10 +1,10 @@
 {
   "last_updated": "2026-07-06",
-  "human_next_action": "VercelでImport Projectを押し、yoshihiro0001/evolution-factoryを選ぶ",
+  "human_next_action": "VercelでImport Projectを押す",
   "one_action_only": true,
   "approved_task": "Security Foundation Sprint started",
-  "codex_next_task": "Wait for Human to import repo into Vercel and provide Vercel Project URL / Preview URL only",
-  "status": "Repository renamed; local remote updated; Vercel Project import pending",
+  "codex_next_task": "After Human imports repo, record Vercel Project URL / Preview URL and update CEO Console. Do not request secrets.",
+  "status": "Knowledge Compiler / Registry / Guided Execution created; Vercel Project import pending",
   "related_files": [
     "SECURITY/README.md",
     "SECURITY/Google_Account.md",
@@ -40,10 +40,15 @@
     "99_LEARNING/Reality_Navigation_Log.md",
     "06_DEPLOY/Vercel_Project_Import_Guide.md",
     "06_DEPLOY/Supabase_to_Vercel_Env_Guide.md",
-    "03_STATUS/identity.json"
+    "03_STATUS/identity.json",
+    "02_WORKFLOWS/Knowledge_Compiler.md",
+    "04_EVIDENCE/Architecture_Review_Index.md",
+    "02_WORKFLOWS/Guided_Execution.md",
+    "02_WORKFLOWS/OS_Knowledge_Audit.md",
+    "03_STATUS/current_state.json"
   ],
   "current_reality_step": "GitHub repository renamed / Vercel dashboard reached",
-  "current_screen": "Vercel Dashboard / Import Project",
+  "current_screen": "Vercel Dashboard / Add New / Import Project",
   "detected_task": "Import GitHub repository yoshihiro0001/evolution-factory into Vercel",
   "knowledge_status": "Knowledge Compression Loop added; registry created",
   "architecture_audit_status": "Route & Connection Audit designed; Multi-Codex discussion saved",
@@ -68,5 +73,21 @@
   "vercel_project_created": false,
   "vercel_repo_imported": false,
   "supabase_project_created": true,
-  "supabase_env_vars_ready": false
+  "supabase_env_vars_ready": false,
+  "exact_button": "Add New / Import Project",
+  "exact_input": "yoshihiro0001/evolution-factory",
+  "do_not_paste": [
+    "service_role",
+    "secret key",
+    "DB password",
+    "Recovery Code",
+    "PAT"
+  ],
+  "knowledge_compiler_status": "created",
+  "knowledge_registry_status": "created",
+  "guided_execution_status": "improving",
+  "ceo_console_quality": "improving",
+  "current_blocker": "Vercel Project Import",
+  "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続",
+  "current_state_registry": "03_STATUS/current_state.json"
 }

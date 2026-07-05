@@ -96,3 +96,32 @@ Next Required Improvement:
 Vercel Import後、Vercel Preview URLとSupabase public env varsの接続状態をCEO Consoleへ反映する。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / Knowledge Compiler and CEO Console Reorganization
+
+Score: 76 / 100
+
+What improved:
+- 思想は強いが、Architecture Reviewが長大化したため、辞書として扱うIndexを作成した。
+- Discussion追加よりKnowledge CompilerでSummary / Evidence / Reusable Rule / Registryへ圧縮する運用へ移行した。
+- CEO Console上部にCurrent Screen / Exact Button / Exact Input / Do Not Pasteを出し、Humanが次に押す場所を明確化した。
+- Guided ExecutionをCurrent Screen単位へ整理し、Vercel / Supabase / GitHub / Bitwardenの停止ポイントを扱える形にした。
+
+Biggest Gap:
+CEO Console下部にはまだAI向け詳細が残る。AI Control Centerへさらに下げる余地がある。
+
+Current Bottleneck:
+Vercel Project Import。HumanがVercelでImport Projectを押し、`yoshihiro0001/evolution-factory` を選ぶ必要がある。
+
+Highest ROI Fix:
+Vercel Importを迷わず完了し、Vercel Preview URLをCEO Console / current_state.jsonへ反映する。
+
+Highest Risk:
+Secret誤保存。service_role / secret key / DB password / Recovery Code / PATをGit / Chat / Markdownへ貼らないこと。
+
+Next Required Improvement:
+Vercel Import完了後、CEO ConsoleのLegacy PreviewをVercel Previewへ差し替え、Status JSONとRoute Auditを更新する。
+
+Next Review Date: 2026-07-12

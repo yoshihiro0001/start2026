@@ -4,10 +4,10 @@
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
     "current_percent": 55,
-    "status": "Repository identity finalized; Vercel import pending",
-    "blocker": "Vercel Project未作成 / Env Vars未設定",
-    "next_action": "Import yoshihiro0001/evolution-factory into Vercel",
-    "confidence": "64%"
+    "status": "Knowledge Compiler added; Vercel import pending",
+    "blocker": "Vercel Project未作成 / Console情報過多 / Registry未接続の残り",
+    "next_action": "VercelでImport Projectを押す",
+    "confidence": "66%"
   },
   "categories": [
     {
@@ -377,6 +377,46 @@
       "blocker": "Some routes are textual references, not clickable UI",
       "next_action": "Run weekly route audit",
       "confidence": "35%"
+    },
+    {
+      "name": "Knowledge Compiler",
+      "current_percent": 55,
+      "status": "Created",
+      "blocker": "Manual compression only; not automated",
+      "next_action": "Use compiler before adding new Discussion",
+      "confidence": "58%"
+    },
+    {
+      "name": "Knowledge Registry",
+      "current_percent": 55,
+      "status": "Expanded to 10 reusable categories",
+      "blocker": "Needs weekly audit",
+      "next_action": "Run Weekly Knowledge Audit",
+      "confidence": "58%"
+    },
+    {
+      "name": "Guided Execution",
+      "current_percent": 45,
+      "status": "Current Screen fields defined",
+      "blocker": "Still manual; Vercel Import not completed",
+      "next_action": "Follow Vercel Project Import row",
+      "confidence": "60%"
+    },
+    {
+      "name": "CEO Console Quality",
+      "current_percent": 48,
+      "status": "Top action panel simplified",
+      "blocker": "Lower sections still contain AI detail",
+      "next_action": "Keep exact button/input at top only",
+      "confidence": "55%"
+    },
+    {
+      "name": "Architecture Review Index",
+      "current_percent": 40,
+      "status": "Created as dictionary index",
+      "blocker": "Manual sync with MrBrain",
+      "next_action": "Update Index after major Architecture Review changes",
+      "confidence": "50%"
     }
   ],
   "next_highest_roi_action": "VercelでImport Projectを押し、yoshihiro0001/evolution-factoryを選ぶ",
@@ -461,5 +501,12 @@
     "local_remote_updated": true,
     "remote_url": "https://github.com/yoshihiro0001/evolution-factory.git",
     "legacy_preview_url": "https://yoshihiro0001.github.io/start2026/"
-  }
+  },
+  "knowledge_compiler": "created",
+  "knowledge_registry": "created",
+  "guided_execution": "improving",
+  "ceo_console_quality": "improving",
+  "current_blocker": "Vercel Project Import",
+  "next_human_action": "VercelでImport Projectを押す",
+  "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続"
 }

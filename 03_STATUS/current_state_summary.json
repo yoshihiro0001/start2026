@@ -15,7 +15,7 @@
   "overall_health": "55%",
   "current_highest_risk": "Secret誤保存 / RLS未設計",
   "current_highest_trust_risk": "RLS未設計のままanon/publishable keyを使うこと",
-  "human_next_action": "VercelでImport Projectを押し、yoshihiro0001/evolution-factoryを選ぶ",
+  "human_next_action": "VercelでImport Projectを押す",
   "one_action_only": true,
   "next_rule_fix": "service_role / secret keyをコピーしない運用を守り、RLS前に本番データを入れない",
   "active_rules": [
@@ -77,5 +77,20 @@
   "vercel_project_created": false,
   "vercel_repo_imported": false,
   "supabase_project_created": true,
-  "supabase_env_vars_ready": false
+  "supabase_env_vars_ready": false,
+  "knowledge_health": "55%",
+  "knowledge_compiler": "02_WORKFLOWS/Knowledge_Compiler.md",
+  "architecture_review_index": "04_EVIDENCE/Architecture_Review_Index.md",
+  "guided_execution": "02_WORKFLOWS/Guided_Execution.md",
+  "current_state_registry": "03_STATUS/current_state.json",
+  "current_screen": "Vercel Dashboard / Add New / Import Project",
+  "exact_button": "Add New / Import Project",
+  "exact_input": "yoshihiro0001/evolution-factory",
+  "do_not_paste": [
+    "service_role",
+    "secret key",
+    "DB password",
+    "Recovery Code",
+    "PAT"
+  ]
 }

@@ -1,0 +1,28 @@
+{
+  "last_updated": "2026-07-06",
+  "repo": "yoshihiro0001/evolution-factory",
+  "former_repo": "yoshihiro0001/start2026",
+  "vercel_org": "evolution-factory-jp",
+  "vercel_project_created": false,
+  "supabase_org": "evolution-factory",
+  "supabase_project": "evolution-factory",
+  "supabase_project_url": "https://fxqvhcryitmgsemlojme.supabase.co",
+  "supabase_status": "Healthy",
+  "db_password_storage": "Bitwarden",
+  "github_repo_connected_to_vercel": false,
+  "supabase_connected_to_vercel": false,
+  "env_vars_configured": false,
+  "current_screen": "Vercel Dashboard / Add New / Import Project",
+  "current_next_action": "VercelでImport Projectを押し、yoshihiro0001/evolution-factoryを選ぶ",
+  "exact_button": "Add New / Import Project",
+  "exact_input": "yoshihiro0001/evolution-factory",
+  "do_not_touch": [
+    "service_role",
+    "secret key",
+    "DB password",
+    "Recovery Code",
+    "PAT"
+  ],
+  "security_warning": "Import時点ではEnvironment Variablesへ秘密値を入れない。service_role / secret key / DB passwordは保存禁止。",
+  "legacy_preview_url": "https://yoshihiro0001.github.io/start2026/"
+}
