@@ -247,3 +247,36 @@ Do not execute refactor yet:
 フォルダ移動、削除、Archive、Workflow追加、Registry追加はまだ禁止。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / Evolution Ecosystem Discussion
+
+Score: 84 / 100
+
+What changed:
+- Operating Companyを部署管理で終わらせず、全部署が勝手に良くなり続ける循環として再整理した。
+- Evolution Engineは新しい部署ではなく、全Officeを監査し、統合・圧縮・削減・Canonical化・Rule昇格・Archive候補抽出を優先する上位循環候補として扱う。
+- 新規Workflow / Registry / Guideは追加していない。
+
+Review View:
+今は部署管理。
+次は循環管理。
+会社ではなく、自己進化する生態系へ移行する。
+
+Evolution Engine Inputs:
+Trust, Human Cost, Human Risk, AI Cost, Reality Progress, Knowledge Health, Runtime Health, Security, Profit Validation, Purpose Alignment, Entropy.
+
+Entropy Review:
+Entropyが高い場合、Garbage Collectorは新概念追加ではなく、統合・整理・Archive候補抽出を優先する。
+
+Current Reality Blocker:
+Vercel Import未完了。
+
+Current Human Action:
+Vercelで Import Project を押し、`yoshihiro0001/evolution-factory` を選ぶ。
+
+Do not promote yet:
+Evolution EngineはまだPrincipleへ昇格しない。Blueprint Discussion候補のまま検証する。
+
+Next Review Date: 2026-07-12
