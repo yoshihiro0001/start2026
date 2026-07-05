@@ -1,11 +1,12 @@
 {
   "last_updated": "2026-07-05",
-  "human_next_action": "Supabase project / Vercel projectを作成する",
+  "human_next_action": "Vercel / Supabase project作成を進める",
   "one_action_only": true,
-  "approved_task": "Vercel + Supabase構成へ進むことを承認済み",
-  "codex_next_task": "Vercel / Supabase接続準備、Schema、Approval Inbox設計、env templateを作る",
-  "status": "Awaiting actual Vercel and Supabase project creation",
+  "approved_task": "Vercel + Supabase project creation approved",
+  "codex_next_task": "Wait for Human to provide Vercel Project URL, Supabase Project URL, and publishable/anon key only",
+  "status": "Human setup guide ready; awaiting project creation",
   "related_files": [
+    "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
     "04_BACKEND/Supabase_Setup_Checklist.md",
     "04_BACKEND/Task_Queue_Schema.md",
     "01_HUMAN_CONSOLE/Approval_Inbox_Design.md",

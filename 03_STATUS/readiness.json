@@ -3,20 +3,20 @@
   "source": "03_STATUS/readiness.json",
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
-    "current_percent": 43,
-    "status": "Vercel + Supabase approved, setup checklist created",
-    "blocker": "Vercel and Supabase projects are not created yet",
-    "next_action": "Create Supabase project / Vercel project",
-    "confidence": "55%"
+    "current_percent": 44,
+    "status": "Human setup guide added",
+    "blocker": "Human has not created Vercel / Supabase projects yet",
+    "next_action": "Vercel / Supabase project作成を進める",
+    "confidence": "58%"
   },
   "categories": [
     {
       "name": "Overall Readiness",
-      "current_percent": 42,
-      "status": "Production path direction selected",
-      "blocker": "Vercel / Supabase not connected",
-      "next_action": "Approve Vercel + Supabase minimum connection",
-      "confidence": "55%"
+      "current_percent": 44,
+      "status": "Human setup guide added",
+      "blocker": "Projects not created",
+      "next_action": "Vercel / Supabase project作成を進める",
+      "confidence": "58%"
     },
     {
       "name": "Deployment",
@@ -28,11 +28,11 @@
     },
     {
       "name": "Security",
-      "current_percent": 32,
-      "status": "Secret policy and env template added",
+      "current_percent": 34,
+      "status": "Setup guide and key distinction added",
       "blocker": "Auth/RLS not configured",
-      "next_action": "Create Supabase Auth/RLS plan",
-      "confidence": "45%"
+      "next_action": "Create Supabase Auth/RLS after project",
+      "confidence": "48%"
     },
     {
       "name": "Runtime Intelligence",
@@ -87,7 +87,7 @@
       "current_percent": 0,
       "status": "Not created",
       "blocker": "Project not created",
-      "next_action": "Create Supabase project",
+      "next_action": "Human creates Supabase project",
       "confidence": "40%"
     },
     {
@@ -95,7 +95,7 @@
       "current_percent": 0,
       "status": "Not created",
       "blocker": "Project not created",
-      "next_action": "Create Vercel project",
+      "next_action": "Human imports start2026 to Vercel",
       "confidence": "40%"
     },
     {
@@ -121,9 +121,58 @@
       "blocker": "No live input path",
       "next_action": "Connect tasks / approvals later",
       "confidence": "45%"
+    },
+    {
+      "name": "Evolution OS",
+      "current_percent": 35,
+      "status": "Architecture + workflow documented",
+      "blocker": "Not connected to DB-backed loop",
+      "next_action": "Connect first Approval / Task / Gauge loop later",
+      "confidence": "45%"
+    },
+    {
+      "name": "Human Understanding",
+      "current_percent": 15,
+      "status": "Architecture discussion documented",
+      "blocker": "No data capture yet",
+      "next_action": "Capture feedback in Approval Inbox later",
+      "confidence": "35%"
+    },
+    {
+      "name": "Population Model",
+      "current_percent": 5,
+      "status": "Discussion only",
+      "blocker": "No experiment dataset",
+      "next_action": "Collect experiment evidence later",
+      "confidence": "20%"
+    },
+    {
+      "name": "Trust Evolution",
+      "current_percent": 5,
+      "status": "Discussion only",
+      "blocker": "No agent validation data",
+      "next_action": "Record Agent result later",
+      "confidence": "20%"
+    },
+    {
+      "name": "Agent Validation",
+      "current_percent": 0,
+      "status": "Not started",
+      "blocker": "No validation record",
+      "next_action": "Add validation field later",
+      "confidence": "15%"
+    },
+    {
+      "name": "Gauge Auto Update",
+      "current_percent": 5,
+      "status": "Static reflection only",
+      "blocker": "No DB-backed gauge update",
+      "next_action": "Connect readiness_scores later",
+      "confidence": "25%"
     }
   ],
-  "next_highest_roi_action": "Supabase project / Vercel projectを作成する",
+  "next_highest_roi_action": "Vercel / Supabase project作成を進める",
   "recommended_production_path": "Vercel + Supabase",
-  "github_pages_role": "Temporary static preview only"
+  "github_pages_role": "Temporary static preview only",
+  "human_setup_guide": "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md"
 }

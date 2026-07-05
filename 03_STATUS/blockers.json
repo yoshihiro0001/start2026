@@ -3,26 +3,28 @@
   "top_blockers": [
     {
       "rank": 1,
-      "name": "Supabase project not created",
-      "impact": "Task Queue / Approval Inbox cannot persist data yet",
-      "next_action": "Human creates Supabase project"
+      "name": "Human may not know how to create projects",
+      "impact": "Vercel / Supabase creation can stop before the loop starts",
+      "next_action": "Use Human Setup Guide and create empty projects only"
     },
     {
       "rank": 2,
-      "name": "Vercel project not created",
-      "impact": "Human Console cannot run as app/API preview yet",
-      "next_action": "Human creates/imports Vercel project"
+      "name": "Secret key confusion risk",
+      "impact": "service_role / secret key could be shared or committed by mistake",
+      "next_action": "Share only Project URL and publishable/anon key; never share secret/service_role"
     },
     {
       "rank": 3,
       "name": "Auth / RLS not configured",
       "impact": "Important data cannot be safely stored",
-      "next_action": "Define Supabase Auth and RLS before real data"
+      "next_action": "Keep start2026 empty until Auth/RLS is configured"
     }
   ],
   "resolved_recently": [
     "GitHub Pages preview URL issued",
     "Temporary password gate added",
-    "Root index redirect added"
+    "Root index redirect added",
+    "Human setup guide added",
+    "Supabase key distinction documented"
   ]
 }
