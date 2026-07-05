@@ -214,3 +214,36 @@ Current Human Action:
 Vercelで Import Project を押し、`yoshihiro0001/evolution-factory` を選ぶ。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / AI Operating Company Five-Office Blueprint
+
+Score: 82 / 100
+
+What improved:
+- BlueprintをEvolution Factory視点からAI Operating Company視点へ再整理した。
+- 既存構造をConstitution Office / Runtime Office / Knowledge Office / Reality Office / CEO Office / Learning Archiveへ分類した。
+- 新規Workflow / Registry / Discussionは追加していない。
+- ファイル数の多さは残るが、部署単位で見れば責務が軽く見える。
+
+Responsibility Separation:
+- Constitution Office: Purpose, Thinking Constitution, Trust Rules, Structure Freeze, 禁止事項, 判断基準。
+- Runtime Office: Execution, Workflow, Codex Loop, Guided Execution, Automation, Multi-Codex将来構想。
+- Knowledge Office: Knowledge Compiler, Registry, Evidence Summary, Current State, Learning, Architecture Index。
+- Reality Office: Vercel, Supabase, GitHub, Security, Browser/Docs/External Services, Deployment, Env Vars。
+- CEO Office: CEO Console, Next Human Action, Decision Quality, Bottleneck, Trust/Audit Status, Strategy/North Star。
+
+Current Gap:
+最大GapはManual Sync。Humanが更新するのではなく、SystemがStateを更新し、Humanは承認する形にする必要がある。
+
+Current Reality Blocker:
+Vercel Import未完了。
+
+Next Execution:
+Vercelで Import Project を押し、`yoshihiro0001/evolution-factory` を選ぶ。
+
+Do not execute refactor yet:
+フォルダ移動、削除、Archive、Workflow追加、Registry追加はまだ禁止。
+
+Next Review Date: 2026-07-12

@@ -133,3 +133,29 @@ Do not paste:
 - DB password
 - Recovery Code
 - PAT
+
+## AI Operating Company Office Rules
+
+Rule:
+大カテゴリは原則5〜7個以内に保つ。
+
+Rule:
+Workflowは独立カテゴリではなくRuntime Officeの実装である。
+
+Rule:
+Deploy / Security / Browser / External ServiceはReality Officeの実装である。
+
+Rule:
+Status / Registry / Evidence / SummaryはKnowledge Officeの実装である。
+
+Rule:
+Humanが見るものはCEO Officeに集約する。
+
+Rule:
+Humanは更新作業者ではなく、承認者・方向決定者である。
+
+Current Office:
+Reality Office
+
+Current Reality Step:
+Vercel Import

@@ -1,25 +1,32 @@
-# Blueprint Gap Report
+# Blueprint Gap Report: AI Operating Company
 
 Last updated: 2026-07-06
 
 ## Purpose
 
 まだ修正しない。
-Blueprintを見た結果の差分だけを出す。
+5部署モデルで見た差分だけを出す。
 
 ## Gaps
 
-| Gap | Severity | Evidence | Do Now? |
-| --- | --- | --- | --- |
-| Workflow多すぎ | High | 17 workflow files | No, plan only |
-| Registry重複 / manual sync | Medium | many `03_STATUS/*.json` | No, plan only |
-| CEO Console責務混在 | Medium | lower AI details still exist in HTML but hidden | No, plan only |
-| Discussion未昇格 / 未圧縮 | Medium | Architecture Review long | No, plan only |
-| Guide重複 | High | Human Setup / Security Roadmap / SECURITY files / Deploy guides overlap | No, plan only |
-| Security散らばり | Medium | SECURITY + 06_DEPLOY Security Roadmap | No, plan only |
-| Archive process未実装 | Low | archive candidates only | No |
-| Evidence自動接続なし | Medium | Evidence folder and registry manually maintained | No |
-| Current route still Reality未完了 | High | Vercel Import pending | Yes, but outside Blueprint Sprint |
+| Gap | Office | Severity | Evidence | Do Now? |
+| --- | --- | --- | --- | --- |
+| Workflow / Deploy / Statusが多く見える | Runtime / Reality / Knowledge | Medium | Many workflow, deploy, status files | No, office model absorbs it |
+| Manual Sync | Knowledge Office | High | Status JSON, CEO Console, Guides are hand-updated | Not now; after Vercel Import |
+| CEO Console責務混在 | CEO Office | Medium | AI/detail cards still exist hidden in HTML | No, plan only |
+| Guide重複 | Reality Office | High | Human Setup / Security Roadmap / SECURITY / Deploy guides overlap | No, plan only |
+| Security散らばり | Reality Office | Medium | SECURITY + deploy security docs | No, plan only |
+| Thinking / Decision route overlap | Constitution / CEO | Medium | Thinking_Route and Decision_Quality overlap | No, plan only |
+| Reality Blocker | Reality Office | High | Vercel Project未Import | Yes, next action |
+| Learning / Archive Loop未実装 | Learning / Archive | Low | Candidate files only | No |
+
+## Required Additions To Gap Report
+
+- 現在はWorkflow / Deploy / Statusが多く見える。
+- しかし上位部署で見れば整理可能。
+- 最大GapはManual Sync。
+- Humanが更新するのではなく、SystemがStateを更新し、Humanは承認する形にする必要がある。
+- 次の現実BlockerはVercel Import未完了。
 
 ## Most Important Gap
 

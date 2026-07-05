@@ -1,45 +1,40 @@
-# Blueprint Audit
+# Blueprint Audit: AI Operating Company
 
 Last updated: 2026-07-06
 
 ## Purpose
 
-BlueprintがPurposeからReality Change / Learningまで一本道になっているか監査する。
+5部署モデルで、全ファイルが軽く整理できているか監査する。
 
-## Audit Table
+## Office Audit
 
 | Check | Status | Evidence | Gap |
 | --- | --- | --- | --- |
-| 目的と接続しているか | Partial | Purpose appears in Constitution / Architecture / Console | Purpose is spread across files |
-| 憲法を通るか | Partial | `Thinking_Constitution.md` exists | Not automatically enforced |
-| Thinking Ruleを通るか | Partial | `Thinking_Route.md`, Quickstart | Overlaps with Decision Pipeline |
-| Trust Ruleを通るか | Active | `Trust_Rules.md`, `trust_rules.json` | Manual compliance |
-| Evidenceを通るか | Partial | Evidence folder / setup evidence exists | Not every decision has evidence |
-| Registryへ接続しているか | Partial | `03_STATUS/*.json` | Manual sync; duplicates possible |
-| Consoleへ接続しているか | Active | CEO Console exists | Lower details hidden but still in file |
-| Realityへ届くか | Pending | Vercel Import route exists | Vercel Project not imported yet |
-| Learningへ戻るか | Partial | Reality Navigation Log | Manual updates |
-| Archiveへ行けるか | Candidate | `99_ARCHIVE_CANDIDATES.md`, Structure Freeze Rule | No actual archive process yet |
-| 一本道になっているか | Partial | Current active route is clear | Overall system still branches heavily |
+| すべてのファイルが5部署のどこかに所属しているか | Active | `01_Current_Blueprint.md`, `02_Evolution_Factory_Blueprint.md` have Office column | Some files are support/reference only |
+| WorkflowがRuntime Officeへ集約できているか | Partial | `02_WORKFLOWS/*` mapped mostly to Runtime Office | Some workflows belong to Knowledge/CEO and need future merge |
+| Status JSONがKnowledge Officeへ集約できているか | Active | `03_STATUS/*.json` mapped to Knowledge Office | Manual sync remains |
+| Deploy / SecurityがReality Officeへ集約できているか | Active | `06_DEPLOY`, `SECURITY` mapped to Reality Office | Guide/security overlap remains |
+| Human ConsoleがCEO Officeへ整理できているか | Active | `01_HUMAN_CONSOLE/index.html` is CEO Office canonical | Hidden lower details still exist in HTML |
+| Constitutionが全Routeの前段にあるか | Partial | Structure Freeze / Trust / Thinking are canonical | No automated enforcement |
+| Learning / Archiveへの戻り道があるか | Partial | `Reality_Navigation_Log.md`, `99_ARCHIVE_CANDIDATES.md` | Archive not executed, learning manual |
 
-## Current Route Audit
+## Current Strength
 
-Strong:
-- CEO Console now points to one Human action.
-- Current State Registry exists.
-- Guided Execution has Current Screen / Exact Button / Do Not Paste.
-- Structure Freeze is active.
+5部署で見ると、ファイル数の多さは少し軽く見える。
+Workflow / Deploy / Statusは多いが、Office単位では整理可能。
 
-Weak:
-- Workflow folder is large.
-- Registry synchronization is manual.
-- Security and Deploy guidance overlap.
-- Architecture Review is indexed but still long.
-- Reality step is still blocked by Vercel Import.
+## Current Weakness
 
-## Result
+最大GapはManual Sync。
+Humanが更新するのではなく、SystemがStateを更新し、Humanは承認する形にする必要がある。
 
-Blueprint clarity score: 62 / 100
+## Current Reality Blocker
+
+Vercel Import未完了。
+
+## Blueprint Clarity Score
+
+68 / 100
 
 Reason:
-The current route is understandable, but the full system still has many support files and overlapping responsibilities.
+5部署モデルにより全体は軽く見える。ただし実際の自動同期、Vercel Preview、DB-backed state更新がまだない。

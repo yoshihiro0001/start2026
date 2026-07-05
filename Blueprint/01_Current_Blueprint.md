@@ -4,9 +4,18 @@ Last updated: 2026-07-06
 
 ## Purpose
 
-MrBrain全体を、修正・移動・削除せずに可視化する。
+MrBrain全体を、AI Operating Companyの5部署モデルへ分類して可視化する。
 
-This is an observation blueprint only.
+This is an observation blueprint only. No move / delete / archive is executed.
+
+## Office Model
+
+- Constitution Office: Purpose / Principles / Architecture / 禁止事項 / 判断基準
+- Runtime Office: Projects / Agents / Design build candidates / Execution-facing assets
+- Knowledge Office: Knowledge / Notes / Index / Documentation
+- Reality Office: Business reality / HOTEL JOY / 経理 / 税務 / 現実業務
+- CEO Office: Human profile / Home / Decision-facing entry
+- Learning / Archive: Archive and historical material
 
 ## Counts
 
@@ -211,201 +220,201 @@ This is an observation blueprint only.
 
 ## Responsibility Table
 
-| Path | Type | Responsibility | Purpose | Connected To | Usage | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| `.obsidian` | Folder | Unknown | 未分類。 | Unknown | Medium | Support |
-| `.obsidian/plugins` | Folder | Unknown | 未分類。 | Unknown | Medium | Support |
-| `.obsidian/plugins/2hop-links-plus` | Folder | Unknown | 未分類。 | Unknown | Medium | Support |
-| `.obsidian/plugins/omnisearch` | Folder | Unknown | 未分類。 | Unknown | Medium | Support |
-| `00_HOME` | Folder | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `01_ME` | Folder | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `02_LIFE` | Folder | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_PRINCIPLES` | Folder | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | Medium | Support |
-| `03_BUSINESS` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/JOY` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/スタッフ` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/取引先` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/契約` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/孝行` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/税務` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/経理` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/設備` | Folder | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `04_PROJECTS` | Folder | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/AI_Workspace_OS` | Folder | Architecture正本 | AI Workspace OS / MrBrain設計正本。 | Evolution Factory / Constitution | Medium | Support |
-| `04_PROJECTS/スプレッドシート整理` | Folder | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/ホテルシステム` | Folder | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/株スクリーニング` | Folder | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/申告システム` | Folder | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/相性AI` | Folder | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/経理アプリ` | Folder | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `05_DESIGN_SYSTEM` | Folder | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/developer_dashboard` | Folder | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/mobile_design_studio` | Folder | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/playground` | Folder | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_IDEAS` | Folder | Unknown | 未分類。 | Unknown | Medium | Support |
-| `06_KNOWLEDGE` | Folder | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `07_AGENTS` | Folder | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_SYSTEM` | Folder | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `99_ARCHIVE` | Folder | Archive | 過去・退避。 | Learning | Medium | Support |
-| `.DS_Store` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `.gitignore` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `.obsidian/app.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/appearance.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/community-plugins.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/core-plugins.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/graph.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/plugins/2hop-links-plus/main.js` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/plugins/2hop-links-plus/manifest.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/plugins/2hop-links-plus/styles.css` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/plugins/omnisearch/data.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/plugins/omnisearch/main.js` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/plugins/omnisearch/manifest.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/plugins/omnisearch/styles.css` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `.obsidian/workspace.json` | File | Unknown | 未分類。 | Unknown | Low | Support |
-| `00_HOME/EVOLUTION_MAP.md` | File | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `00_HOME/HOME.md` | File | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `00_HOME/README.md` | File | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `00_HOME/TASKS.md` | File | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `00_HOME/今日見る.md` | File | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `00_HOME/今月の重点.md` | File | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `00_HOME/樫原義大OS設計書.md` | File | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
-| `01_ME/2026-06-23_エネルギー循環ログ.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/INFPの傾向.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/README.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/健康.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/判断基準.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/好きなデザイン.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/好きな服.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/睡眠.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/私について.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `01_ME/苦手なループ.md` | File | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
-| `02_LIFE/README.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_LIFE/保険.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_LIFE/契約一覧.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_LIFE/家.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_LIFE/家族関連.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_LIFE/車.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_LIFE/通信.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `02_PRINCIPLES/Blueprint Engine.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `02_PRINCIPLES/Blueprint System.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `02_PRINCIPLES/Flow Bridge OS.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `02_PRINCIPLES/Human Communication OS.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `02_PRINCIPLES/エネルギー循環OS.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `02_PRINCIPLES/判断基準.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `02_PRINCIPLES/名前と意識の接続OS.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `02_PRINCIPLES/接続理論.md` | File | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical |
-| `03_BUSINESS/BUSINESS_INDEX.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/JOY/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/スタッフ/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/会社マスター索引.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/取引先/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/契約/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/孝行/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/税務/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/経理/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `03_BUSINESS/設備/README.md` | File | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
-| `04_PROJECTS/AI_Workspace_OS/AI_Workspace_OS_Architecture_Review.md` | File | Architecture正本 | AI Workspace OS / MrBrain Architecture Review正本 | Evolution Factory Blueprint / Index | High | Canonical |
-| `04_PROJECTS/AI_Workspace_OS/AI_Workspace_OS_Blueprint.md` | File | Architecture正本 | AI Workspace OS / MrBrain設計正本。 | Evolution Factory / Constitution | Medium | Support |
-| `04_PROJECTS/AI_Workspace_OS/AI_Workspace_OS_Dry_Run.md` | File | Architecture正本 | AI Workspace OS / MrBrain設計正本。 | Evolution Factory / Constitution | Medium | Support |
-| `04_PROJECTS/GitHub連携_MrBrain保存計画.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/MrBrain_GitHub_Obsidian_Codex連携計画.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/PROJECTS.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/README.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/エネルギー循環OS_MrBrain実験機.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/スプレッドシート整理/5スプレッドシート_AI引き継ぎ.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/スプレッドシート整理/README.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/スプレッドシート整理/SPREADSHEET_INDEX.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/スプレッドシート整理/現状分析_5スプレッドシート_2026-06-22.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/ホテルシステム/JOY_Human_Agent_Mission_Sheet.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/ホテルシステム/JOY_システム再構築_情報収集インターフェース.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/ホテルシステム/JOY_信号_PC処理対応Blueprint.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/ホテルシステム/JOY_信号取得レイヤー判定Blueprint.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/ホテルシステム/JOY_既存システム再現OS_Blueprint.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/ホテルシステム/README.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/一元管理OS_現状と方針.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/株スクリーニング/README.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/株スクリーニング/投資家OS構想.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/申告システム/README.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/相性AI/README.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/経理アプリ/ACCOUNTING_APP_PLAN.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/経理アプリ/README.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `04_PROJECTS/経理アプリ/会社運営OS_ゼロベース再設計レビュー.md` | File | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
-| `05_DESIGN_SYSTEM/Animation_System_Architecture.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Animation_Taste_Test.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Component_Library_Candidate.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Design_DNA_Template.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Design_Playground.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Design_Playground_Roadmap.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Design_Reference_Analysis.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Design_System_Architecture_Review.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Design_System_Roadmap.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Design_Taste_Test.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Developer_Dashboard_Design_DNA.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Developer_Environment_Inventory.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Developer_Experience_Gap_Report.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Human_Action_Inbox.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Nomad_Design_Reference_Analysis.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Preview_Delivery_Checklist.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Smartphone_Design_Development_Flow.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/Smartphone_Preview_Setup.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/developer_dashboard/README.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/developer_dashboard/index.html` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/mobile_design_studio/README.md` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/mobile_design_studio/index.html` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/playground/index.html` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_DESIGN_SYSTEM/playground/qr_design_playground.png` | File | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
-| `05_IDEAS/AGI時代の土地.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `05_IDEAS/IDEAS.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `05_IDEAS/README.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `05_IDEAS/会話テーマ生成.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `05_IDEAS/未来のホテル運営.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `05_IDEAS/相性AI.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `05_IDEAS/金魚アプリ.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `06_KNOWLEDGE/AI開発.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/Codex便利な使い方.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/NotebookLMの役割.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/Obsidian.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/Obsidian_Codex連携.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/README.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/エネルギー循環OS.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/心理学.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/投資.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/文字起こし_ObsidianとAI永続メモリー.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/法人運営.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `06_KNOWLEDGE/税務.md` | File | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
-| `07_AGENTS/Blueprint Agent.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/Blueprint Reviewer.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/Brain Curator Agent.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/Communication Agent.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/Compass Agent.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/Flow Bridge Agent.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/Identity Agent.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/README.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_AGENTS/SNS Posting Engine.md` | File | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
-| `07_SYSTEM/AI_CONTEXT.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/AI憲法.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/Automation Backlog.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/Blueprint v2 Template.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/Codexへの指示.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/DECISION_LOG.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/MrBrain Kernel Router.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/MrBrain Runtime Loop.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/MrBrain 保存・復元・拡張ルール.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/MrBrainスキル化構想.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/Operation Log.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/README.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/エネルギー循環OS憲法.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/セキュリティルール.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/テンプレート集.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/ファイル整理ルール.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `07_SYSTEM/命名ルール.md` | File | System operations | MrBrain運用。 | Architecture | Medium | Support |
-| `99_ARCHIVE/README.md` | File | Archive | 過去・退避。 | Learning | Low | Legacy |
-| `AGENTS.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `README.md` | File | Unknown | 未分類。 | Unknown | Medium | Support |
-| `無題のファイル.canvas` | File | Unknown | 未分類。 | Unknown | Medium | Support |
+| Path | Type | Office | Responsibility | Purpose | Connected To | Usage | Status | Current Problem | Recommended Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `.obsidian` | Folder | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support |
+| `.obsidian/plugins` | Folder | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support |
+| `.obsidian/plugins/2hop-links-plus` | Folder | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support |
+| `.obsidian/plugins/omnisearch` | Folder | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support |
+| `00_HOME` | Folder | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support |
+| `01_ME` | Folder | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support |
+| `02_LIFE` | Folder | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support |
+| `02_PRINCIPLES` | Folder | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | Medium | Support |
+| `03_BUSINESS` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/JOY` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/スタッフ` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/取引先` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/契約` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/孝行` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/税務` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/経理` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `03_BUSINESS/設備` | Folder | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support |
+| `04_PROJECTS` | Folder | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
+| `04_PROJECTS/AI_Workspace_OS` | Folder | Constitution Office | Architecture正本 | AI Workspace OS / MrBrain設計正本。 | Evolution Factory / Constitution | Medium | Support |
+| `04_PROJECTS/スプレッドシート整理` | Folder | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
+| `04_PROJECTS/ホテルシステム` | Folder | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
+| `04_PROJECTS/株スクリーニング` | Folder | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
+| `04_PROJECTS/申告システム` | Folder | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
+| `04_PROJECTS/相性AI` | Folder | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
+| `04_PROJECTS/経理アプリ` | Folder | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support |
+| `05_DESIGN_SYSTEM` | Folder | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
+| `05_DESIGN_SYSTEM/developer_dashboard` | Folder | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
+| `05_DESIGN_SYSTEM/mobile_design_studio` | Folder | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
+| `05_DESIGN_SYSTEM/playground` | Folder | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support |
+| `05_IDEAS` | Folder | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support |
+| `06_KNOWLEDGE` | Folder | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support |
+| `07_AGENTS` | Folder | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support |
+| `07_SYSTEM` | Folder | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support |
+| `99_ARCHIVE` | Folder | Learning / Archive | Archive | 過去・退避。 | Learning | Medium | Support |
+| `.DS_Store` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `.gitignore` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `.obsidian/app.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/appearance.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/community-plugins.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/core-plugins.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/graph.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/plugins/2hop-links-plus/main.js` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/plugins/2hop-links-plus/manifest.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/plugins/2hop-links-plus/styles.css` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/plugins/omnisearch/data.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/plugins/omnisearch/main.js` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/plugins/omnisearch/manifest.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/plugins/omnisearch/styles.css` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `.obsidian/workspace.json` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Low | Support | None now | Support canonical source |
+| `00_HOME/EVOLUTION_MAP.md` | File | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support | None now | Support canonical source |
+| `00_HOME/HOME.md` | File | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support | None now | Support canonical source |
+| `00_HOME/README.md` | File | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support | None now | Support canonical source |
+| `00_HOME/TASKS.md` | File | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support | None now | Support canonical source |
+| `00_HOME/今日見る.md` | File | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support | None now | Support canonical source |
+| `00_HOME/今月の重点.md` | File | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support | None now | Support canonical source |
+| `00_HOME/樫原義大OS設計書.md` | File | CEO Office | 入口 / Hub | MrBrain全体の入口。 | AI_CONTEXT / AGENTS / Projects | Medium | Support | None now | Support canonical source |
+| `01_ME/2026-06-23_エネルギー循環ログ.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/INFPの傾向.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/README.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/健康.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/判断基準.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/好きなデザイン.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/好きな服.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/睡眠.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/私について.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `01_ME/苦手なループ.md` | File | CEO Office | Human profile | User / Humanの前提情報。 | Projects / Human Experience | Medium | Support | None now | Support canonical source |
+| `02_LIFE/README.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `02_LIFE/保険.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `02_LIFE/契約一覧.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `02_LIFE/家.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `02_LIFE/家族関連.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `02_LIFE/車.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `02_LIFE/通信.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `02_PRINCIPLES/Blueprint Engine.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `02_PRINCIPLES/Blueprint System.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `02_PRINCIPLES/Flow Bridge OS.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `02_PRINCIPLES/Human Communication OS.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `02_PRINCIPLES/エネルギー循環OS.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `02_PRINCIPLES/判断基準.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `02_PRINCIPLES/名前と意識の接続OS.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `02_PRINCIPLES/接続理論.md` | File | Constitution Office | Principle正本 | 判断基準・原理。 | AI_CONTEXT / Architecture | High | Canonical | None now | Keep as canonical |
+| `03_BUSINESS/BUSINESS_INDEX.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/JOY/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/スタッフ/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/会社マスター索引.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/取引先/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/契約/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/孝行/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/税務/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/経理/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `03_BUSINESS/設備/README.md` | File | Reality Office | Business reality | HOTEL JOY / 経理 / 税務など現実業務。 | Projects / Evidence | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/AI_Workspace_OS/AI_Workspace_OS_Architecture_Review.md` | File | Constitution Office | Architecture正本 | AI Workspace OS / MrBrain Architecture Review正本 | Evolution Factory Blueprint / Index | High | Canonical | None now | Keep as canonical |
+| `04_PROJECTS/AI_Workspace_OS/AI_Workspace_OS_Blueprint.md` | File | Constitution Office | Architecture正本 | AI Workspace OS / MrBrain設計正本。 | Evolution Factory / Constitution | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/AI_Workspace_OS/AI_Workspace_OS_Dry_Run.md` | File | Constitution Office | Architecture正本 | AI Workspace OS / MrBrain設計正本。 | Evolution Factory / Constitution | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/GitHub連携_MrBrain保存計画.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/MrBrain_GitHub_Obsidian_Codex連携計画.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/PROJECTS.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/README.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/エネルギー循環OS_MrBrain実験機.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/スプレッドシート整理/5スプレッドシート_AI引き継ぎ.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/スプレッドシート整理/README.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/スプレッドシート整理/SPREADSHEET_INDEX.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/スプレッドシート整理/現状分析_5スプレッドシート_2026-06-22.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/ホテルシステム/JOY_Human_Agent_Mission_Sheet.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/ホテルシステム/JOY_システム再構築_情報収集インターフェース.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/ホテルシステム/JOY_信号_PC処理対応Blueprint.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/ホテルシステム/JOY_信号取得レイヤー判定Blueprint.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/ホテルシステム/JOY_既存システム再現OS_Blueprint.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/ホテルシステム/README.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/一元管理OS_現状と方針.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/株スクリーニング/README.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/株スクリーニング/投資家OS構想.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/申告システム/README.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/相性AI/README.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/経理アプリ/ACCOUNTING_APP_PLAN.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/経理アプリ/README.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `04_PROJECTS/経理アプリ/会社運営OS_ゼロベース再設計レビュー.md` | File | Runtime Office | Project正本 | 各ProjectのBlueprint / Task / Evidence。 | Business / Design / Factory | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Animation_System_Architecture.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Animation_Taste_Test.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Component_Library_Candidate.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Design_DNA_Template.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Design_Playground.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Design_Playground_Roadmap.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Design_Reference_Analysis.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Design_System_Architecture_Review.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Design_System_Roadmap.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Design_Taste_Test.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Developer_Dashboard_Design_DNA.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Developer_Environment_Inventory.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Developer_Experience_Gap_Report.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Human_Action_Inbox.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Nomad_Design_Reference_Analysis.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Preview_Delivery_Checklist.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Smartphone_Design_Development_Flow.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/Smartphone_Preview_Setup.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/developer_dashboard/README.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/developer_dashboard/index.html` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/mobile_design_studio/README.md` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/mobile_design_studio/index.html` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/playground/index.html` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_DESIGN_SYSTEM/playground/qr_design_playground.png` | File | Runtime Office | Design System | Design / Motion / Playground / Dashboard候補。 | Evolution Factory / Artifacts | Medium | Support | None now | Support canonical source |
+| `05_IDEAS/AGI時代の土地.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `05_IDEAS/IDEAS.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `05_IDEAS/README.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `05_IDEAS/会話テーマ生成.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `05_IDEAS/未来のホテル運営.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `05_IDEAS/相性AI.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `05_IDEAS/金魚アプリ.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/AI開発.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/Codex便利な使い方.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/NotebookLMの役割.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/Obsidian.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/Obsidian_Codex連携.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/README.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/エネルギー循環OS.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/心理学.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/投資.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/文字起こし_ObsidianとAI永続メモリー.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/法人運営.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `06_KNOWLEDGE/税務.md` | File | Knowledge Office | Knowledge | 知識資料。 | Architecture / Projects | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/Blueprint Agent.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/Blueprint Reviewer.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/Brain Curator Agent.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/Communication Agent.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/Compass Agent.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/Flow Bridge Agent.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/Identity Agent.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/README.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_AGENTS/SNS Posting Engine.md` | File | Runtime Office | Agent context | Agent引き継ぎ・Role。 | Evolution Factory / AI Control | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/AI_CONTEXT.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/AI憲法.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/Automation Backlog.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/Blueprint v2 Template.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/Codexへの指示.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/DECISION_LOG.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/MrBrain Kernel Router.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/MrBrain Runtime Loop.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/MrBrain 保存・復元・拡張ルール.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/MrBrainスキル化構想.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/Operation Log.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/README.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/エネルギー循環OS憲法.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/セキュリティルール.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/テンプレート集.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/ファイル整理ルール.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `07_SYSTEM/命名ルール.md` | File | Constitution Office | System operations | MrBrain運用。 | Architecture | Medium | Support | None now | Support canonical source |
+| `99_ARCHIVE/README.md` | File | Learning / Archive | Archive | 過去・退避。 | Learning | Low | Legacy | Legacy or reference only | Review for merge/archive later |
+| `AGENTS.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `README.md` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
+| `無題のファイル.canvas` | File | Knowledge Office | Unknown | 未分類。 | Unknown | Medium | Support | None now | Support canonical source |
 
 ## Initial Read
 
-MrBrain is the source of truth for Architecture, Project正本, Design System candidates, Business reality, and Learning.
-Evolution Factory should not replace MrBrain. It should operationalize and preview what MrBrain defines.
+MrBrain is the source of truth for Constitution, Architecture, Project正本, Reality, Knowledge, and Learning.
+Evolution Factory should operationalize and preview what MrBrain defines.
