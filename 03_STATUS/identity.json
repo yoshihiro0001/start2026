@@ -50,5 +50,41 @@
     "supabase_project_name": "evolution-factory",
     "region": "Japan or nearby",
     "environment": "preview"
+  },
+  "security_status": {
+    "current_security_level": "Prototype / Security Foundation Sprint",
+    "security_readiness": "22%",
+    "highest_risk": "Recovery未整備",
+    "next_security_action": "Google Account Security Checkup and Recoveryを完了する"
+  },
+  "2fa": {
+    "google": "Unknown / check required",
+    "github": "Unknown / check required",
+    "vercel": "In progress",
+    "supabase": "Not configured",
+    "cloudflare": "Not configured"
+  },
+  "passkey": {
+    "google": "Unknown / check required",
+    "github": "Unknown / check required"
+  },
+  "recovery": {
+    "google": "Needs confirmation",
+    "github": "Needs confirmation",
+    "vercel": "Pending recovery codes after 2FA",
+    "password_manager": "Needs confirmation"
+  },
+  "password_manager": "Unknown / Human must confirm where recovery codes are stored",
+  "backup": "Not confirmed",
+  "risk": {
+    "overall": "High until recovery and secrets are confirmed",
+    "current_highest_risk": "Recovery未整備",
+    "do_not_store": [
+      "API Key",
+      "PAT",
+      "service_role key",
+      "Database password",
+      "Recovery Code"
+    ]
   }
 }

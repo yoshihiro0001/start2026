@@ -155,7 +155,7 @@ Prototype
 Next Security Action:
 
 ```text
-VercelにGitHub repoをImportする
+Google Account Security Checkup and Recoveryを完了する
 ```
 
 ---
@@ -200,3 +200,58 @@ Server-side only:
 Official docs:
 
 - Supabase API Keys: https://supabase.com/docs/guides/api/api-keys
+
+---
+
+## Security Foundation Sprint
+
+Purpose:
+Identity / Security / Recovery / Secret / Riskを固め、10億円規模へ進む前の土台を作る。
+
+Human Costだけでは足りないため、Human Riskを明示する。
+
+Human Risk examples:
+
+- 全部失う可能性
+- アカウント乗っ取り
+- Recovery不能
+- 秘密漏洩
+- 権限ミス
+
+Current Highest Risk:
+Recovery未整備
+
+Next Security Action:
+Google Account Security Checkup and Recoveryを完了する。
+
+Security Readiness:
+
+| Area | Readiness |
+|---|---:|
+| Identity | 35% |
+| Google | 70% |
+| GitHub | 40% |
+| Vercel | 20% |
+| Supabase | 0% |
+| Secrets | 0% |
+| Recovery | 10% |
+| Password Manager | 15% |
+| Overall | 22% |
+
+---
+
+## Security Foundation Levels
+
+今回のSprintでは、以下を上流Identityから順に固める。
+
+| Level | Target | Foundation |
+|---|---|---|
+| Level 1 | Google Account | Passkey / 2FA / Recovery / Security Checkup |
+| Level 2 | GitHub | Passkey / 2FA / Recovery / SSH / PAT整理 |
+| Level 3 | Vercel | 2FA / Recovery / Environment Variables |
+| Level 4 | Supabase | 2FA / RLS / Secrets |
+| Level 5 | Cloudflare | DNS / Zero Trust |
+| Level 6 | OpenAI / Anthropic | API Key / Rotation |
+
+Current Next Level:
+Level 1 Google Account Recoveryを完了する。

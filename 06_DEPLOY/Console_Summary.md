@@ -154,3 +154,29 @@ Preview URL:
 
 Important:
 This is temporary non-sensitive preview only. It is not production auth.
+
+
+---
+
+## Security Foundation Summary
+
+Current Decision:
+Security Foundation Sprintを開始する。
+
+Recommendation:
+機能追加より先に、Google Account Recovery / Password Manager / Recovery Codes / Secrets方針を固める。
+
+Human Next Action:
+Google Account Security Checkup and Recoveryを完了する。
+
+Risk:
+Recovery未整備。上流Identityを失うとGitHub / Vercel / Supabase / Cloudflareへ連鎖する。
+
+Evidence Status:
+SECURITY台帳作成済み。実設定完了は未確認。
+
+Related Files:
+
+- SECURITY/README.md
+- 06_DEPLOY/Security_Roadmap.md
+- 99_LEARNING/Reality_Navigation_Log.md

@@ -3,21 +3,21 @@
   "top_blockers": [
     {
       "rank": 1,
-      "name": "Vercel 2FA setup",
-      "impact": "Human cannot proceed to GitHub Import until 2FA is completed",
-      "next_action": "Open Google Authenticator or iPhone Passwords, scan QR, enter 6-digit code on Mac"
+      "name": "Recovery未整備",
+      "impact": "Google / GitHub / Vercel / Supabaseの上流Identityを失う可能性がある",
+      "next_action": "Google Account Security Checkup and Recoveryを完了する"
     },
     {
       "rank": 2,
-      "name": "Vercel project not imported",
-      "impact": "Evolution Factory cannot move from static preview to app preview",
-      "next_action": "After 2FA, import yoshihiro0001/start2026 to Vercel Hobby as evolution-factory"
+      "name": "Vercel 2FA setup",
+      "impact": "Human cannot proceed to GitHub Import until 2FA is completed",
+      "next_action": "Open authenticator app, scan QR, enter 6-digit code on Mac, save recovery codes"
     },
     {
       "rank": 3,
-      "name": "Supabase project not created",
-      "impact": "Task Queue / Approval Inbox cannot persist data yet",
-      "next_action": "Create Supabase project after Vercel import"
+      "name": "Secrets not configured",
+      "impact": "API / DB cannot be safely connected",
+      "next_action": "Keep real values out of Git; use env vars later"
     }
   ],
   "resolved_recently": [
@@ -29,6 +29,9 @@
     "Evolution Factory identity recorded",
     "Security Roadmap created",
     "Human setup suggested values added",
-    "Human Navigator guide for Vercel 2FA added"
+    "Human Navigator guide for Vercel 2FA added",
+    "Security Foundation Sprint started",
+    "SECURITY registry files added",
+    "Human Risk added as discussion metric"
   ]
 }

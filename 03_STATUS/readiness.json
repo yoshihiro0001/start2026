@@ -4,10 +4,10 @@
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
     "current_percent": 46,
-    "status": "Human Navigator active for Vercel 2FA",
-    "blocker": "Vercel 2FA setup is not completed",
-    "next_action": "Vercel 2FAを完了する",
-    "confidence": "62%"
+    "status": "Security Foundation Sprint started",
+    "blocker": "Recovery is not fully configured",
+    "next_action": "Google Account Recoveryを完成させる",
+    "confidence": "60%"
   },
   "categories": [
     {
@@ -28,11 +28,11 @@
     },
     {
       "name": "Security",
-      "current_percent": 36,
-      "status": "2FA setup in progress",
-      "blocker": "Recovery codes not saved yet",
-      "next_action": "Complete 2FA and save recovery codes outside Git",
-      "confidence": "55%"
+      "current_percent": 22,
+      "status": "Security Foundation Sprint started",
+      "blocker": "Recovery / Secrets / Password Manager not confirmed",
+      "next_action": "Complete Google Account Recovery",
+      "confidence": "45%"
     },
     {
       "name": "Runtime Intelligence",
@@ -172,11 +172,11 @@
     },
     {
       "name": "Identity Registry",
-      "current_percent": 20,
-      "status": "identity.json created",
-      "blocker": "Vercel/Supabase URLs missing",
-      "next_action": "Fill after project creation",
-      "confidence": "50%"
+      "current_percent": 35,
+      "status": "Security fields added",
+      "blocker": "Recovery status incomplete",
+      "next_action": "Complete Google Account Recovery",
+      "confidence": "55%"
     },
     {
       "name": "Naming Strategy",
@@ -209,9 +209,73 @@
       "blocker": "Manual guidance only; no screen recognition automation yet",
       "next_action": "Complete Vercel 2FA using Human Navigator guide",
       "confidence": "50%"
+    },
+    {
+      "name": "Security Foundation",
+      "current_percent": 22,
+      "status": "Sprint active",
+      "blocker": "Recovery未整備",
+      "next_action": "Complete Google Account Recovery",
+      "confidence": "45%"
+    },
+    {
+      "name": "Google Account",
+      "current_percent": 70,
+      "status": "Login in use / recovery not confirmed",
+      "blocker": "Recovery settings not confirmed",
+      "next_action": "Run Google Security Checkup",
+      "confidence": "50%"
+    },
+    {
+      "name": "GitHub Security",
+      "current_percent": 40,
+      "status": "Repo connected",
+      "blocker": "2FA / PAT / SSH inventory not confirmed",
+      "next_action": "Confirm after Google recovery",
+      "confidence": "45%"
+    },
+    {
+      "name": "Vercel Security",
+      "current_percent": 20,
+      "status": "2FA in progress",
+      "blocker": "Recovery codes not saved yet",
+      "next_action": "Complete Vercel 2FA",
+      "confidence": "45%"
+    },
+    {
+      "name": "Supabase Security",
+      "current_percent": 0,
+      "status": "Not created",
+      "blocker": "RLS/Auth/keys not configured",
+      "next_action": "Create project after foundation",
+      "confidence": "35%"
+    },
+    {
+      "name": "Secrets",
+      "current_percent": 0,
+      "status": "No production secret handling yet",
+      "blocker": "Env vars not configured",
+      "next_action": "Keep secrets out of Git",
+      "confidence": "45%"
+    },
+    {
+      "name": "Recovery",
+      "current_percent": 10,
+      "status": "Inventory not complete",
+      "blocker": "Recovery code storage unconfirmed",
+      "next_action": "Save Google recovery methods",
+      "confidence": "35%"
+    },
+    {
+      "name": "Password Manager",
+      "current_percent": 15,
+      "status": "Storage location unconfirmed",
+      "blocker": "Recovery storage not confirmed",
+      "next_action": "Confirm password manager",
+      "confidence": "35%"
     }
   ],
-  "next_highest_roi_action": "Vercel 2FAを完了し、GitHub Import画面へ進む",
+  "next_highest_roi_action": "Google Account Recoveryを完成させる",
   "recommended_production_path": "Vercel + Supabase",
   "github_pages_role": "Temporary static preview only",
   "human_setup_guide": "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
@@ -220,5 +284,18 @@
   "human_navigator_status": "active",
   "current_reality_step": "Vercel 2FA Setup",
   "current_screen": "Authenticator App QR Code",
-  "human_navigator_guide": "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md"
+  "human_navigator_guide": "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md",
+  "security_readiness": {
+    "identity": "35%",
+    "google": "70%",
+    "github": "40%",
+    "vercel": "20%",
+    "supabase": "0%",
+    "secrets": "0%",
+    "recovery": "10%",
+    "password_manager": "15%",
+    "overall": "22%"
+  },
+  "current_highest_risk": "Recovery未整備",
+  "current_highest_roi": "Security Foundation後はSupabase接続。今はGoogle Account Recoveryを先に固める。"
 }

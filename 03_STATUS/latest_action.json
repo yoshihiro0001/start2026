@@ -1,16 +1,18 @@
 {
   "last_updated": "2026-07-05",
-  "human_next_action": "Vercel 2FAを完了する",
+  "human_next_action": "Google Account Recoveryを完成させる",
   "one_action_only": true,
-  "approved_task": "Use Human Navigator to complete Vercel 2FA",
-  "codex_next_task": "Wait for Human to complete 2FA and provide Vercel Project URL after GitHub Import",
-  "status": "Vercel onboarding is at 2FA step; Human Navigator guide is active",
+  "approved_task": "Security Foundation Sprint started",
+  "codex_next_task": "Wait for Human to confirm Google Account Recovery / Password Manager status",
+  "status": "Security Foundation Sprint active; Human Risk is now tracked",
   "related_files": [
-    "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md",
-    "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
-    "99_LEARNING/Reality_Navigation_Log.md"
+    "SECURITY/README.md",
+    "SECURITY/Google_Account.md",
+    "SECURITY/Recovery_Codes.md",
+    "SECURITY/Password_Manager.md",
+    "06_DEPLOY/Security_Roadmap.md"
   ],
-  "current_reality_step": "Vercel 2FA Setup",
+  "current_reality_step": "Security Foundation / Google Account Recovery",
   "current_screen": "Authenticator App QR Code",
-  "detected_task": "Scan QR with authenticator app and enter 6-digit code on Mac"
+  "detected_task": "Run Google Security Checkup and confirm recovery settings"
 }
