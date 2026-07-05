@@ -3,7 +3,7 @@
   "human_next_action": "VercelでImport Projectを押す",
   "one_action_only": true,
   "approved_task": "Security Foundation Sprint started",
-  "codex_next_task": "After Human imports repo, record Vercel Project URL / Preview URL and update CEO Console. Do not request secrets.",
+  "codex_next_task": "After Vercel env vars are set, open CEO Console and confirm Supabase Reality Verification shows Connected. Do not request or store secret values.",
   "status": "Knowledge Compiler / Registry / Guided Execution created; Vercel Project import pending",
   "related_files": [
     "SECURITY/README.md",
@@ -60,7 +60,7 @@
   "console_mode": "CEO Console",
   "decision_quality_status": "Decision Quality Pipeline created; CEO Console top view added",
   "next_human_decision": "VercelでGitHub repo yoshihiro0001/evolution-factory をImportする",
-  "current_bottleneck": "Vercel Project未作成 / Env Vars未設定",
+  "current_bottleneck": "Vercel Project Import / Environment Variables未設定 / Reality Verification pending",
   "current_sprint": "Vercel Project Import + Supabase Env preparation",
   "supabase_created": true,
   "supabase_connected_to_vercel": false,
@@ -89,5 +89,6 @@
   "ceo_console_quality": "improving",
   "current_blocker": "Vercel Project Import",
   "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続",
-  "current_state_registry": "03_STATUS/current_state.json"
+  "current_state_registry": "03_STATUS/current_state.json",
+  "supabase_reality_verification": "implemented"
 }

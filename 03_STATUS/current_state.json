@@ -49,5 +49,17 @@
   "current_objective": "Vercel Projectを作成しPreview URLを得る",
   "current_bottleneck": "Vercel Project未作成 / file explosion risk high",
   "structure_freeze_status": "ACTIVE",
-  "current_canonical_source": "03_STATUS/current_state.json + 01_HUMAN_CONSOLE/index.html + 00_CONSTITUTION/Structure_Freeze_Rule.md"
+  "current_canonical_source": "03_STATUS/current_state.json + 01_HUMAN_CONSOLE/index.html + 00_CONSTITUTION/Structure_Freeze_Rule.md",
+  "supabase_reality_verification": {
+    "implemented": true,
+    "api_route": "/api/supabase-health",
+    "ceo_console_display": "Supabase Reality Verification",
+    "runtime_env_required": [
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY"
+    ],
+    "key_value_displayed": false,
+    "status": "pending_vercel_env_vars",
+    "next_action": "Set Vercel Environment Variables and confirm CEO Console shows Connected / Reality Verified"
+  }
 }

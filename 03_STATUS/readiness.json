@@ -4,9 +4,9 @@
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
     "current_percent": 55,
-    "status": "Knowledge Compiler added; Vercel import pending",
-    "blocker": "Vercel Project未作成 / Console情報過多 / Registry未接続の残り",
-    "next_action": "VercelでImport Projectを押す",
+    "status": "Reality Verification implemented; Vercel env vars pending",
+    "blocker": "Vercel Project / Env Vars / Supabase Reality Verified not complete",
+    "next_action": "Import repo into Vercel, set public Supabase env vars, verify Connected in CEO Console",
     "confidence": "66%"
   },
   "categories": [
@@ -84,18 +84,18 @@
     },
     {
       "name": "Supabase",
-      "current_percent": 48,
-      "status": "Project healthy; DB password saved in Bitwarden",
-      "blocker": "Env vars/RLS/GitHub connection missing",
-      "next_action": "Prepare env after Vercel import",
+      "current_percent": 55,
+      "status": "Project healthy; Reality Verification API implemented",
+      "blocker": "Vercel env vars not configured / Reality Verified pending",
+      "next_action": "Set public env vars and confirm CEO Console Connected",
       "confidence": "66%"
     },
     {
       "name": "Vercel",
       "current_percent": 42,
-      "status": "Account/2FA/GitHub auth complete",
-      "blocker": "Project not imported",
-      "next_action": "Import evolution-factory repo",
+      "status": "Account/2FA/GitHub auth complete; Reality Verification ready after import",
+      "blocker": "Project not imported / env vars not set",
+      "next_action": "Import evolution-factory repo, then set Supabase public env vars",
       "confidence": "65%"
     },
     {
