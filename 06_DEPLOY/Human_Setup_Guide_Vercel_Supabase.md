@@ -17,6 +17,83 @@ Goal:
 Vercel / Supabase project作成を進める。
 ```
 
+
+---
+
+## Naming / Identity
+
+Current official project identity:
+
+```text
+Project Name: Evolution Factory
+Role: AI Development Factory
+```
+
+Legacy repository:
+
+```text
+yoshihiro0001/start2026
+```
+
+Long-term naming rule:
+年号依存の新規命名は禁止。意味で命名する。
+
+Suggested values:
+
+| Input | Suggested Value | Copy |
+|---|---|---|
+| Vercel Project Name | Evolution Factory / evolution-factory | `evolution-factory` |
+| Supabase Project Name | Evolution Factory / evolution-factory | `evolution-factory` |
+| GitHub Repository | yoshihiro0001/start2026 | `yoshihiro0001/start2026` |
+| Environment | preview | `preview` |
+| Region | Japanまたは近い地域 | `Japan or nearby` |
+
+---
+
+## Vercel Onboarding
+
+Human judgment:
+VercelはまずHobbyで開始してよい。
+商用化・顧客データ・本番運用へ進む段階でPro以上を再検討する。
+Googleログインで開始済み。
+
+Steps:
+
+1. VercelにGoogleログインする。
+2. Hobby / Personal projectで開始する。
+3. GitHub連携を確認する。
+4. Repository `yoshihiro0001/start2026` をImportする。
+5. Project nameは `evolution-factory` を推奨する。
+6. Frameworkは静的HTMLならOther、またはVercelの自動判定に任せる。
+7. Deployする。
+8. 発行されたURLをHuman Consoleへ反映する。
+
+注意:
+Hobbyは検証用。
+商用化、顧客データ、本番DB、外部ユーザー利用へ進む時はPro以上を再検討する。
+
+---
+
+## Security Roadmap Reference
+
+Security Roadmap:
+
+```text
+06_DEPLOY/Security_Roadmap.md
+```
+
+Current Security Level:
+
+```text
+Prototype
+```
+
+Next Security Action:
+
+```text
+VercelにGitHub repoをImportする
+```
+
 ---
 
 ## Vercel 最短手順
@@ -24,9 +101,10 @@ Vercel / Supabase project作成を進める。
 1. Vercelにログインする。
 2. GitHub連携を確認する。
 3. `yoshihiro0001/start2026` をImportする。
-4. まずDeployする。
-5. Preview URLを取得する。
-6. Environment Variablesは、実値をVercel管理画面に入れる。Gitには入れない。
+4. Project nameは `evolution-factory` を推奨する。
+5. まずDeployする。
+6. Preview URLを取得する。
+7. Environment Variablesは、実値をVercel管理画面に入れる。Gitには入れない。
 
 HumanがCodexへ渡してよいもの:
 
@@ -152,3 +230,39 @@ Supabase publishable / anon key:
 ```
 
 Secret / service_role keyは共有しない。
+
+---
+
+## Human Setup Intelligence運用
+
+今後、Vercel / Supabase / Cloudflare / OpenAI / Anthropic / Google / GitHubなど、何か登録する時は必ずGuideへ残す。
+
+残す項目:
+
+- Humanが入力する内容
+- Suggested Value
+- コピー用
+- 注意事項
+- Codexへ渡してよい情報
+- Codexへ渡してはいけない情報
+
+目的:
+Humanが名前、Region、Repository、Environment、Domainで止まらないようにする。
+
+---
+
+## Vercel / Supabase Security Notes
+
+Vercel:
+
+- Environment Variablesはコード外で管理する。
+- Sensitive Environment Variablesは本番Secretで検討する。
+- Vercel AuthenticationはDeployment保護候補。
+- Password ProtectionはPro add-on / Enterprise条件があるため、採用前に確認する。
+
+Supabase:
+
+- client-side: publishable key または legacy anon key。
+- server-side: secret key または legacy service_role key。
+- server-side keyはGitへ保存しない。ブラウザへ出さない。Codexへ貼らない。
+- publishable / anon keyはRLS設計とセットで扱う。

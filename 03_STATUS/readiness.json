@@ -3,20 +3,20 @@
   "source": "03_STATUS/readiness.json",
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
-    "current_percent": 44,
-    "status": "Human setup guide added",
-    "blocker": "Human has not created Vercel / Supabase projects yet",
-    "next_action": "Vercel / Supabase project作成を進める",
-    "confidence": "58%"
+    "current_percent": 45,
+    "status": "Evolution Factory identity and security roadmap added",
+    "blocker": "Vercel project is not imported yet",
+    "next_action": "Vercel HobbyでEvolution Factory projectを作成しGitHub repoをImportする",
+    "confidence": "60%"
   },
   "categories": [
     {
       "name": "Overall Readiness",
-      "current_percent": 44,
-      "status": "Human setup guide added",
-      "blocker": "Projects not created",
-      "next_action": "Vercel / Supabase project作成を進める",
-      "confidence": "58%"
+      "current_percent": 45,
+      "status": "Identity + security roadmap added",
+      "blocker": "Vercel not imported",
+      "next_action": "Import repo to Vercel Hobby",
+      "confidence": "60%"
     },
     {
       "name": "Deployment",
@@ -28,11 +28,11 @@
     },
     {
       "name": "Security",
-      "current_percent": 34,
-      "status": "Setup guide and key distinction added",
-      "blocker": "Auth/RLS not configured",
-      "next_action": "Create Supabase Auth/RLS after project",
-      "confidence": "48%"
+      "current_percent": 36,
+      "status": "Roadmap created",
+      "blocker": "Auth/RLS/secrets not configured",
+      "next_action": "Import repo to Vercel; keep secrets out of Git",
+      "confidence": "50%"
     },
     {
       "name": "Runtime Intelligence",
@@ -87,16 +87,16 @@
       "current_percent": 0,
       "status": "Not created",
       "blocker": "Project not created",
-      "next_action": "Human creates Supabase project",
+      "next_action": "Create after Vercel or in parallel",
       "confidence": "40%"
     },
     {
       "name": "Vercel",
-      "current_percent": 0,
-      "status": "Not created",
+      "current_percent": 5,
+      "status": "Hobby approved / not imported",
       "blocker": "Project not created",
-      "next_action": "Human imports start2026 to Vercel",
-      "confidence": "40%"
+      "next_action": "Import GitHub repo",
+      "confidence": "45%"
     },
     {
       "name": "Approval Inbox",
@@ -169,10 +169,44 @@
       "blocker": "No DB-backed gauge update",
       "next_action": "Connect readiness_scores later",
       "confidence": "25%"
+    },
+    {
+      "name": "Identity Registry",
+      "current_percent": 20,
+      "status": "identity.json created",
+      "blocker": "Vercel/Supabase URLs missing",
+      "next_action": "Fill after project creation",
+      "confidence": "50%"
+    },
+    {
+      "name": "Naming Strategy",
+      "current_percent": 25,
+      "status": "Evolution Factory selected",
+      "blocker": "Repository still legacy start2026",
+      "next_action": "Use evolution-factory for new services",
+      "confidence": "55%"
+    },
+    {
+      "name": "Human Setup Intelligence",
+      "current_percent": 20,
+      "status": "Suggested values added",
+      "blocker": "No copy UI yet",
+      "next_action": "Use setup guide manually",
+      "confidence": "45%"
+    },
+    {
+      "name": "Security Roadmap",
+      "current_percent": 25,
+      "status": "Roadmap documented",
+      "blocker": "Security controls not implemented",
+      "next_action": "Import repo to Vercel Hobby",
+      "confidence": "50%"
     }
   ],
-  "next_highest_roi_action": "Vercel / Supabase project作成を進める",
+  "next_highest_roi_action": "Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする",
   "recommended_production_path": "Vercel + Supabase",
   "github_pages_role": "Temporary static preview only",
-  "human_setup_guide": "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md"
+  "human_setup_guide": "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
+  "project_name": "Evolution Factory",
+  "identity_source": "03_STATUS/identity.json"
 }

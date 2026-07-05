@@ -1,0 +1,54 @@
+{
+  "last_updated": "2026-07-05",
+  "project_name": "Evolution Factory",
+  "purpose": "Evidenceを使って自分自身を進化させるAI Development Factory",
+  "description": "Human Console、Task Queue、Approval Inbox、Readiness Gauge、Evidence、Learning Logを接続する実験工場",
+  "repository": "yoshihiro0001/start2026",
+  "repository_status": "legacy name; future rename candidate: evolution-factory",
+  "local_path": "/Users/kashiharayoshihiro/Library/Mobile Documents/com~apple~CloudDocs/system/Evolution Factory",
+  "preview_url": "https://yoshihiro0001.github.io/start2026/",
+  "domain": "Unknown",
+  "environment": "local / github-pages-preview / vercel-preview / production",
+  "vercel": {
+    "status": "not created",
+    "suggested_project_name": "evolution-factory",
+    "plan": "Hobby / Development only"
+  },
+  "supabase": {
+    "status": "not created",
+    "suggested_project_name": "evolution-factory",
+    "region": "Japan or nearby"
+  },
+  "cloudflare": {
+    "status": "not connected",
+    "suggested_project_name": "evolution-factory"
+  },
+  "github": {
+    "status": "connected",
+    "repo": "yoshihiro0001/start2026"
+  },
+  "owner": "Human",
+  "ai_organization": [
+    "Research",
+    "Knowledge",
+    "Principle",
+    "Strategy",
+    "Execution",
+    "Learning"
+  ],
+  "current_status": "Naming updated; Vercel/Supabase setup pending",
+  "connection_status": "GitHub Pages preview connected; Vercel/Supabase not connected",
+  "pending_items": [
+    "Vercel project creation",
+    "Supabase project creation",
+    "Auth/RLS design",
+    "Secret management"
+  ],
+  "suggested_inputs": {
+    "vercel_project_name": "evolution-factory",
+    "github_repository": "yoshihiro0001/start2026",
+    "supabase_project_name": "evolution-factory",
+    "region": "Japan or nearby",
+    "environment": "preview"
+  }
+}

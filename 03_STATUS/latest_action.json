@@ -1,15 +1,13 @@
 {
   "last_updated": "2026-07-05",
-  "human_next_action": "Vercel / Supabase project作成を進める",
+  "human_next_action": "Vercel HobbyでEvolution Factory projectを作成し、GitHub repoをImportする",
   "one_action_only": true,
-  "approved_task": "Vercel + Supabase project creation approved",
-  "codex_next_task": "Wait for Human to provide Vercel Project URL, Supabase Project URL, and publishable/anon key only",
-  "status": "Human setup guide ready; awaiting project creation",
+  "approved_task": "Evolution Factory identity and Vercel Hobby onboarding approved",
+  "codex_next_task": "Wait for Human to provide Vercel Project URL after import",
+  "status": "Human setup guide and identity registry ready; awaiting Vercel import",
   "related_files": [
+    "03_STATUS/identity.json",
     "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
-    "04_BACKEND/Supabase_Setup_Checklist.md",
-    "04_BACKEND/Task_Queue_Schema.md",
-    "01_HUMAN_CONSOLE/Approval_Inbox_Design.md",
-    ".env.example"
+    "06_DEPLOY/Security_Roadmap.md"
   ]
 }

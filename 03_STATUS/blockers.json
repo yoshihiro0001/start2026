@@ -3,21 +3,21 @@
   "top_blockers": [
     {
       "rank": 1,
-      "name": "Human may not know how to create projects",
-      "impact": "Vercel / Supabase creation can stop before the loop starts",
-      "next_action": "Use Human Setup Guide and create empty projects only"
+      "name": "Vercel project not imported",
+      "impact": "Evolution Factory cannot move from static preview to app preview",
+      "next_action": "Import yoshihiro0001/start2026 to Vercel Hobby as evolution-factory"
     },
     {
       "rank": 2,
-      "name": "Secret key confusion risk",
-      "impact": "service_role / secret key could be shared or committed by mistake",
-      "next_action": "Share only Project URL and publishable/anon key; never share secret/service_role"
+      "name": "Supabase project not created",
+      "impact": "Task Queue / Approval Inbox cannot persist data yet",
+      "next_action": "Create Supabase project after Vercel or in parallel"
     },
     {
       "rank": 3,
-      "name": "Auth / RLS not configured",
-      "impact": "Important data cannot be safely stored",
-      "next_action": "Keep start2026 empty until Auth/RLS is configured"
+      "name": "Secrets not configured",
+      "impact": "API / DB cannot be safely connected",
+      "next_action": "Use Vercel Environment Variables; never commit secrets"
     }
   ],
   "resolved_recently": [
@@ -25,6 +25,9 @@
     "Temporary password gate added",
     "Root index redirect added",
     "Human setup guide added",
-    "Supabase key distinction documented"
+    "Supabase key distinction documented",
+    "Evolution Factory identity recorded",
+    "Security Roadmap created",
+    "Human setup suggested values added"
   ]
 }
