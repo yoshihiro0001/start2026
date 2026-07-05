@@ -48,5 +48,13 @@
     ],
     "current_blocker": "Task Queue and Validation Layer are not implemented",
     "next_action": "Focus on single-Codex Task Queue operation first"
-  }
+  },
+  "thinking_route_health": "30%",
+  "evidence_route_health": "35%",
+  "human_console_route_health": "40%",
+  "ai_control_center_route_health": "10%",
+  "knowledge_connection_health": "35%",
+  "security_route_health": "35%",
+  "top_gap": "AI Control Center is only minimally separated; official docs and evidence checks are not yet automated",
+  "next_route_fix": "Use Rule Audit before the next external-service setup and update trust_rules.json after result"
 }

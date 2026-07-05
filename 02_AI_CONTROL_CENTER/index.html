@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Control Center | Evolution Factory</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0f1328; --panel:#1a1f3b; --panel2:#24294b; --text:#f8f9ff; --muted:#aeb5d0; --accent:#139af2; --warn:#ffd166; --danger:#ff6b7a; }
+    body { margin:0; min-height:100vh; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--text); background:linear-gradient(180deg,#12162e,var(--bg)); }
+    main { width:min(980px, calc(100% - 28px)); margin:0 auto; padding:30px 0 48px; }
+    section { background:rgba(26,31,59,.9); border:1px solid rgba(255,255,255,.1); border-radius:28px; padding:24px; margin:16px 0; }
+    h1 { font-size:clamp(34px,5vw,58px); line-height:1; margin:0 0 12px; }
+    h2 { margin:0 0 14px; font-size:22px; }
+    p, li { color:var(--muted); line-height:1.7; }
+    .pill { display:inline-flex; border-radius:999px; padding:8px 12px; color:#9edbff; background:rgba(19,154,242,.16); font-weight:800; font-size:13px; margin-bottom:14px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+    .item { background:var(--panel2); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:14px; }
+    .key { color:#76809d; font-size:12px; font-weight:900; text-transform:uppercase; }
+    .val { margin-top:6px; font-weight:850; }
+    .warn { color:var(--warn); }
+    .danger { color:var(--danger); }
+    a { color:#6cc8ff; }
+    @media(max-width:720px){ .grid{grid-template-columns:1fr;} section{padding:18px;border-radius:22px;} }
+  </style>
+</head>
+<body>
+<main>
+  <section>
+    <span class="pill">AI-facing / Minimal Candidate</span>
+    <h1>AI Control Center</h1>
+    <p>Human Consoleを長文化しないため、AI / Codex / Browser Agent向けの作業情報を分離する候補画面です。</p>
+  </section>
+  <section>
+    <h2>Current Task</h2>
+    <div class="grid">
+      <div class="item"><div class="key">Task</div><div class="val">AI Capability RegistryのOfficial Docs確認</div></div>
+      <div class="item"><div class="key">Expected Output</div><div class="val">Browser / Security setupで使うAI選定をEvidence付きで更新</div></div>
+      <div class="item"><div class="key">Completion Check</div><div class="val">ai_capability_registry.json のConfidenceとRecommendationが更新される</div></div>
+      <div class="item"><div class="key">Rule Checklist</div><div class="val">Rule 01 / 02 / 03 / 07 / 11を確認</div></div>
+    </div>
+  </section>
+  <section>
+    <h2>Required / Prohibited Inputs</h2>
+    <ul>
+      <li>Required: Official Docs URL, checked date, exact plan/capability evidence.</li>
+      <li class="danger">Prohibited: Secret / API Key / PAT / service_role / Recovery Code.</li>
+      <li>UnknownはUnknown / Pending Researchとして残す。</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Source Files</h2>
+    <ul>
+      <li><code>00_CONSTITUTION/Trust_Rules.md</code></li>
+      <li><code>02_WORKFLOWS/AI_Capability_Registry.md</code></li>
+      <li><code>02_WORKFLOWS/AI_Routing_Rule.md</code></li>
+      <li><code>03_STATUS/trust_rules.json</code></li>
+      <li><code>03_STATUS/route_audit.json</code></li>
+    </ul>
+  </section>
+  <p><a href="../01_HUMAN_CONSOLE/index.html">Human Consoleへ戻る</a></p>
+</main>
+</body>
+</html>

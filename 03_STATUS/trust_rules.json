@@ -1,0 +1,211 @@
+{
+  "last_updated": "2026-07-05",
+  "rule_compliance": "32%",
+  "evidence_status": "Partial",
+  "official_docs_check": "Required for current facts / AI capability / security / pricing / API / law / specs",
+  "ai_routing_confidence": "Pending Research for browser/security setup",
+  "current_highest_trust_risk": "AI能力比較が未完了のままBrowser AI選定がPending",
+  "next_rule_fix": "AI Capability RegistryのOfficial Docs確認を完了する",
+  "items": [
+    {
+      "rule_id": "Rule 01",
+      "title": "Official Docs Required",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "最新情報、料金、機能、AI能力、セキュリティ、API、法律、仕様は、公式Docs確認なしに断定しない。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 02",
+      "title": "AI Routing Requires Evidence",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "AI選定は、AI Capability Registry、公式Docs、契約プラン、実機能力、Cost、Riskを比較してから行う。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 03",
+      "title": "No Evidence, No Assertion",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Evidence不足の判断は、断定せずHypothesis / Pending Researchと表示する。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 04",
+      "title": "Explain With Existing Architecture First",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "新しい概念は、既存Architectureで説明できるか確認してから追加する。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 05",
+      "title": "Human Cost Must Pay Back",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Human Costを増やす実装は、明確なReality ChangeまたはRisk低下がない限り採用しない。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 06",
+      "title": "High Human Risk Requires Security",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Human Riskが高い作業は、必ずSecurity / Recovery / Approvalを通す。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 07",
+      "title": "No Secrets In Git",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Secret / API Key / PAT / service_role / Recovery CodeはGitへ保存しない。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 08",
+      "title": "Stop Points Become Evidence",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Humanが迷った場所はReality Navigation LogへEvidenceとして残す。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 09",
+      "title": "Guide From Current Screen",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "外部サービス設定は、Human NavigatorでCurrent Screen / Next Button / Required App / Completion Checkまで案内する。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 10",
+      "title": "Compress Human Console",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Human Consoleは長文を表示せず、Current Mission / Risk / Gauge / Next Action / Approvalに圧縮する。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 11",
+      "title": "Separate Human And AI Screens",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "AI用画面とHuman用画面は責務を分ける。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 12",
+      "title": "Compress Knowledge",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "KnowledgeはRawのまま放置せず、Summary / Decision / Evidence / Reusable Rule / Next Reviewへ圧縮する。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 13",
+      "title": "Audit Routes And Maintenance",
+      "status": "active",
+      "confidence": "medium",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Route / Connection / Duplicate / Dead File / Maintenance Costは定期Auditする。",
+      "current_gap": "Needs stronger automated checks",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 14",
+      "title": "Do Not Ask Twice",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "同じ情報をHumanに二度入力させない。Identity Registry / Input Memoryから再利用する。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 15",
+      "title": "Do Not Multi-Codex Too Early",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "複数Codex化は、Task Queue / Conflict Check / Validation / Human Approval / Merge Ruleが整うまで実装しない。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 16",
+      "title": "Profit Requires Market Evidence",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Profit Strategyは、Market Evidence / Demand / Price / Competition / Human Cost / Riskなしに実行しない。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 17",
+      "title": "Design Optimizes Experience",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "DesignやUIは見た目ではなく、Human Experience / Cognitive Load / Reality Changeで評価する。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 18",
+      "title": "Validate Goal Before Execution",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Execution前にGoal Validationを通す。IntentをそのままExecutionへ流さない。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 19",
+      "title": "Discover Implementation Before Building",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "Implementation前にReality Connection / Implementation Discoveryを通す。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    },
+    {
+      "rule_id": "Rule 20",
+      "title": "Trust Is Earned",
+      "status": "candidate",
+      "confidence": "low",
+      "last_checked": "2026-07-05",
+      "evidence_required": "TrustはAIの賢さではなく、Ruleを守った回数、Evidence、成功結果で上げる。",
+      "current_gap": "Needs repeated project evidence and route audit",
+      "next_action": "Use in Rule Audit before execution"
+    }
+  ]
+}

@@ -348,11 +348,35 @@
     },
     {
       "name": "AI Control Center",
-      "current_percent": 10,
-      "status": "Human Console summary added",
-      "blocker": "No separate AI-facing surface yet",
-      "next_action": "Keep Human Console concise; split later if needed",
+      "current_percent": 15,
+      "status": "Minimal AI-facing page created",
+      "blocker": "Not connected to Task Queue / current screen data",
+      "next_action": "Keep Human Console concise and move AI-only detail here later",
       "confidence": "30%"
+    },
+    {
+      "name": "Thinking Constitution",
+      "current_percent": 25,
+      "status": "Constitution files created",
+      "blocker": "Rules are not automated yet",
+      "next_action": "Use Rule Audit before next execution",
+      "confidence": "35%"
+    },
+    {
+      "name": "Trust Rules",
+      "current_percent": 32,
+      "status": "20 rules extracted from discussions",
+      "blocker": "Needs repeated execution evidence",
+      "next_action": "Complete AI Capability official docs check",
+      "confidence": "40%"
+    },
+    {
+      "name": "Route Audit",
+      "current_percent": 30,
+      "status": "route_audit.json created",
+      "blocker": "Some routes are textual references, not clickable UI",
+      "next_action": "Run weekly route audit",
+      "confidence": "35%"
     }
   ],
   "next_highest_roi_action": "Google Account Recoveryを完成させる",
@@ -393,5 +417,11 @@
     "evidence_status": "Official docs research plan created; capabilities not fully verified",
     "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs",
     "risk": "Security setup / browser operation should not be routed by assumption"
+  },
+  "trust_rule_status": {
+    "rule_compliance": "32%",
+    "current_highest_trust_risk": "AI能力比較が未完了のままBrowser AI選定がPending",
+    "next_rule_fix": "AI Capability RegistryのOfficial Docs確認を完了する",
+    "thinking_route_health": "30%"
   }
 }

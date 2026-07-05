@@ -39,7 +39,11 @@
     "Route & Connection Audit designed",
     "Multi-Codex Orchestration discussion added",
     "AI Capability Registry created",
-    "AI Routing Rule documented"
+    "AI Routing Rule documented",
+    "Thinking Constitution created",
+    "Trust Rules extracted from existing discussions",
+    "Route Audit created",
+    "Minimal AI Control Center created"
   ],
   "knowledge_blocker": {
     "name": "No automated Knowledge Audit yet",
@@ -60,5 +64,15 @@
     "name": "Browser-capable AI not verified",
     "impact": "Security setup guidance could be routed to the wrong AI/tool if based on memory or assumption",
     "next_action": "Compare official docs and actual account capabilities for ChatGPT / Codex / Gemini / Claude / Browser Agent"
+  },
+  "trust_rule_blocker": {
+    "name": "Trust Rules are not yet automated",
+    "impact": "AI can still skip Official Docs / Evidence / Approval unless the checklist is manually applied",
+    "next_action": "Use Rule_Audit_Checklist.md before the next external-service setup or AI routing decision"
+  },
+  "route_audit_blocker": {
+    "name": "Routes are still mostly document references",
+    "impact": "Human Console can point to files, but not all routes are clickable or automatically validated",
+    "next_action": "Run weekly Route Audit and convert high-use routes into clickable cards"
   }
 }

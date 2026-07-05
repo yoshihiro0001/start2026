@@ -19,7 +19,16 @@
     "02_WORKFLOWS/AI_Capability_Registry.md",
     "02_WORKFLOWS/AI_Routing_Rule.md",
     "03_STATUS/ai_capability_registry.json",
-    "06_DEPLOY/AI_Tool_Docs_Research_Plan.md"
+    "06_DEPLOY/AI_Tool_Docs_Research_Plan.md",
+    "00_CONSTITUTION/README.md",
+    "00_CONSTITUTION/Thinking_Constitution.md",
+    "00_CONSTITUTION/Trust_Rules.md",
+    "00_CONSTITUTION/Rule_Audit_Checklist.md",
+    "02_WORKFLOWS/Thinking_Route.md",
+    "02_AI_CONTROL_CENTER/README.md",
+    "02_AI_CONTROL_CENTER/index.html",
+    "03_STATUS/trust_rules.json",
+    "03_STATUS/route_audit.json"
   ],
   "current_reality_step": "Security Foundation / Google Account Recovery",
   "current_screen": "Google Security Checkup / Recovery settings",
@@ -27,5 +36,7 @@
   "knowledge_status": "Knowledge Compression Loop added; registry created",
   "architecture_audit_status": "Route & Connection Audit designed; Multi-Codex discussion saved",
   "ai_control_center_status": "AI Capability Registry / AI Routing Rule / Docs Research Plan added; recommended AI remains Pending Research for browser/security setup",
-  "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs"
+  "next_ai_research_action": "Compare ChatGPT / Codex / Gemini / Claude browser capabilities using official docs",
+  "trust_rule_status": "Thinking Constitution / Trust Rules / Rule Audit / Route Audit added",
+  "route_audit_status": "Route Audit created; AI Control Center minimally separated from Human Console"
 }

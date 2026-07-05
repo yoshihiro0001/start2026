@@ -1,0 +1,68 @@
+{
+  "last_checked": "2026-07-05",
+  "thinking_route_health": "30%",
+  "evidence_route_health": "35%",
+  "human_console_route_health": "40%",
+  "ai_control_center_route_health": "10%",
+  "knowledge_connection_health": "35%",
+  "security_route_health": "35%",
+  "top_gap": "AI Control Center information is still mostly summarized inside Human Console; dedicated AI view is minimal only",
+  "next_route_fix": "Complete Official Docs checks for AI Capability Registry and link AI Control Center to task-specific docs/evidence",
+  "checks": [
+    {
+      "route": "Human Console -> Security Guide",
+      "status": "partial",
+      "evidence": "SECURITY files exist; Console mentions SECURITY/README.md but clickable route coverage is limited"
+    },
+    {
+      "route": "Human Console -> AI Capability Registry",
+      "status": "added",
+      "evidence": "AI Control Center card points to AI Capability Registry / Routing Rule / status JSON"
+    },
+    {
+      "route": "Human Console -> Knowledge Registry",
+      "status": "partial",
+      "evidence": "Knowledge Health card references 03_STATUS/knowledge_registry.json"
+    },
+    {
+      "route": "Human Console -> Architecture Audit",
+      "status": "partial",
+      "evidence": "System Architecture Audit card references architecture_audit.json"
+    },
+    {
+      "route": "Human Console -> Human Navigator Guide",
+      "status": "added",
+      "evidence": "Human Navigator card references Vercel 2FA Guide"
+    },
+    {
+      "route": "Human Console -> Trust Rules",
+      "status": "added",
+      "evidence": "Trust Rule Status card references 00_CONSTITUTION and trust_rules.json"
+    },
+    {
+      "route": "AI Control Center separation",
+      "status": "minimal",
+      "evidence": "02_AI_CONTROL_CENTER/README.md and index.html added as lightweight candidate"
+    },
+    {
+      "route": "Discussion / Rule / Workflow / Registry / Status JSON responsibility",
+      "status": "improving",
+      "evidence": "Architecture discussion in MrBrain; constitution/workflow/status in Evolution Factory"
+    },
+    {
+      "route": "GitHub Pages root index redirect",
+      "status": "acceptable for now",
+      "evidence": "Root index redirects to Human Console; AI Control Center can remain a secondary route"
+    },
+    {
+      "route": "Evolution Factory entry",
+      "status": "human-first",
+      "evidence": "Human Console remains default; AI Control Center may become secondary when workers need it"
+    }
+  ],
+  "periodic_review": {
+    "weekly": "Route / Connection / Broken Links / Rule Compliance",
+    "monthly": "Duplicate Concepts / Responsibility Overlap / Dead Files",
+    "quarterly": "Architecture Review / Security / Infrastructure / AI capability plan review"
+  }
+}
