@@ -465,14 +465,14 @@
         <div class="summary">
           <div class="summary-card"><div class="label">Overall Health</div><div class="value">52%</div></div>
           <div class="summary-card"><div class="label">Trust Status</div><div class="value">Medium</div></div>
-          <div class="summary-card"><div class="label">Current Bottleneck</div><div class="value">Env Vars未設定</div></div>
+          <div class="summary-card"><div class="label">Current Bottleneck</div><div class="value">Vercel未Import</div></div>
         </div>
       </div>
       <aside class="next">
         <div>
           <div class="label">Next Human Decision</div>
-          <h2>Supabaseの公開URL/key確認へ進む。</h2>
-          <p>Settings / APIでProject URLとanonまたはpublishable keyだけを確認します。service_role / secret keyはコピーしません。</p>
+          <h2>VercelでrepoをImportする。</h2>
+          <p>VercelでImport Projectを押し、GitHub repo `yoshihiro0001/evolution-factory` を選びます。Environment Variablesは後で追加します。</p>
         </div>
         <span class="tag ok">1 action only</span>
       </aside>
@@ -486,23 +486,37 @@
         <div class="card-head"><h3>CEO Decision Board</h3><span class="tag ok">Decision View</span></div>
         <div class="benefit">
           <div class="benefit-card"><div class="num">North Star</div><div class="num-note">AI Operating Companyを作る。</div></div>
-          <div class="benefit-card"><div class="num">Objective</div><div class="num-note">SupabaseをVercel接続へ進め、Task Queue / Approval Inboxの保存先を作る。</div></div>
-          <div class="benefit-card"><div class="num">Bottleneck</div><div class="num-note">Environment Variables未設定。</div></div>
-          <div class="benefit-card"><div class="num">Sprint</div><div class="num-note">Supabase → Vercel接続 + Security Foundation。</div></div>
+          <div class="benefit-card"><div class="num">Objective</div><div class="num-note">Vercel Projectを作成し、Supabase env vars接続へ進む。</div></div>
+          <div class="benefit-card"><div class="num">Bottleneck</div><div class="num-note">Vercel Project未作成 / Env Vars未設定。</div></div>
+          <div class="benefit-card"><div class="num">Sprint</div><div class="num-note">Vercel Project Import + Supabase Env preparation。</div></div>
         </div>
         <div class="rows" style="margin-top:16px">
-          <div class="row"><div class="row-key">Next Human Decision</div><div class="row-val">Supabase Project Settings / APIでProject URLとanon/publishable keyを確認する。</div></div>
-          <div class="row"><div class="row-key">Trust Status</div><div class="row-val">中。Supabase作成済み。ただしkey handling / RLS / env varsは未完了。</div></div>
-          <div class="row"><div class="row-key">Audit Status</div><div class="row-val">一部完了。Supabase作成Evidence保存済み。Env vars / RLSは未完了。</div></div>
-          <div class="row"><div class="row-key">Overall Health</div><div class="row-val">52%。Supabase Project作成により前進。Vercel接続とRLSは未完了。</div></div>
+          <div class="row"><div class="row-key">Next Human Decision</div><div class="row-val">VercelでImport Projectを押し、yoshihiro0001/evolution-factoryを選ぶ。</div></div>
+          <div class="row"><div class="row-key">Trust Status</div><div class="row-val">中。Repository Identityは正式化。Secret / RLS / Env Varsは未完了。</div></div>
+          <div class="row"><div class="row-key">Audit Status</div><div class="row-val">一部完了。Repo rename / remote update / Supabase Evidence保存済み。Vercel Importは未完了。</div></div>
+          <div class="row"><div class="row-key">Overall Health</div><div class="row-val">55%。Repository Identityは正式化。Vercel ImportとEnv Varsは未完了。</div></div>
+        </div>
+      </article>
+
+
+
+      <article class="card full">
+        <div class="card-head"><h3>Guided Execution</h3><span class="tag ok">Vercel Import</span></div>
+        <div class="rows">
+          <div class="row"><div class="row-key">Current Step</div><div class="row-val">Repository renamed. Local remote updated to https://github.com/yoshihiro0001/evolution-factory.git。</div></div>
+          <div class="row"><div class="row-key">Next Step</div><div class="row-val">Vercel dashboardでImport Projectを押し、GitHub repo `yoshihiro0001/evolution-factory` を選ぶ。</div></div>
+          <div class="row"><div class="row-key">Exact Path</div><div class="row-val">Vercel Dashboard → Add New / Import Project → GitHub → yoshihiro0001/evolution-factory → Import。</div></div>
+          <div class="row"><div class="row-key">Framework</div><div class="row-val">現状静的HTMLならOtherまたは自動判定。Root Directoryはまずrepository root。</div></div>
+          <div class="row"><div class="row-key">Env Vars</div><div class="row-val">後で追加。Import時点ではservice_role / secret key / DB password / PATを入れない。</div></div>
+          <div class="row"><div class="row-key">Completion Check</div><div class="row-val">Vercel Project URL / Preview URLが発行され、CEO Consoleへ記録できる。</div></div>
         </div>
       </article>
 
       <article class="card full">
-        <div class="card-head"><h3>Current System Review</h3><span class="tag warn">Score 68 / 100</span></div>
+        <div class="card-head"><h3>Current System Review</h3><span class="tag warn">Score 72 / 100</span></div>
         <div class="rows">
-          <div class="row"><div class="row-key">Biggest Gap</div><div class="row-val">Guided ExecutionがまだHumanの停止に後追い。Current ScreenごとのExact Inputが必要。</div></div>
-          <div class="row"><div class="row-key">Highest ROI Fix</div><div class="row-val">Supabase → Vercel接続GuideをCEO Console上で完結させる。</div></div>
+          <div class="row"><div class="row-key">Biggest Gap</div><div class="row-val">Repository Identityが正式化。次はVercel Import routeを完了する必要がある。</div></div>
+          <div class="row"><div class="row-key">Highest ROI Fix</div><div class="row-val">Vercelでevolution-factory repoをImportし、Vercel Preview URLを発行する。</div></div>
           <div class="row"><div class="row-key">Next Review Date</div><div class="row-val">2026-07-12</div></div>
           <div class="row"><div class="row-key">Decision Source</div><div class="row-val">03_STATUS/decision_quality.json / 02_WORKFLOWS/Decision_Quality_Pipeline.md</div></div>
         </div>
@@ -539,7 +553,7 @@
         <div class="rows" style="margin-top:16px">
           <div class="row"><div class="row-key">AI Read First</div><div class="row-val">03_STATUS/current_state_summary.json → Thinking_Rules_Quickstart.md → MrBrain_Operating_Manual.md。</div></div>
           <div class="row"><div class="row-key">Current Rule</div><div class="row-val">Official Docs Required / AI Routing Requires Evidence / No Secrets In Git / Compress Human Console。</div></div>
-          <div class="row"><div class="row-key">Next Decision</div><div class="row-val">Human: Supabase API情報の確認へ進む。AI: AI Capability RegistryのOfficial Docs確認を進める。</div></div>
+          <div class="row"><div class="row-key">Next Decision</div><div class="row-val">Human: Vercel Importへ進む。AI: AI Capability RegistryのOfficial Docs確認を進める。</div></div>
           <div class="row"><div class="row-key">Handoff Files</div><div class="row-val">00_CONSTITUTION/AI_Handoff_Protocol.md / Thinking_Rules_Quickstart.md / MrBrain_Operating_Manual.md / 03_STATUS/current_state_summary.json</div></div>
         </div>
       </article>
@@ -564,7 +578,7 @@
       <article class="card">
         <div class="card-head"><h3>Waiting Human Decision</h3><span class="tag warn">CEO判断待ち</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Supabase API情報の確認へ進む</div><div class="item-note">Project URLとanon/publishable keyだけを確認する。service_role / secret keyはコピーしない。</div></div></li>
+          <li class="item"><span class="icon warn">1</span><div><div class="item-title">Vercel Importへ進む</div><div class="item-note">Import Projectを押し、yoshihiro0001/evolution-factoryを選ぶ。Env Varsは後で追加。</div></div></li>
         </ul>
       </article>
 
@@ -692,16 +706,16 @@
         <div class="rows">
           <div class="row"><div class="row-key">Identity</div><div class="row-val">Evolution Factory</div></div>
           <div class="row"><div class="row-key">Environment</div><div class="row-val">local / github-pages-preview / vercel-preview / production</div></div>
-          <div class="row"><div class="row-key">Repository</div><div class="row-val">yoshihiro0001/start2026（legacy repo name。将来rename候補: evolution-factory）</div></div>
+          <div class="row"><div class="row-key">Repository</div><div class="row-val">yoshihiro0001/evolution-factory（former: yoshihiro0001/start2026）</div></div>
           <div class="row"><div class="row-key">Local Path</div><div class="row-val">/Users/kashiharayoshihiro/Library/Mobile Documents/com~apple~CloudDocs/system/Evolution Factory</div></div>
           <div class="row"><div class="row-key">GitHub</div><div class="row-val">connected</div></div>
           <div class="row"><div class="row-key">Vercel</div><div class="row-val">registered / 2FA completed。Team URL: evolution-factory-jp</div></div>
           <div class="row"><div class="row-key">Supabase</div><div class="row-val">created / healthy。Org: evolution-factory / Project: evolution-factory / URL: https://fxqvhcryitmgsemlojme.supabase.co</div></div>
           <div class="row"><div class="row-key">Cloudflare</div><div class="row-val">not connected。Production protection候補。</div></div>
           <div class="row"><div class="row-key">Current Status</div><div class="row-val">Vercel登録/2FA完了。Supabase Organization/Project作成完了。Env Vars未設定。</div></div>
-          <div class="row"><div class="row-key">Connection Status</div><div class="row-val">GitHub Pages preview connected。Supabase Project created。Vercel Environment Variables未接続。</div></div>
-          <div class="row"><div class="row-key">Pending Items</div><div class="row-val">Supabase API確認、Vercel Environment Variables、Auth/RLS、Secret管理。</div></div>
-          <div class="row"><div class="row-key">Suggested Input</div><div class="row-val">NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY または publishable key。service_roleは貼らない。</div></div>
+          <div class="row"><div class="row-key">Connection Status</div><div class="row-val">Legacy GitHub Pages preview connected。Supabase Project created。Vercel Project未Import。</div></div>
+          <div class="row"><div class="row-key">Pending Items</div><div class="row-val">Vercel Project Import、Supabase API確認、Vercel Environment Variables、Auth/RLS、Secret管理。</div></div>
+          <div class="row"><div class="row-key">Suggested Input</div><div class="row-val">Vercel Import: yoshihiro0001/evolution-factory。Env Varsは後で追加。service_roleは貼らない。</div></div>
           <div class="row"><div class="row-key">Copy Button予定</div><div class="row-val">今は手動copy。将来Human Console上にcopy buttonを置く。</div></div>
         </div>
       </article>
@@ -762,7 +776,7 @@
           <div class="row"><div class="row-key">Distance to Production</div><div class="row-val">Medium。構成方針は決定。Vercel / Supabase作成、Auth、RLS、Secret管理が未完了。</div></div>
           <div class="row"><div class="row-key">Decision Brief</div><div class="row-val">06_DEPLOY/Production_Path_Decision_Brief.md</div></div>
           <div class="row"><div class="row-key">GitHub Pages</div><div class="row-val">Temporary Preview only。静的確認用として残すが、本格開発の主軸にはしない。</div></div>
-          <div class="row"><div class="row-key">次にHumanが決めること</div><div class="row-val">Supabase API情報の確認へ進む。</div></div>
+          <div class="row"><div class="row-key">次にHumanが決めること</div><div class="row-val">Vercel Importへ進む。</div></div>
         </div>
       </article>
 
@@ -788,7 +802,7 @@
         <div class="card-head"><h3>Human Setup Shortest Path</h3><span class="tag ok">迷わない手順</span></div>
         <div class="rows">
           <div class="row"><div class="row-key">Guide</div><div class="row-val">06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md</div></div>
-          <div class="row"><div class="row-key">Vercel</div><div class="row-val">ログイン → GitHub連携 → yoshihiro0001/start2026をImport → Deploy → Preview URL取得。</div></div>
+          <div class="row"><div class="row-key">Vercel</div><div class="row-val">Dashboard → Import Project → yoshihiro0001/evolution-factory → Deploy → Preview URL取得。</div></div>
           <div class="row"><div class="row-key">Supabase</div><div class="row-val">Project作成済み。次はSettings → API → Project URL / anonまたはpublishable key確認。service_roleはコピーしない。</div></div>
           <div class="row"><div class="row-key">Codexへ渡す</div><div class="row-val">Vercel Project URL、Supabase Project URL、Supabase publishable / legacy anon keyのみ。</div></div>
           <div class="row"><div class="row-key">渡さない</div><div class="row-val">service_role key、secret key、Database password、API Key、PAT。</div></div>
@@ -836,7 +850,7 @@
           <div class="benefit-card"><div class="num">Yes</div><div class="num-note">Password Protected。仮Preview gateを追加済み。</div></div>
           <div class="benefit-card"><div class="num">123456</div><div class="num-note">Temporary Password。本番・重要情報ありでは使用禁止。</div></div>
           <div class="benefit-card"><div class="num">35%</div><div class="num-note">Deployment Readiness。Pages URLは発行済み、公開済み。</div></div>
-          <div class="benefit-card"><div class="num">Issued</div><div class="num-note">Preview URL: https://yoshihiro0001.github.io/start2026/</div></div>
+          <div class="benefit-card"><div class="num">Issued</div><div class="num-note">Legacy Preview URL: https://yoshihiro0001.github.io/start2026/</div></div>
         </div>
         <div class="rows" style="margin-top:16px">
           <div class="row"><div class="row-key">Selected Preview Method</div><div class="row-val">GitHub Pages + simple client-side password gate。</div></div>
@@ -865,11 +879,11 @@
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Console</div><div class="gauge-score">46%</div></div><div class="bar"><div class="fill warn" style="width:46%"></div></div><div class="gauge-note">Prototype / Human Navigator反映。スマホ常時Preview未安定。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Design System</div><div class="gauge-score">65%</div></div><div class="bar"><div class="fill" style="width:65%"></div></div><div class="gauge-note">Candidate / Mobile Studio検証。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Developer Factory</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Booting / Workflow未接続。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Identity Registry</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">identity.json created / URLs未入力。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Naming Strategy</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Evolution Factory selected / repo legacy。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Identity Registry</div><div class="gauge-score">20%</div></div><div class="bar"><div class="fill danger" style="width:20%"></div></div><div class="gauge-note">Canonical repo recorded / legacy preview remains。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Naming Strategy</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Canonical repo updated / legacy preview remains。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Setup Intelligence</div><div class="gauge-score">30%</div></div><div class="bar"><div class="fill danger" style="width:30%"></div></div><div class="gauge-note">Human Navigator added / Copy UI未実装。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Navigator</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Supabase API guidance active / Screen recognition未実装。</div></div>
-          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Security Roadmap</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Roadmap created / controls未実装。</div></div>
+          <div class="gauge"><div class="gauge-top"><div class="gauge-name">Security Roadmap</div><div class="gauge-score">25%</div></div><div class="bar"><div class="fill danger" style="width:25%"></div></div><div class="gauge-note">Vercel 2FA completed / controls still staged。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Evolution OS</div><div class="gauge-score">35%</div></div><div class="bar"><div class="fill danger" style="width:35%"></div></div><div class="gauge-note">Discussion / Workflow保存済み。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Human Understanding</div><div class="gauge-score">15%</div></div><div class="bar"><div class="fill danger" style="width:15%"></div></div><div class="gauge-note">Discussion only / Feedback未収集。</div></div>
           <div class="gauge"><div class="gauge-top"><div class="gauge-name">Population Model</div><div class="gauge-score">5%</div></div><div class="bar"><div class="fill danger" style="width:5%"></div></div><div class="gauge-note">No evidence / 実験未実施。</div></div>
@@ -965,7 +979,7 @@
       <article class="card">
         <div class="card-head"><h3>Latest Commit</h3><span class="tag">Git</span></div>
         <div class="rows">
-          <div class="row"><div class="row-key">Repository</div><div class="row-val">yoshihiro0001/start2026</div></div>
+          <div class="row"><div class="row-key">Repository</div><div class="row-val">yoshihiro0001/evolution-factory</div></div>
           <div class="row"><div class="row-key">Branch</div><div class="row-val">main</div></div>
           <div class="row"><div class="row-key">Status</div><div class="row-val">This page is updated by Codex and pushed to GitHub.</div></div>
         </div>
@@ -975,9 +989,9 @@
         <div class="card-head"><h3>Developer Status</h3><span class="tag ok">Factory booting</span></div>
         <div class="rows">
           <div class="row"><div class="row-key">Git</div><div class="row-val">Initialized</div></div>
-          <div class="row"><div class="row-key">Remote</div><div class="row-val">https://github.com/yoshihiro0001/start2026.git</div></div>
+          <div class="row"><div class="row-key">Remote</div><div class="row-val">https://github.com/yoshihiro0001/evolution-factory.git</div></div>
           <div class="row"><div class="row-key">Push</div><div class="row-val">Enabled</div></div>
-          <div class="row"><div class="row-key">Preview</div><div class="row-val">GitHub Pages URL issued: <a href="https://yoshihiro0001.github.io/start2026/">https://yoshihiro0001.github.io/start2026/</a></div></div>
+          <div class="row"><div class="row-key">Preview</div><div class="row-val">Legacy GitHub Pages URL: <a href="https://yoshihiro0001.github.io/start2026/">https://yoshihiro0001.github.io/start2026/</a></div></div>
         </div>
       </article>
 
@@ -994,7 +1008,7 @@
       <article class="card full">
         <div class="card-head"><h3>Next CEO Decision</h3><span class="tag ok">5分で判断</span></div>
         <ul class="stack">
-          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Supabase API情報の確認へ進む。</div><div class="item-note">理由: Vercel Environment Variablesへ接続する準備のため。service_role / secret keyはコピーしない。</div></div></li>
+          <li class="item"><span class="icon ok">→</span><div><div class="item-title">Vercel Importへ進む。</div><div class="item-note">理由: Vercel PreviewとEnv Vars接続の入口を作るため。Secret / service_role / DB passwordは入力しない。</div></div></li>
         </ul>
       </article>
     </section>
@@ -1005,7 +1019,7 @@
   <script>
     (function () {
       var allowed = '123456';
-      var key = 'start2026PreviewAccess';
+      var key = 'evolutionFactoryPreviewAccess';
       var form = document.getElementById('previewGateForm');
       var input = document.getElementById('previewPassword');
       var error = document.getElementById('lockError');

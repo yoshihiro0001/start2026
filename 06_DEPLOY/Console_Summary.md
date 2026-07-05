@@ -10,7 +10,7 @@ Human Consoleをスマホで安定して開けるため、発行済みPreview UR
 ## Recommendation
 
 Level 1:
-GitHub Pages + simple client-side password gate。Preview URL issued: `https://yoshihiro0001.github.io/start2026/`
+GitHub Pages + simple client-side password gate。Legacy preview URL issued: `https://yoshihiro0001.github.io/start2026/`
 
 Level 2:
 Vercel または Cloudflare Pagesで常時Preview + Human Console。
@@ -20,7 +20,7 @@ Vercel または Cloudflare Pages + Supabaseで、本番App + API + DB + Auth。
 
 ## Human Next Action
 
-スマホでPreview URLを開き、password 123456で入れるか確認する。
+VercelでImport Projectを押し、`yoshihiro0001/evolution-factory` を選ぶ。
 
 ## Risk
 
@@ -88,7 +88,7 @@ Purpose / Architecture / Designは進んでいるが、Runtime / Security / Prof
 
 ## Next Research Needed
 
-スマホでPreview URLを開き、password 123456で入れるか確認する。
+VercelでImport Projectを押し、`yoshihiro0001/evolution-factory` を選ぶ。
 
 ## Preview Password Policy
 
@@ -128,7 +128,7 @@ Reasoning Depth / Accuracy Need / Cost / Speed / Risk / Privacy / Repeatability 
 
 ## Next Highest ROI Action
 
-Human Consoleをスマホで安定して開ける、スマホでPreview URLを開き、password 123456で入れるか確認する。
+Human Consoleをスマホで安定して開ける、VercelでImport Projectを押し、`yoshihiro0001/evolution-factory` を選ぶ。
 
 Reason:
 Preview URLは公開済み。次はスマホ実機で開けることを確認し、Human Consoleを常時入口にする。
@@ -141,7 +141,7 @@ Preview URLは公開済み。次はスマホ実機で開けることを確認し
 ## Preview Deployment Summary
 
 Selected method:
-GitHub Pages + simple client-side password gate.
+Legacy GitHub Pages + simple client-side password gate. Next method: Vercel Project import.
 
 Password Protected:
 Yes.
@@ -149,7 +149,7 @@ Yes.
 Temporary Password:
 `123456`
 
-Preview URL:
+Legacy Preview URL:
 `https://yoshihiro0001.github.io/start2026/`
 
 Important:

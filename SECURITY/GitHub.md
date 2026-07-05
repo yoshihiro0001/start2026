@@ -2,7 +2,7 @@
 
 ## 現在状態
 
-Repository connected: yoshihiro0001/start2026. 2FA / passkey / SSH / PAT inventory status is not confirmed.
+Repository connected: yoshihiro0001/evolution-factory. 2FA / passkey / SSH / PAT inventory status is not confirmed.
 
 ## 目的
 

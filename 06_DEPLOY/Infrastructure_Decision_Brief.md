@@ -118,7 +118,7 @@ Human Consoleをスマホで毎回安定して開けること。
 
 仮推奨:
 
-- まずは GitHub Pages で `start2026` の静的Previewを公開
+- まずは GitHub Pages で `Evolution Factory` の静的Previewを公開
 - 理由: GitHub repoと直結し、Human Costが低い
 - 制約: API / DB / Authは基本なし。公開範囲に注意
 
@@ -191,7 +191,7 @@ Backup: Supabase backup policy + Drive original storage
 2. 月額いくらまで許容ですか。
    - 0円優先 / 1,000〜3,000円 / 5,000円以上も可
 
-3. HOTEL JOY本番環境と start2026 実験環境は分けますか。
+3. HOTEL JOY本番環境と Evolution Factory 実験環境は分けますか。
    - 分ける / 最初は同じでよい / 任せる
 
 ---

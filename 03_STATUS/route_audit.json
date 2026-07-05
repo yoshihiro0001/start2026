@@ -1,13 +1,13 @@
 {
   "last_checked": "2026-07-06",
-  "thinking_route_health": "40%",
-  "evidence_route_health": "45%",
-  "human_console_route_health": "48%",
+  "thinking_route_health": "45%",
+  "evidence_route_health": "50%",
+  "human_console_route_health": "52%",
   "ai_control_center_route_health": "10%",
   "knowledge_connection_health": "35%",
-  "security_route_health": "42%",
-  "top_gap": "Guided Execution still follows Human stop points instead of predicting Current Screen exact inputs ahead of time",
-  "next_route_fix": "Add Supabase Settings / API exact input guidance and Vercel Environment Variables path",
+  "security_route_health": "45%",
+  "top_gap": "Vercel Project Import route is now the highest-value path; legacy preview route remains temporary",
+  "next_route_fix": "Create Vercel Project from yoshihiro0001/evolution-factory and record issued URL",
   "checks": [
     {
       "route": "Human Console -> Security Guide",
@@ -63,6 +63,11 @@
       "route": "CEO Console -> Supabase Evidence -> Vercel Env Vars",
       "status": "partial",
       "evidence": "Supabase Project Setup evidence created; env vars still not configured"
+    },
+    {
+      "route": "CEO Console -> Vercel Import Guide -> Vercel Project URL",
+      "status": "pending",
+      "evidence": "Repository renamed and local remote updated; Vercel project not created yet"
     }
   ],
   "periodic_review": {

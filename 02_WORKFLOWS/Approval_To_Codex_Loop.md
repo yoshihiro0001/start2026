@@ -45,7 +45,7 @@ Human Console update:
 Preview URL、Password、Status、Blockerを更新する。
 
 Learning:
-成功、失敗、Connection Gap、次の改善をMrBrain / start2026へ戻す。
+成功、失敗、Connection Gap、次の改善をMrBrain / Evolution Factoryへ戻す。
 
 ## Current Approved Task
 

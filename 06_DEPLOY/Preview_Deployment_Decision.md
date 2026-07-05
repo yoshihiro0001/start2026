@@ -79,7 +79,7 @@ The current highest ROI action is to make Human Console accessible from smartpho
 
 GitHub Pages + simple gate is chosen because:
 
-- start2026 is already on GitHub.
+- Evolution Factory is already on GitHub.
 - It can serve static HTML.
 - It requires no API, DB, or server.
 - It is enough for a non-sensitive Human Console preview.
@@ -101,5 +101,5 @@ GitHub Pages + simple gate is chosen because:
 GitHub Pages has been enabled from the `main` branch root. Open the preview URL on smartphone and enter password `123456`:
 
 ```text
-https://yoshihiro0001.github.io/start2026/
+https://yoshihiro0001.github.io/start2026/ (legacy preview)
 ```

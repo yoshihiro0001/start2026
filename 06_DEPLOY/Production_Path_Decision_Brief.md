@@ -29,7 +29,7 @@ Temporary preview:
 GitHub Pages + simple client-side password gate
 
 Preview URL:
-https://yoshihiro0001.github.io/start2026/
+https://yoshihiro0001.github.io/start2026/ (legacy preview)
 
 Temporary password:
 123456
@@ -168,13 +168,13 @@ It remains useful for static confirmation.
 
 ### Step 2: Create Vercel project
 
-Connect `yoshihiro0001/start2026` to Vercel.
+Connect `yoshihiro0001/evolution-factory` to Vercel.
 Use environment variables for secrets.
 Do not commit any secret.
 
 ### Step 3: Create Supabase project
 
-Create Supabase project for `start2026`.
+Create Supabase project for `Evolution Factory`.
 Start with minimal schema:
 
 - tasks

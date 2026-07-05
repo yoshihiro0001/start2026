@@ -10,7 +10,7 @@ Vercel will host Human Console / API routes / previews. It must not expose secre
 
 ## 今やること
 
-Complete Vercel 2FA, save recovery codes, then import GitHub repo.
+Vercel 2FA completed. Next: import GitHub repo into Vercel.
 
 ## 注意事項
 
@@ -31,4 +31,4 @@ Save Vercel recovery codes in Password Manager. Do not paste them into Codex or 
 
 ## Human Next Action
 
-Complete Vercel 2FA using Human Navigator.
+Import `yoshihiro0001/evolution-factory` into Vercel.

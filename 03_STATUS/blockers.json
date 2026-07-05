@@ -3,21 +3,21 @@
   "top_blockers": [
     {
       "rank": 1,
-      "name": "Environment Variables未設定",
-      "impact": "Vercel / Supabase / Task Queue / Approval Inboxがまだ接続できない",
-      "next_action": "Supabase Project URL / anon or publishable keyを確認し、Vercelへ接続する準備を進める"
+      "name": "Vercel Project Import",
+      "impact": "No Vercel Preview / Env Vars / deployment pipeline until repo is imported",
+      "next_action": "VercelでImport Projectを押し、yoshihiro0001/evolution-factoryを選ぶ"
     },
     {
       "rank": 2,
-      "name": "RLS未設計",
-      "impact": "anon/publishable keyを使う前提でも、本番データを入れると危険",
-      "next_action": "本番データ投入前にRLS設計を作る"
+      "name": "Environment Variables未設定",
+      "impact": "Supabase cannot be used from Vercel until public env vars are configured",
+      "next_action": "After import, add NEXT_PUBLIC_SUPABASE_URL and anon/publishable key only"
     },
     {
       "rank": 3,
-      "name": "Secrets handling未確定",
-      "impact": "service_role / secret key / DB passwordの誤共有リスクがある",
-      "next_action": "service_role / secret keyをGit・Chat・Markdownに保存しない運用を維持する"
+      "name": "Secret誤保存 / RLS未設計",
+      "impact": "service_role / secret key / DB password leak or unsafe anon access could compromise data",
+      "next_action": "Do not store secrets in Git/Chat/Markdown; design RLS before real data"
     }
   ],
   "resolved_recently": [
@@ -48,7 +48,12 @@
     "Vercel 2FA completed",
     "Supabase Organization created",
     "Supabase Project created",
-    "Supabase Project URL recorded as public-safe evidence"
+    "Supabase Project URL recorded as public-safe evidence",
+    "GitHub repository renamed to yoshihiro0001/evolution-factory",
+    "Local git remote updated to evolution-factory",
+    "Vercel GitHub integration authorized",
+    "Vercel dashboard reached",
+    "Supabase DB password saved in Bitwarden"
   ],
   "knowledge_blocker": {
     "name": "No automated Knowledge Audit yet",
@@ -84,5 +89,10 @@
     "name": "Vercel Environment Variables not configured",
     "impact": "Evolution Factory cannot use Supabase until public URL/key and server secrets are configured in the proper environment",
     "next_action": "Get Project URL and anon/publishable key; do not copy service_role / secret key into chat or Git"
+  },
+  "repo_identity_blocker": {
+    "name": "Vercel Project not imported",
+    "impact": "Production path cannot proceed beyond static legacy preview",
+    "next_action": "Import yoshihiro0001/evolution-factory into Vercel"
   }
 }

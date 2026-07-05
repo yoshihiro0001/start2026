@@ -1,49 +1,51 @@
-# start2026
+# Evolution Factory
 
-start2026 is the AI Development Factory for MrBrain.
+Evolution Factory is the AI Development Factory for MrBrain.
 
 MrBrain is the source of truth for thinking, architecture, learning, and decision criteria.
-start2026 is the place to build, preview, test, deploy, and operate daily workflows.
+Evolution Factory is the place to build, preview, test, deploy, and operate daily workflows.
+
+Former name:
+`start2026`
+
+Current GitHub repository:
+`yoshihiro0001/evolution-factory`
 
 ## First Screen
 
-Open the Human Console first:
+Open the CEO Console first:
 
 ```text
 01_HUMAN_CONSOLE/index.html
 ```
 
-The Human Console shows only what the Human needs now:
+The CEO Console shows only what the Human needs for decision:
 
-- Current Mission
-- Current Stage
-- Human Next Action
-- Waiting Human Input
-- Missing Information
-- Preview Links
-- Blockers
-- Latest Commit
-- Next Best Action
+- North Star
+- Current Objective
+- Current Bottleneck
+- Current Sprint
+- Next Human Decision
+- Trust Status
+- Audit Status
+- Overall Health
 
-## Domain
+## Preview
 
-Primary domain candidate:
+Current GitHub Pages preview may still be legacy:
 
 ```text
-fashionhoteljoy.com
+https://yoshihiro0001.github.io/start2026/
 ```
 
-## Secret Policy
-
-Never commit GitHub PAT, API keys, passwords, tokens, or private credentials.
-Use `.env`, GitHub Secrets, or a password manager for secrets.
+Treat it as legacy preview until the renamed repository preview / Vercel preview is issued.
 
 
 ## Console Summary Rule
 
 When a Decision Brief is updated, update the related `Console_Summary.md` in the same area.
 
-Human Console should display only the Summary, not the full Brief.
+CEO Console should display only the Summary, not the full Brief.
 The goal is to minimize what Human needs to read.
 
 Current deploy summary:
@@ -57,3 +59,16 @@ Current deploy brief:
 ```text
 06_DEPLOY/Infrastructure_Decision_Brief.md
 ```
+
+## Domain
+
+Primary domain candidate:
+
+```text
+fashionhoteljoy.com
+```
+
+## Secret Policy
+
+Never commit GitHub PAT, API keys, passwords, tokens, service_role keys, recovery codes, or private credentials.
+Use Vercel Environment Variables, GitHub Secrets, Supabase settings, or a password manager for secrets.

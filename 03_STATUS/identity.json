@@ -1,31 +1,41 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "project_name": "Evolution Factory",
   "purpose": "Evidenceを使って自分自身を進化させるAI Development Factory",
   "description": "Human Console、Task Queue、Approval Inbox、Readiness Gauge、Evidence、Learning Logを接続する実験工場",
-  "repository": "yoshihiro0001/start2026",
-  "repository_status": "legacy name; future rename candidate: evolution-factory",
+  "repository": "yoshihiro0001/evolution-factory",
+  "repository_status": "renamed from yoshihiro0001/start2026; current canonical repo is yoshihiro0001/evolution-factory",
   "local_path": "/Users/kashiharayoshihiro/Library/Mobile Documents/com~apple~CloudDocs/system/Evolution Factory",
   "preview_url": "https://yoshihiro0001.github.io/start2026/",
   "domain": "Unknown",
   "environment": "local / github-pages-preview / vercel-preview / production",
   "vercel": {
-    "status": "not created",
+    "status": "not created / not imported",
     "suggested_project_name": "evolution-factory",
-    "plan": "Hobby / Development only"
+    "plan": "Hobby / Development only",
+    "organization_url": "evolution-factory-jp",
+    "project_created": false,
+    "repo_imported": false
   },
   "supabase": {
-    "status": "not created",
+    "status": "created / healthy",
     "suggested_project_name": "evolution-factory",
-    "region": "Japan or nearby"
+    "region": "Oceania (Sydney) / ap-southeast-2",
+    "organization": "evolution-factory",
+    "project": "evolution-factory",
+    "project_url": "https://fxqvhcryitmgsemlojme.supabase.co",
+    "compute": "Nano",
+    "github_repository_connected": false
   },
   "cloudflare": {
     "status": "not connected",
     "suggested_project_name": "evolution-factory"
   },
   "github": {
-    "status": "connected",
-    "repo": "yoshihiro0001/start2026"
+    "status": "renamed / connected",
+    "repo": "yoshihiro0001/evolution-factory",
+    "repo_url": "https://github.com/yoshihiro0001/evolution-factory",
+    "former_repo": "yoshihiro0001/start2026"
   },
   "owner": "Human",
   "ai_organization": [
@@ -36,17 +46,18 @@
     "Execution",
     "Learning"
   ],
-  "current_status": "Naming updated; Vercel/Supabase setup pending",
-  "connection_status": "GitHub Pages preview connected; Vercel/Supabase not connected",
+  "current_status": "Repository renamed; Vercel Project import pending; Supabase Project created",
+  "connection_status": "Local remote updated to evolution-factory; Supabase Project created; Vercel Project not imported",
   "pending_items": [
-    "Vercel project creation",
-    "Supabase project creation",
+    "Vercel Project Import",
+    "Vercel Environment Variables",
+    "Supabase anon/publishable key confirmation",
     "Auth/RLS design",
     "Secret management"
   ],
   "suggested_inputs": {
     "vercel_project_name": "evolution-factory",
-    "github_repository": "yoshihiro0001/start2026",
+    "github_repository": "yoshihiro0001/evolution-factory",
     "supabase_project_name": "evolution-factory",
     "region": "Japan or nearby",
     "environment": "preview"
@@ -54,13 +65,13 @@
   "security_status": {
     "current_security_level": "Prototype / Security Foundation Sprint",
     "security_readiness": "22%",
-    "highest_risk": "Recovery未整備",
-    "next_security_action": "Google Account Security Checkup and Recoveryを完了する"
+    "highest_risk": "Secret誤保存",
+    "next_security_action": "Do not copy service_role / secret key; keep DB password in Bitwarden only"
   },
   "2fa": {
     "google": "Unknown / check required",
     "github": "Unknown / check required",
-    "vercel": "In progress",
+    "vercel": "completed",
     "supabase": "Not configured",
     "cloudflare": "Not configured"
   },
@@ -78,7 +89,7 @@
   "backup": "Not confirmed",
   "risk": {
     "overall": "High until recovery and secrets are confirmed",
-    "current_highest_risk": "Recovery未整備",
+    "current_highest_risk": "Secret誤保存 / RLS未設計",
     "do_not_store": [
       "API Key",
       "PAT",
@@ -86,5 +97,10 @@
       "Database password",
       "Recovery Code"
     ]
-  }
+  },
+  "repository_name": "evolution-factory",
+  "repository_url": "https://github.com/yoshihiro0001/evolution-factory",
+  "preview_status": "legacy GitHub Pages preview; keep until new Vercel preview is issued",
+  "remote_url_status": "updated to https://github.com/yoshihiro0001/evolution-factory.git",
+  "bitwarden_saved_status": "Supabase DB password saved in Bitwarden; do not store in Git/Chat/Markdown"
 }

@@ -3,36 +3,36 @@
   "source": "03_STATUS/readiness.json",
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
-    "current_percent": 52,
-    "status": "Supabase project created; Vercel/Supabase connection pending",
-    "blocker": "Environment Variables未設定",
-    "next_action": "Supabase Project URL / anon or publishable keyを確認する",
-    "confidence": "62%"
+    "current_percent": 55,
+    "status": "Repository identity finalized; Vercel import pending",
+    "blocker": "Vercel Project未作成 / Env Vars未設定",
+    "next_action": "Import yoshihiro0001/evolution-factory into Vercel",
+    "confidence": "64%"
   },
   "categories": [
     {
       "name": "Overall Readiness",
-      "current_percent": 52,
-      "status": "Supabase project created",
-      "blocker": "Environment Variables未設定",
-      "next_action": "Confirm Project URL and anon/publishable key",
-      "confidence": "62%"
+      "current_percent": 55,
+      "status": "Repository renamed / Supabase created / Vercel import pending",
+      "blocker": "Vercel Project未作成",
+      "next_action": "Import repo into Vercel",
+      "confidence": "64%"
     },
     {
       "name": "Deployment",
-      "current_percent": 50,
-      "status": "Vercel registered / 2FA complete; Supabase project created",
-      "blocker": "Vercel env vars not configured",
-      "next_action": "Prepare Vercel Environment Variables",
-      "confidence": "60%"
+      "current_percent": 52,
+      "status": "Vercel dashboard reached; GitHub integration authorized",
+      "blocker": "Repo not imported into Vercel",
+      "next_action": "Import yoshihiro0001/evolution-factory",
+      "confidence": "62%"
     },
     {
       "name": "Security",
-      "current_percent": 30,
-      "status": "Security notes added for Supabase key handling",
-      "blocker": "RLS not designed; secrets not configured",
-      "next_action": "Do not copy service_role / secret key; design RLS before real data",
-      "confidence": "48%"
+      "current_percent": 34,
+      "status": "DB password saved in Bitwarden; secrets policy active",
+      "blocker": "RLS not designed; service_role must stay private",
+      "next_action": "Do not copy service_role / secret key",
+      "confidence": "52%"
     },
     {
       "name": "Runtime Intelligence",
@@ -68,11 +68,11 @@
     },
     {
       "name": "Infrastructure",
-      "current_percent": 58,
-      "status": "Vercel + Supabase path now has a live Supabase project",
-      "blocker": "No Vercel/Supabase connection yet",
-      "next_action": "Connect public Supabase values to Vercel env vars",
-      "confidence": "62%"
+      "current_percent": 62,
+      "status": "GitHub repo identity finalized; Supabase live",
+      "blocker": "Vercel Project and env vars missing",
+      "next_action": "Create Vercel Project via Import",
+      "confidence": "66%"
     },
     {
       "name": "Automation",
@@ -84,19 +84,19 @@
     },
     {
       "name": "Supabase",
-      "current_percent": 45,
-      "status": "Project created and healthy",
-      "blocker": "URL/key not connected to Vercel; RLS not designed",
-      "next_action": "Open Settings / API and confirm public URL/key",
-      "confidence": "65%"
+      "current_percent": 48,
+      "status": "Project healthy; DB password saved in Bitwarden",
+      "blocker": "Env vars/RLS/GitHub connection missing",
+      "next_action": "Prepare env after Vercel import",
+      "confidence": "66%"
     },
     {
       "name": "Vercel",
-      "current_percent": 35,
-      "status": "Registration and 2FA completed",
-      "blocker": "Environment Variables not configured",
-      "next_action": "Prepare env vars after Supabase API screen check",
-      "confidence": "60%"
+      "current_percent": 42,
+      "status": "Account/2FA/GitHub auth complete",
+      "blocker": "Project not imported",
+      "next_action": "Import evolution-factory repo",
+      "confidence": "65%"
     },
     {
       "name": "Approval Inbox",
@@ -172,43 +172,43 @@
     },
     {
       "name": "Identity Registry",
-      "current_percent": 35,
-      "status": "Security fields added",
-      "blocker": "Recovery status incomplete",
-      "next_action": "Complete Google Account Recovery",
-      "confidence": "55%"
+      "current_percent": 55,
+      "status": "Repository canonical name updated",
+      "blocker": "Legacy preview still uses start2026 URL",
+      "next_action": "Keep legacy preview label until Vercel URL exists",
+      "confidence": "68%"
     },
     {
       "name": "Naming Strategy",
-      "current_percent": 25,
-      "status": "Evolution Factory selected",
-      "blocker": "Repository still legacy start2026",
-      "next_action": "Use evolution-factory for new services",
-      "confidence": "55%"
+      "current_percent": 70,
+      "status": "Evolution Factory canonical identity finalized",
+      "blocker": "Historical start2026 references remain as legacy/history",
+      "next_action": "Use evolution-factory for active services",
+      "confidence": "75%"
     },
     {
       "name": "Human Setup Intelligence",
       "current_percent": 30,
-      "status": "Human Navigator added for Vercel 2FA",
+      "status": "Human Navigator captured Vercel 2FA evidence",
       "blocker": "No live screen recognition yet",
-      "next_action": "Use Vercel 2FA Guide manually",
-      "confidence": "55%"
+      "next_action": "Use Vercel Import Guide manually",
+      "confidence": "58%"
     },
     {
       "name": "Security Roadmap",
-      "current_percent": 30,
-      "status": "2FA guidance added",
-      "blocker": "2FA not completed",
-      "next_action": "Complete Vercel 2FA and save recovery codes",
-      "confidence": "55%"
+      "current_percent": 34,
+      "status": "Vercel 2FA completed; staged security roadmap exists",
+      "blocker": "Secrets / Env Vars / RLS not configured",
+      "next_action": "Import repo into Vercel without entering secrets yet",
+      "confidence": "60%"
     },
     {
       "name": "Human Navigator",
-      "current_percent": 15,
-      "status": "Active for Vercel 2FA setup",
+      "current_percent": 25,
+      "status": "Vercel 2FA resolved; Vercel Import guidance active",
       "blocker": "Manual guidance only; no screen recognition automation yet",
-      "next_action": "Complete Vercel 2FA using Human Navigator guide",
-      "confidence": "50%"
+      "next_action": "Use Vercel Project Import Guide",
+      "confidence": "58%"
     },
     {
       "name": "Security Foundation",
@@ -379,14 +379,14 @@
       "confidence": "35%"
     }
   ],
-  "next_highest_roi_action": "Supabase Project URL / anon or publishable keyを確認し、Vercel Environment Variablesへ接続する準備を進める",
+  "next_highest_roi_action": "VercelでImport Projectを押し、yoshihiro0001/evolution-factoryを選ぶ",
   "recommended_production_path": "Vercel + Supabase",
   "github_pages_role": "Temporary static preview only",
   "human_setup_guide": "06_DEPLOY/Human_Setup_Guide_Vercel_Supabase.md",
   "project_name": "Evolution Factory",
   "identity_source": "03_STATUS/identity.json",
   "human_navigator_status": "active",
-  "current_reality_step": "Vercel 2FA Setup",
+  "current_reality_step": "Vercel Project Import",
   "current_screen": "Authenticator App QR Code",
   "human_navigator_guide": "06_DEPLOY/Human_Navigator_Vercel_2FA_Guide.md",
   "security_readiness": {
@@ -436,6 +436,30 @@
     "last_migration": "No migrations",
     "last_backup": "No backups",
     "connected_to_vercel": false,
+    "env_vars_configured": false,
+    "db_password_storage": "Bitwarden"
+  },
+  "repo_status": {
+    "repo_renamed": true,
+    "current_repo": "yoshihiro0001/evolution-factory",
+    "former_repo": "yoshihiro0001/start2026",
+    "local_remote_updated": true,
+    "remote_url": "https://github.com/yoshihiro0001/evolution-factory.git"
+  },
+  "vercel_status": {
+    "organization_url": "evolution-factory-jp",
+    "github_integration_authorized": true,
+    "dashboard_reached": true,
+    "project_created": false,
+    "repo_imported": false,
     "env_vars_configured": false
+  },
+  "repository_state": {
+    "repo_renamed": true,
+    "former_repo": "yoshihiro0001/start2026",
+    "current_repo": "yoshihiro0001/evolution-factory",
+    "local_remote_updated": true,
+    "remote_url": "https://github.com/yoshihiro0001/evolution-factory.git",
+    "legacy_preview_url": "https://yoshihiro0001.github.io/start2026/"
   }
 }

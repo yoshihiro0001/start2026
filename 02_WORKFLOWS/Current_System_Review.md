@@ -67,3 +67,32 @@ Security Review:
 - RLS未設計のまま本番データを入れない。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / Repository Renamed to Evolution Factory
+
+Score: 72 / 100
+
+What improved:
+- Repository Identityが正式化された。
+- Current canonical repository is `yoshihiro0001/evolution-factory`.
+- Local remote URL was updated to `https://github.com/yoshihiro0001/evolution-factory.git`.
+- Vercel / Supabase / GitHubの接続状態がCEO ConsoleとStatus JSONで見え始めた。
+
+Current Bottleneck:
+Vercel Project未作成 / 未Import。GitHub repositoryは正式化されたが、Vercel Projectへまだ接続されていない。
+
+Highest ROI Fix:
+Vercel Dashboardで `yoshihiro0001/evolution-factory` をImportし、Preview URLを発行する。
+
+Highest Risk:
+Secret誤保存。Supabase `service_role` / secret key / DB password / Recovery Code / PATをGit、Chat、Markdownへ貼らないこと。
+
+CEO Console Review:
+CEO Consoleはrepo名変更とconnection stateを正確に表示すべき。Legacy GitHub Pages previewは現状として残すが、current identityとは分離して表示する。
+
+Next Required Improvement:
+Vercel Import後、Vercel Preview URLとSupabase public env varsの接続状態をCEO Consoleへ反映する。
+
+Next Review Date: 2026-07-12

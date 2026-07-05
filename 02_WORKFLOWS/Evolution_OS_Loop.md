@@ -4,10 +4,10 @@ Last updated: 2026-07-05
 
 ## Purpose
 
-start2026を、単なるPreview / 開発フォルダではなく、Evidenceを使って自分自身を進化させ続けるEvolution OSの実験工場として動かす。
+Evolution Factoryを、単なるPreview / 開発フォルダではなく、Evidenceを使って自分自身を進化させ続けるEvolution OSの実験工場として動かす。
 
 MrBrainは思想・Architecture・Evidenceの正本。
-start2026はHuman Console、Task Queue、Approval Inbox、Readiness Gauge、Evidence、Learning Logをつなぎ、実際に進化ループを回す場所である。
+Evolution FactoryはHuman Console、Task Queue、Approval Inbox、Readiness Gauge、Evidence、Learning Logをつなぎ、実際に進化ループを回す場所である。
 
 ---
 
@@ -134,9 +134,9 @@ Evolution Loopの現在位置、次に承認すること、どのゲージが上
 
 ---
 
-## 6. start2026での実装方針
+## 6. Evolution Factoryでの実装方針
 
-start2026はEvolution OSの実験工場である。
+Evolution FactoryはEvolution OSの実験工場である。
 
 ```text
 Human Console
@@ -217,7 +217,7 @@ Vercel + Supabase接続後は、次のDBへ移行する。
 注意が必要。ただしEvolution OSは新しいEngineというより、既存のPurpose / Human Experience / Evidence / Learning / Gauge / Executionを一本の自己改善ループとして束ねるWorkflowである。
 
 Evolution OSは最上流候補として自然か:
-自然である可能性がある。start2026が目指す「自分自身を改善する開発工場」を説明しやすい。ただしPrinciple化には複数分野での検証が必要。
+自然である可能性がある。Evolution Factoryが目指す「自分自身を改善する開発工場」を説明しやすい。ただしPrinciple化には複数分野での検証が必要。
 
 Humanにとって心地よく、軽く、継続しやすいか:
 Humanが読む量を減らし、Next Highest Evolution Actionを1つに絞るなら、継続しやすい可能性が高い。

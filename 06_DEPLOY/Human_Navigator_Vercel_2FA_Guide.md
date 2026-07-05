@@ -157,4 +157,4 @@ If Failed:
 QRが読めない場合は、画面上部の英数字キーを認証アプリへ手入力する。
 
 After Completion:
-GitHub repo `yoshihiro0001/start2026` をImportする。
+GitHub repo `yoshihiro0001/evolution-factory` をImportする。

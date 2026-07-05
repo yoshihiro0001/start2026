@@ -55,7 +55,7 @@ Current plan:
 
 ```text
 Vercel Project: evolution-factory
-Repository: yoshihiro0001/start2026
+Repository: yoshihiro0001/evolution-factory
 ```
 
 ---

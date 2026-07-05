@@ -1,6 +1,6 @@
-# Human Console
+# CEO Console
 
-Human Console is the command screen for the Human.
+CEO Console is the command screen for the Human.
 
 It is not a Developer Dashboard.
 It is the first screen the Human opens to understand:
@@ -24,7 +24,7 @@ Open this file in a browser:
 For local smartphone preview, run:
 
 ```bash
-cd "/Users/kashiharayoshihiro/Library/Mobile Documents/com~apple~CloudDocs/system/start2026/01_HUMAN_CONSOLE"
+cd "/Users/kashiharayoshihiro/Library/Mobile Documents/com~apple~CloudDocs/system/Evolution Factory/01_HUMAN_CONSOLE"
 python3 -m http.server 8081 --bind 0.0.0.0
 ipconfig getifaddr en0
 ```
@@ -37,5 +37,5 @@ http://<Mac LAN IP>:8081/index.html
 
 ## Current Role
 
-This is the minimum prototype for reducing Human cognitive load.
+This is the minimum prototype for reducing CEO decision load.
 The next improvement is stable smartphone preview delivery.

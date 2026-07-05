@@ -4,7 +4,7 @@ Last updated: 2026-07-05
 
 ## Purpose
 
-start2026を、HumanのPurpose・美意識・資産・能力を前提に、最上流の考え、市場Evidence、複数AI視点、ROI、Human Costを統合し、最短で利益化へ向かう戦略を提案・検証・改善するAI Development Factoryとして動かす。
+Evolution Factoryを、HumanのPurpose・美意識・資産・能力を前提に、最上流の考え、市場Evidence、複数AI視点、ROI、Human Costを統合し、最短で利益化へ向かう戦略を提案・検証・改善するAI Development Factoryとして動かす。
 
 このWorkflowは利益額や成功確率を断定しない。
 すべて仮説、Evidence、検証条件として扱う。
@@ -266,7 +266,7 @@ Strategy Update
 MrBrain:
 Evidence、Principle、Strategy仮説、Learning、判断基準の正本。
 
-start2026:
+Evolution Factory:
 Prototype、Workflow、Preview、Market Test、Human Console、Execution Logの工場。
 
 ---

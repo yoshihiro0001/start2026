@@ -4,17 +4,17 @@ Last updated: 2026-07-06
 
 ## Purpose
 
-HumanがVercel / Supabaseを初めて作る場合でも、迷わず最小手順で進めるためのGuide。
+HumanがVercel / Supabaseを初めて接続する場合でも、迷わず最小手順で進めるためのGuide。
 
 Goal:
-スマホ承認、Task Queue、DB-backed Gauge更新へ進むため、Vercel projectとSupabase projectを作る。
+スマホ承認、Task Queue、DB-backed Gauge更新へ進むため、Vercel ProjectをGitHub repoへ接続し、Supabase env varsへ進める。
 
 ---
 
 ## Human Next Action
 
 ```text
-Supabase Project Settings / APIでProject URLとanon/publishable keyを確認する。
+VercelでImport Projectを押し、`yoshihiro0001/evolution-factory` を選ぶ。
 ```
 
 
@@ -32,7 +32,7 @@ Role: AI Development Factory
 Legacy repository:
 
 ```text
-yoshihiro0001/start2026
+yoshihiro0001/evolution-factory
 ```
 
 Long-term naming rule:
@@ -47,7 +47,7 @@ Suggested values:
 | Supabase Organization | evolution-factory | `evolution-factory` |
 | Supabase Project Name | evolution-factory | `evolution-factory` |
 | Supabase Project URL | https://fxqvhcryitmgsemlojme.supabase.co | `https://fxqvhcryitmgsemlojme.supabase.co` |
-| GitHub Repository | yoshihiro0001/start2026 | `yoshihiro0001/start2026` |
+| GitHub Repository | yoshihiro0001/evolution-factory | `yoshihiro0001/evolution-factory` |
 | Environment | preview | `preview` |
 | Region | Oceania (Sydney) / ap-southeast-2 | `ap-southeast-2` |
 
@@ -67,7 +67,7 @@ Steps:
 3. Team URLを聞かれたら `evolution-factory-jp` を使う。
 4. 2FAが出た場合は、Human Navigator Guideに従って完了する。
 5. GitHub連携を確認する。
-6. Repository `yoshihiro0001/start2026` をImportする。
+6. Repository `yoshihiro0001/evolution-factory` をImportする。
 7. Project nameは `evolution-factory` を推奨する。
 8. Frameworkは静的HTMLならOther、またはVercelの自動判定に任せる。
 9. Deployする。
@@ -130,7 +130,7 @@ VercelにGitHub repoをImportする
 
 1. Vercelにログインする。
 2. GitHub連携を確認する。
-3. `yoshihiro0001/start2026` をImportする。
+3. `yoshihiro0001/evolution-factory` をImportする。
 4. Project nameは `evolution-factory` を推奨する。
 5. まずDeployする。
 6. Preview URLを取得する。
@@ -223,7 +223,7 @@ Vercel Environment VariablesやPassword Managerで管理する。
 ### Vercel / Supabaseを作ったことがない
 
 このGuideの順番通りでよい。
-まず空の`start2026`だけ接続する。
+まず空の`evolution-factory`だけ接続する。
 重要情報は入れない。
 
 ### どの情報をCodexへ渡す？
@@ -245,7 +245,7 @@ Vercel Environment VariablesやPassword Managerで管理する。
 
 ### 怖い
 
-まず空の`start2026`だけ接続する。
+まず空の`evolution-factory`だけ接続する。
 顧客情報、売上、税務、契約、個人情報は入れない。
 RLS / Authができるまで重要情報は保存しない。
 
@@ -258,7 +258,7 @@ RLS / Authができるまで重要情報は保存しない。
 - [ ] Secret / API Key / PATをGitへ保存しない
 - [ ] service_role / secret keyをCodexへ貼らない
 - [ ] Supabase publishable / anon keyはRLS設計とセットで扱う
-- [ ] まず空のstart2026だけ接続する
+- [ ] まず空のevolution-factoryだけ接続する
 
 ---
 
