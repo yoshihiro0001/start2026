@@ -13,7 +13,7 @@
   "supabase_connected_to_vercel": false,
   "env_vars_configured": true,
   "current_screen": "Supabase Dashboard / Project Settings / API and Vercel Project / Settings / Environment Variables",
-  "current_next_action": "VercelのNEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEYが正しいpublishable/anon public keyか確認し、再Deploy後にReality Verificationを再実行する",
+  "current_next_action": "Wait for Vercel deploy, then rerun /api/supabase-health",
   "exact_button": "Supabase Settings / API; Vercel Settings / Environment Variables",
   "exact_input": "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY (value must stay only in Vercel, not in Chat/Git/Markdown)",
   "do_not_touch": [
@@ -45,9 +45,9 @@
     "security": "SECURITY/README.md",
     "supabase_evidence": "04_EVIDENCE/Supabase_Project_Setup.md"
   },
-  "current_human_action": "Supabase Settings / APIでpublishable keyまたはanon public keyを確認し、Vercel Environment Variablesの値と一致しているか確認する",
+  "current_human_action": "現在Human追加操作なし。CodexがRuntime修正後に再検証する",
   "current_objective": "Supabase Reality VerificationをConnectedにする",
-  "current_bottleneck": "Supabase Data API returned 401 during Reality Verification",
+  "current_bottleneck": "Runtime Health Check used Authorization Bearer with publishable key; fixed to apikey-only and waiting for Vercel redeploy verification",
   "structure_freeze_status": "ACTIVE",
   "current_canonical_source": "03_STATUS/current_state.json + 01_HUMAN_CONSOLE/index.html + 00_CONSTITUTION/Structure_Freeze_Rule.md",
   "supabase_reality_verification": {
@@ -67,9 +67,15 @@
     "data_api_status": 401,
     "reality_verified": false,
     "last_verified": "2026-07-06T08:19:04.459Z",
-    "status": "failed",
+    "status": "runtime_fix_redeploy_pending",
     "reason": "Supabase Data API returned 401. Runtime env vars are readable and Supabase Client creation succeeded, but Data API access is not verified yet.",
-    "next_action": "Confirm Vercel NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY matches Supabase publishable/anon public key, then redeploy and recheck /api/supabase-health"
+    "next_action": "Confirm Vercel NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY matches Supabase publishable/anon public key, then redeploy and recheck /api/supabase-health",
+    "runtime_fix": {
+      "removed_authorization_bearer_header": true,
+      "kept_apikey_header": true,
+      "added_accept_json": true,
+      "official_docs_reason": "Supabase publishable keys are not JWT-based; Data API Quickstart uses apikey header for REST requests."
+    }
   },
   "vercel_production_url": "https://evolution-factory.vercel.app",
   "reality_verified": false,

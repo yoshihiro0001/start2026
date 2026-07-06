@@ -318,3 +318,32 @@ Security Review:
 HumanはSupabase DashboardとVercel Environment Variables上で一致確認だけ行う。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / Reality Verification Sprint Phase2
+
+Score: 90 / 100
+
+What improved:
+- Human confirmed `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` match the Supabase dashboard.
+- Runtime implementation was reviewed against current Supabase official docs.
+- Runtime-side cause was found before asking Human for additional actions.
+
+Cause Candidate Priority:
+1. Runtime fetch implementation: High. The previous Health Check sent `Authorization: Bearer <publishable key>`.
+2. Environment Variables: Low. Human confirmed values match.
+3. RLS / grants: Medium later, but not the first cause for root `/rest/v1/` 401.
+
+Evidence:
+- Supabase API Keys docs say publishable keys are `sb_publishable_...`, are not JWT-based, and cannot be used as Bearer JWTs for database authorization.
+- Supabase Data API Quickstart queries REST with `apikey: <PUBLISHABLE_KEY>` and does not require `Authorization: Bearer <PUBLISHABLE_KEY>`.
+- `@supabase/supabase-js` initialization examples use `createClient(url, 'your-publishable-key')`.
+
+Runtime Fix:
+Removed `Authorization: Bearer ${publishableKey}` from `/api/supabase-health` and kept only `apikey: publishableKey` plus `Accept: application/json`.
+
+Current Status:
+Runtime fix committed locally. Reality Verification must be rerun after Vercel deploy.
+
+Next Review Date: 2026-07-12

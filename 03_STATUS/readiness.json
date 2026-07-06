@@ -4,9 +4,9 @@
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
     "current_percent": 55,
-    "status": "Reality Verification executed; Supabase Data API returned 401",
-    "blocker": "Supabase publishable/anon public key verification needed in Vercel env vars",
-    "next_action": "Confirm public Supabase key in Vercel and rerun /api/supabase-health until Data API returns 200 OK",
+    "status": "Runtime header fix made; Vercel redeploy verification pending",
+    "blocker": "Need production redeploy and recheck after removing Authorization Bearer header",
+    "next_action": "Push runtime fix and rerun Reality Verification",
     "confidence": "66%"
   },
   "categories": [

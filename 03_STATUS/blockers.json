@@ -112,7 +112,7 @@
     "next_action": "Human presses Import Project and selects evolution-factory repo"
   },
   "supabase_reality_verification_blocker": {
-    "name": "Supabase Data API returned 401",
+    "name": "Runtime header implementation was incorrect; redeploy pending",
     "impact": "Environment Variables are readable and Supabase Client is created, but Reality Verified remains false until Data API returns 200 OK",
     "evidence": {
       "production_api_url": "https://evolution-factory.vercel.app/api/supabase-health",
@@ -123,6 +123,6 @@
       "data_api_status": 401,
       "reality_verified": false
     },
-    "next_action": "Confirm Vercel NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY matches Supabase publishable/anon public key; do not paste the key into Git, Chat, or Markdown"
+    "next_action": "Deploy apikey-only Runtime fix, then rerun /api/supabase-health before asking Human for additional actions"
   }
 }

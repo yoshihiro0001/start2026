@@ -61,7 +61,7 @@ export default async function handler(req, res) {
       method: 'GET',
       headers: {
         apikey: publishableKey,
-        Authorization: `Bearer ${publishableKey}`
+        Accept: 'application/json'
       }
     });
 
@@ -73,7 +73,9 @@ export default async function handler(req, res) {
       healthCheck: {
         ok: verified,
         status: response.status,
-        endpoint: healthEndpoint
+        endpoint: healthEndpoint,
+        authorizationHeaderSent: false,
+        apikeyHeaderSent: true
       },
       realityVerified: verified,
       status: verified ? 'connected' : 'failed',
@@ -88,7 +90,9 @@ export default async function handler(req, res) {
       healthCheck: {
         ok: false,
         status: null,
-        endpoint: healthEndpoint
+        endpoint: healthEndpoint,
+        authorizationHeaderSent: false,
+        apikeyHeaderSent: true
       },
       message: `Supabase health check failed: ${error.message}`
     });
