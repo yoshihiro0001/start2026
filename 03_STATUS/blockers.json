@@ -112,8 +112,17 @@
     "next_action": "Human presses Import Project and selects evolution-factory repo"
   },
   "supabase_reality_verification_blocker": {
-    "name": "Supabase Reality Verification pending",
-    "impact": "Environment Variables are not proven until the Vercel runtime API confirms URL/key/client/health check",
-    "next_action": "Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in Vercel, redeploy, then check CEO Console"
+    "name": "Supabase Data API returned 401",
+    "impact": "Environment Variables are readable and Supabase Client is created, but Reality Verified remains false until Data API returns 200 OK",
+    "evidence": {
+      "production_api_url": "https://evolution-factory.vercel.app/api/supabase-health",
+      "checked_at": "2026-07-06T08:19:04.459Z",
+      "runtime_env_url_readable": true,
+      "publishable_key_exists": true,
+      "client_created": true,
+      "data_api_status": 401,
+      "reality_verified": false
+    },
+    "next_action": "Confirm Vercel NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY matches Supabase publishable/anon public key; do not paste the key into Git, Chat, or Markdown"
   }
 }

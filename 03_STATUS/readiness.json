@@ -4,9 +4,9 @@
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
     "current_percent": 55,
-    "status": "Reality Verification implemented; Vercel env vars pending",
-    "blocker": "Vercel Project / Env Vars / Supabase Reality Verified not complete",
-    "next_action": "Import repo into Vercel, set public Supabase env vars, verify Connected in CEO Console",
+    "status": "Reality Verification executed; Supabase Data API returned 401",
+    "blocker": "Supabase publishable/anon public key verification needed in Vercel env vars",
+    "next_action": "Confirm public Supabase key in Vercel and rerun /api/supabase-health until Data API returns 200 OK",
     "confidence": "66%"
   },
   "categories": [
@@ -68,11 +68,11 @@
     },
     {
       "name": "Infrastructure",
-      "current_percent": 62,
-      "status": "GitHub repo identity finalized; Supabase live",
-      "blocker": "Vercel Project and env vars missing",
-      "next_action": "Create Vercel Project via Import",
-      "confidence": "66%"
+      "current_percent": 68,
+      "status": "Vercel Production + Supabase env bridge partly verified",
+      "blocker": "Data API 401 prevents Connected status",
+      "next_action": "Fix public key / Data API auth and rerun verification",
+      "confidence": "70%"
     },
     {
       "name": "Automation",
@@ -84,19 +84,19 @@
     },
     {
       "name": "Supabase",
-      "current_percent": 55,
-      "status": "Project healthy; Reality Verification API implemented",
-      "blocker": "Vercel env vars not configured / Reality Verified pending",
-      "next_action": "Set public env vars and confirm CEO Console Connected",
-      "confidence": "66%"
+      "current_percent": 58,
+      "status": "Project healthy; env vars readable; client created; Data API 401",
+      "blocker": "Data API not Connected yet",
+      "next_action": "Verify public key in Vercel env vars and redeploy",
+      "confidence": "70%"
     },
     {
       "name": "Vercel",
-      "current_percent": 42,
-      "status": "Account/2FA/GitHub auth complete; Reality Verification ready after import",
-      "blocker": "Project not imported / env vars not set",
-      "next_action": "Import evolution-factory repo, then set Supabase public env vars",
-      "confidence": "65%"
+      "current_percent": 62,
+      "status": "Production API route reachable; env vars readable",
+      "blocker": "Supabase Data API 401",
+      "next_action": "Confirm Supabase key value in Vercel without exposing it",
+      "confidence": "70%"
     },
     {
       "name": "Approval Inbox",
@@ -508,5 +508,15 @@
   "ceo_console_quality": "improving",
   "current_blocker": "Vercel Project Import",
   "next_human_action": "VercelでImport Projectを押す",
-  "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続"
+  "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続",
+  "supabase_reality_verification": {
+    "production_api_url": "https://evolution-factory.vercel.app/api/supabase-health",
+    "last_verified": "2026-07-06T08:19:04.459Z",
+    "reality_verified": false,
+    "runtime_env_url_readable": true,
+    "publishable_key_exists": true,
+    "client_created": true,
+    "data_api_status": 401,
+    "status": "failed"
+  }
 }

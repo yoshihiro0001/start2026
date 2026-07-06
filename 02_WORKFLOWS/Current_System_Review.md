@@ -280,3 +280,41 @@ Do not promote yet:
 Evolution EngineはまだPrincipleへ昇格しない。Blueprint Discussion候補のまま検証する。
 
 Next Review Date: 2026-07-12
+
+---
+
+## 2026-07-06 Review / Reality Verification Sprint
+
+Score: 86 / 100
+
+What improved:
+- Vercel Production上で `/api/supabase-health` を実際に確認した。
+- Runtime Environment Variablesは読めている。
+- `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` は存在確認できた。値は表示していない。
+- Supabase Client生成は成功した。
+- Data APIへ実際にアクセスし、HTTP 401を確認した。
+
+Reality Verification Result:
+Failed。Connectedではない。
+
+Evidence:
+- Production API: `https://evolution-factory.vercel.app/api/supabase-health`
+- Checked at: `2026-07-06T08:19:04.459Z`
+- Runtime URL readable: true
+- Publishable key exists: true
+- Supabase Client created: true
+- Data API status: 401
+- Reality Verified: false
+
+Meaning:
+「Environment Variablesを設定した」だけでは不十分であることを確認した。
+実際のData APIが200 OKを返すまでConnectedとは扱わない。
+
+Current Bottleneck:
+Vercel上の `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` がSupabaseのpublishable/anon public keyとして正しいか確認が必要。
+
+Security Review:
+キーの値はGit / Chat / Markdownへ貼らない。
+HumanはSupabase DashboardとVercel Environment Variables上で一致確認だけ行う。
+
+Next Review Date: 2026-07-12

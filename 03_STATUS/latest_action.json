@@ -1,9 +1,9 @@
 {
   "last_updated": "2026-07-06",
-  "human_next_action": "VercelでImport Projectを押す",
+  "human_next_action": "Supabase Settings / APIでpublishable keyまたはanon public keyを確認し、Vercel Environment Variablesの値と一致しているか確認する",
   "one_action_only": true,
   "approved_task": "Security Foundation Sprint started",
-  "codex_next_task": "After Vercel env vars are set, open CEO Console and confirm Supabase Reality Verification shows Connected. Do not request or store secret values.",
+  "codex_next_task": "After Human confirms/corrects the publishable key in Vercel, rerun /api/supabase-health and update CEO Console. Do not request or store the key value.",
   "status": "Knowledge Compiler / Registry / Guided Execution created; Vercel Project import pending",
   "related_files": [
     "SECURITY/README.md",
@@ -47,9 +47,9 @@
     "02_WORKFLOWS/OS_Knowledge_Audit.md",
     "03_STATUS/current_state.json"
   ],
-  "current_reality_step": "GitHub repository renamed / Vercel dashboard reached",
-  "current_screen": "Vercel Dashboard / Add New / Import Project",
-  "detected_task": "Import GitHub repository yoshihiro0001/evolution-factory into Vercel",
+  "current_reality_step": "Supabase Reality Verification failed at Data API 401",
+  "current_screen": "Supabase Dashboard / Project Settings / API and Vercel Project / Settings / Environment Variables",
+  "detected_task": "Verify the public Supabase key in Vercel without exposing the value",
   "knowledge_status": "Knowledge Compression Loop added; registry created",
   "architecture_audit_status": "Route & Connection Audit designed; Multi-Codex discussion saved",
   "ai_control_center_status": "AI Capability Registry / AI Routing Rule / Docs Research Plan added; recommended AI remains Pending Research for browser/security setup",
@@ -60,7 +60,7 @@
   "console_mode": "CEO Console",
   "decision_quality_status": "Decision Quality Pipeline created; CEO Console top view added",
   "next_human_decision": "VercelでGitHub repo yoshihiro0001/evolution-factory をImportする",
-  "current_bottleneck": "Vercel Project Import / Environment Variables未設定 / Reality Verification pending",
+  "current_bottleneck": "Data API 401 after env vars were read and client was created",
   "current_sprint": "Vercel Project Import + Supabase Env preparation",
   "supabase_created": true,
   "supabase_connected_to_vercel": false,
@@ -90,5 +90,7 @@
   "current_blocker": "Vercel Project Import",
   "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続",
   "current_state_registry": "03_STATUS/current_state.json",
-  "supabase_reality_verification": "implemented"
+  "supabase_reality_verification": "failed_data_api_401",
+  "reality_verified": false,
+  "last_verified": "2026-07-06T08:19:04.459Z"
 }
