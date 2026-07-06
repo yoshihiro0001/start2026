@@ -13,7 +13,7 @@
   "supabase_connected_to_vercel": false,
   "env_vars_configured": true,
   "current_screen": "Supabase Dashboard / Project Settings / API and Vercel Project / Settings / Environment Variables",
-  "current_next_action": "Deploy Data API probe v2 and rerun /api/supabase-health",
+  "current_next_action": "Create minimal health check table reality_healthcheck_probe with safe public read RLS, then rerun Reality Verification",
   "exact_button": "Supabase Settings / API; Vercel Settings / Environment Variables",
   "exact_input": "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY (value must stay only in Vercel, not in Chat/Git/Markdown)",
   "do_not_touch": [
@@ -45,9 +45,9 @@
     "security": "SECURITY/README.md",
     "supabase_evidence": "04_EVIDENCE/Supabase_Project_Setup.md"
   },
-  "current_human_action": "現在Human追加操作なし。CodexがRuntime修正後に再検証する",
-  "current_objective": "Supabase Reality VerificationをConnectedにする",
-  "current_bottleneck": "Runtime Data API probe v2 deploy pending",
+  "current_human_action": "Health Check用テーブル作成を承認する",
+  "current_objective": "Supabase Data APIを200 OKでReality Verifiedにする",
+  "current_bottleneck": "Health Check probe table missing or inaccessible (404 PGRST205)",
   "structure_freeze_status": "ACTIVE",
   "current_canonical_source": "03_STATUS/current_state.json + 01_HUMAN_CONSOLE/index.html + 00_CONSTITUTION/Structure_Freeze_Rule.md",
   "supabase_reality_verification": {
@@ -64,12 +64,12 @@
     "publishable_key_exists": true,
     "key_value_displayed": false,
     "client_created": true,
-    "data_api_status": 401,
+    "data_api_status": 404,
     "reality_verified": false,
-    "last_verified": "2026-07-06T08:19:04.459Z",
-    "status": "data_api_probe_v2_redeploy_pending",
-    "reason": "Supabase Data API returned 401. Runtime env vars are readable and Supabase Client creation succeeded, but Data API access is not verified yet.",
-    "next_action": "Confirm Vercel NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY matches Supabase publishable/anon public key, then redeploy and recheck /api/supabase-health",
+    "last_verified": "2026-07-06T08:57:28.094Z",
+    "status": "failed_probe_table_missing",
+    "reason": "Data API reached with apikey-only runtime, but probe table is missing or not exposed (404 PGRST205). Connected remains false because 200 OK was not achieved.",
+    "next_action": "Create minimal reality_healthcheck_probe table and safe public read RLS, then recheck /api/supabase-health",
     "runtime_fix": {
       "removed_authorization_bearer_header": true,
       "kept_apikey_header": true,
@@ -82,9 +82,16 @@
       "checks_table_path": true,
       "connected_requires_200_ok": true,
       "distinguishes_401_from_missing_table": true
-    }
+    },
+    "rest_root_status": 401,
+    "data_api_response_code": "PGRST205",
+    "data_api_endpoint": "https://fxqvhcryitmgsemlojme.supabase.co/rest/v1/reality_healthcheck_probe?select=*&limit=1",
+    "data_api_meaning": "data_api_reached_but_probe_table_missing_or_inaccessible",
+    "authorization_header_sent": false,
+    "apikey_header_sent": true,
+    "runtime_side_review": "createClient OK, REST URL OK, apikey header OK, Authorization header removed, publishable key existence OK. Runtime can reach Data API; 200 OK requires an exposed health table."
   },
   "vercel_production_url": "https://evolution-factory.vercel.app",
   "reality_verified": false,
-  "last_verified": "2026-07-06T08:19:04.459Z"
+  "last_verified": "2026-07-06T08:57:28.094Z"
 }

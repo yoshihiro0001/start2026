@@ -1,9 +1,9 @@
 {
   "last_updated": "2026-07-06",
-  "human_next_action": "現在Human追加操作なし。CodexがRuntime修正後に再検証する",
+  "human_next_action": "Health Check用テーブル作成を承認する",
   "one_action_only": true,
   "approved_task": "Security Foundation Sprint started",
-  "codex_next_task": "After push and Vercel deployment, rerun /api/supabase-health and record dataApiCheck status/meaning.",
+  "codex_next_task": "After Human approves, prepare minimal SQL for reality_healthcheck_probe table and public read RLS, then rerun /api/supabase-health.",
   "status": "Knowledge Compiler / Registry / Guided Execution created; Vercel Project import pending",
   "related_files": [
     "SECURITY/README.md",
@@ -47,7 +47,7 @@
     "02_WORKFLOWS/OS_Knowledge_Audit.md",
     "03_STATUS/current_state.json"
   ],
-  "current_reality_step": "Supabase Reality Verification failed at Data API 401",
+  "current_reality_step": "Runtime verified Data API reachability; health table missing",
   "current_screen": "Supabase Dashboard / Project Settings / API and Vercel Project / Settings / Environment Variables",
   "detected_task": "Verify the public Supabase key in Vercel without exposing the value",
   "knowledge_status": "Knowledge Compression Loop added; registry created",
@@ -60,7 +60,7 @@
   "console_mode": "CEO Console",
   "decision_quality_status": "Decision Quality Pipeline created; CEO Console top view added",
   "next_human_decision": "VercelでGitHub repo yoshihiro0001/evolution-factory をImportする",
-  "current_bottleneck": "Vercel redeploy pending after Data API probe v2",
+  "current_bottleneck": "Probe table missing or inaccessible: 404 PGRST205",
   "current_sprint": "Vercel Project Import + Supabase Env preparation",
   "supabase_created": true,
   "supabase_connected_to_vercel": false,
@@ -90,7 +90,7 @@
   "current_blocker": "Vercel Project Import",
   "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続",
   "current_state_registry": "03_STATUS/current_state.json",
-  "supabase_reality_verification": "data_api_probe_v2_redeploy_pending",
+  "supabase_reality_verification": "failed_probe_table_missing",
   "reality_verified": false,
-  "last_verified": "2026-07-06T08:19:04.459Z"
+  "last_verified": "2026-07-06T08:57:28.094Z"
 }

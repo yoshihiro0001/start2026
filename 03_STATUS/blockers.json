@@ -112,17 +112,22 @@
     "next_action": "Human presses Import Project and selects evolution-factory repo"
   },
   "supabase_reality_verification_blocker": {
-    "name": "Data API probe v2 redeploy pending",
-    "impact": "Environment Variables are readable and Supabase Client is created, but Reality Verified remains false until Data API returns 200 OK",
+    "name": "Health Check probe table missing or inaccessible",
+    "impact": "Runtime reaches Data API without auth rejection, but Connected requires Data API 200 OK from a known health table",
     "evidence": {
       "production_api_url": "https://evolution-factory.vercel.app/api/supabase-health",
-      "checked_at": "2026-07-06T08:19:04.459Z",
-      "runtime_env_url_readable": true,
+      "checked_at": "2026-07-06T08:57:28.094Z",
+      "url_readable": true,
       "publishable_key_exists": true,
       "client_created": true,
-      "data_api_status": 401,
+      "authorization_header_sent": false,
+      "apikey_header_sent": true,
+      "rest_root_status": 401,
+      "data_api_status": 404,
+      "data_api_response_code": "PGRST205",
+      "data_api_meaning": "data_api_reached_but_probe_table_missing_or_inaccessible",
       "reality_verified": false
     },
-    "next_action": "Deploy table-path Data API probe, then distinguish auth_rejected from missing probe table before asking Human for more action"
+    "next_action": "Create minimal reality_healthcheck_probe table with safe public read RLS; do not expose secrets"
   }
 }

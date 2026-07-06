@@ -4,9 +4,9 @@
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
     "current_percent": 55,
-    "status": "Data API probe v2 implemented; redeploy verification pending",
-    "blocker": "Need production redeploy and dataApiCheck status",
-    "next_action": "Push Data API probe v2 and rerun Reality Verification",
+    "status": "Runtime reaches Supabase Data API; probe table missing prevents 200 OK",
+    "blocker": "No health check table / RLS exposure for Data API 200 OK",
+    "next_action": "Approve minimal health check table and RLS, then rerun Reality Verification",
     "confidence": "66%"
   },
   "categories": [
@@ -511,12 +511,16 @@
   "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続",
   "supabase_reality_verification": {
     "production_api_url": "https://evolution-factory.vercel.app/api/supabase-health",
-    "last_verified": "2026-07-06T08:19:04.459Z",
+    "last_verified": "2026-07-06T08:57:28.094Z",
     "reality_verified": false,
     "runtime_env_url_readable": true,
     "publishable_key_exists": true,
     "client_created": true,
-    "data_api_status": 401,
-    "status": "failed"
+    "authorization_header_sent": false,
+    "apikey_header_sent": true,
+    "rest_root_status": 401,
+    "data_api_status": 404,
+    "data_api_response_code": "PGRST205",
+    "status": "failed_probe_table_missing"
   }
 }

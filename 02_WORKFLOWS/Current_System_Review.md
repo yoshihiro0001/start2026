@@ -357,3 +357,21 @@ Runtime now checks both:
 The new probe keeps Connected strict: only Data API 200 OK means Connected.
 If status is 401, auth/key is still rejected.
 If status is 404/400, Data API is reachable but the probe table is missing or inaccessible.
+
+Reality Verification Phase2 Result:
+After deploy, `/api/supabase-health` returned:
+- createClient: success
+- Authorization header sent: false
+- apikey header sent: true
+- REST root status: 401
+- Data API probe status: 404
+- Data API response code: PGRST205
+- Meaning: Data API reached, but `reality_healthcheck_probe` table is missing or inaccessible.
+
+Runtime-side conclusion:
+The original Runtime header problem was fixed.
+The current failure is no longer the same 401 auth rejection on the table probe.
+Connected is still false because the Data API has not returned 200 OK.
+
+Next blocker:
+A minimal health check table with safe public read RLS is needed to produce a real 200 OK Data API verification.

@@ -468,7 +468,7 @@
         <div class="summary">
           <div class="summary-card"><div class="label">Overall Health</div><div class="value">55%</div></div>
           <div class="summary-card"><div class="label">Trust Status</div><div class="value">Medium</div></div>
-          <div class="summary-card"><div class="label">Current Bottleneck</div><div class="value">Redeploy待ち</div></div>
+          <div class="summary-card"><div class="label">Current Bottleneck</div><div class="value">Probe table未作成</div></div>
           <div class="summary-card"><div class="label">Operating Company</div><div class="value">Draft</div></div>
           <div class="summary-card"><div class="label">Current Office</div><div class="value">Reality</div></div>
         </div>
@@ -476,8 +476,8 @@
       <aside class="next">
         <div>
           <div class="label">Next Human Decision</div>
-          <h2>Runtime修正後に再検証する。</h2>
-          <p>Runtime側のAuthorization headerを外し、Supabase公式Quickstartと同じ `apikey` headerのみへ修正しました。Deploy後に `/api/supabase-health` を再確認します。</p>
+          <h2>Health Check tableを作る。</h2>
+          <p>RuntimeはData APIへ到達しました。Connectedにするには、`reality_healthcheck_probe` のようなHealth Check用テーブルを作り、RLSで公開読み取りを許可して200 OKを確認します。</p>
         </div>
         <span class="tag ok">1 action only</span>
       </aside>
@@ -496,26 +496,26 @@
           <div class="row"><div class="row-key">Operating Company Mode</div><div class="row-val">Draft</div></div>
           <div class="row"><div class="row-key">Current Office</div><div class="row-val">Reality Office</div></div>
           <div class="row"><div class="row-key">Current Reality Step</div><div class="row-val">Supabase Reality Verification</div></div>
-          <div class="row"><div class="row-key">Current Human Action</div><div class="row-val">Human追加操作なし。CodexがRuntime修正後に再検証する。</div></div>
-          <div class="row"><div class="row-key">Current Bottleneck</div><div class="row-val">Runtime修正のVercel Deploy待ち。</div></div>
+          <div class="row"><div class="row-key">Current Human Action</div><div class="row-val">Health Check用テーブル作成を承認する。</div></div>
+          <div class="row"><div class="row-key">Current Bottleneck</div><div class="row-val">Data APIは到達済み。Probe tableが未作成または未公開。</div></div>
           <div class="row"><div class="row-key">Do Not Paste</div><div class="row-val">service_role / DB password / PAT / Recovery Code</div></div>
         </div>
       </article>
 
 
       <article class="card full" id="supabaseRealityVerification">
-        <div class="card-head"><h3>Supabase Reality Verification</h3><span class="tag warn" id="supabaseRealityTag">Redeploy Pending</span></div>
+        <div class="card-head"><h3>Supabase Reality Verification</h3><span class="tag danger" id="supabaseRealityTag">Failed</span></div>
         <div class="benefit">
-          <div class="benefit-card"><div class="num" id="supabaseRealityStatus">Pending</div><div class="num-note">Runtime fix committed。Deploy後に再実測。</div></div>
+          <div class="benefit-card"><div class="num" id="supabaseRealityStatus">Failed</div><div class="num-note">Data API reached / probe table 404。</div></div>
           <div class="benefit-card"><div class="num" id="supabaseKeyStatus">Exists</div><div class="num-note">Publishable keyは存在確認のみ。値は表示しない。</div></div>
           <div class="benefit-card"><div class="num" id="supabaseClientStatus">Created</div><div class="num-note">Supabase Client生成は成功。</div></div>
-          <div class="benefit-card"><div class="num" id="supabaseHealthStatus">Retry</div><div class="num-note">REST endpoint health check。</div></div>
+          <div class="benefit-card"><div class="num" id="supabaseHealthStatus">404</div><div class="num-note">Data API probe: PGRST205。</div></div>
         </div>
         <div class="rows" style="margin-top:16px">
           <div class="row"><div class="row-key">Runtime URL</div><div class="row-val" id="supabaseRealityUrl">https://evolution-factory.vercel.app</div></div>
-          <div class="row"><div class="row-key">Reality Verified</div><div class="row-val" id="supabaseRealityVerified">Pending。Data API probe実装へ更新。Deploy後に200 OK / 401 / table missingを切り分ける。</div></div>
-          <div class="row"><div class="row-key">Last Checked</div><div class="row-val" id="supabaseRealityUpdated">2026-07-06T08:19:04.459Z</div></div>
-          <div class="row"><div class="row-key">Next Action</div><div class="row-val" id="supabaseRealityNext">Data API probe版をDeployし、`/api/supabase-health` を再実測する。</div></div>
+          <div class="row"><div class="row-key">Reality Verified</div><div class="row-val" id="supabaseRealityVerified">false。Data API reached with apikey-only runtime, but probe table is missing or not exposed (404 PGRST205). Connected remains false because 200 OK was not achieved.</div></div>
+          <div class="row"><div class="row-key">Last Checked</div><div class="row-val" id="supabaseRealityUpdated">2026-07-06T08:57:28.094Z</div></div>
+          <div class="row"><div class="row-key">Next Action</div><div class="row-val" id="supabaseRealityNext">Health Check用の最小テーブル `reality_healthcheck_probe` を作成し、公開読み取りRLSを設定して再検証する。</div></div>
           <div class="row"><div class="row-key">Do Not Display</div><div class="row-val">Publishable key value / service_role / secret key / DB password は表示しない。</div></div>
         </div>
       </article>
