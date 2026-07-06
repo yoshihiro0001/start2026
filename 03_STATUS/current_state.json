@@ -13,7 +13,7 @@
   "supabase_connected_to_vercel": false,
   "env_vars_configured": true,
   "current_screen": "Supabase Dashboard / Project Settings / API and Vercel Project / Settings / Environment Variables",
-  "current_next_action": "Wait for Vercel deploy, then rerun /api/supabase-health",
+  "current_next_action": "Deploy Data API probe v2 and rerun /api/supabase-health",
   "exact_button": "Supabase Settings / API; Vercel Settings / Environment Variables",
   "exact_input": "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY (value must stay only in Vercel, not in Chat/Git/Markdown)",
   "do_not_touch": [
@@ -47,7 +47,7 @@
   },
   "current_human_action": "現在Human追加操作なし。CodexがRuntime修正後に再検証する",
   "current_objective": "Supabase Reality VerificationをConnectedにする",
-  "current_bottleneck": "Runtime Health Check used Authorization Bearer with publishable key; fixed to apikey-only and waiting for Vercel redeploy verification",
+  "current_bottleneck": "Runtime Data API probe v2 deploy pending",
   "structure_freeze_status": "ACTIVE",
   "current_canonical_source": "03_STATUS/current_state.json + 01_HUMAN_CONSOLE/index.html + 00_CONSTITUTION/Structure_Freeze_Rule.md",
   "supabase_reality_verification": {
@@ -67,7 +67,7 @@
     "data_api_status": 401,
     "reality_verified": false,
     "last_verified": "2026-07-06T08:19:04.459Z",
-    "status": "runtime_fix_redeploy_pending",
+    "status": "data_api_probe_v2_redeploy_pending",
     "reason": "Supabase Data API returned 401. Runtime env vars are readable and Supabase Client creation succeeded, but Data API access is not verified yet.",
     "next_action": "Confirm Vercel NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY matches Supabase publishable/anon public key, then redeploy and recheck /api/supabase-health",
     "runtime_fix": {
@@ -75,6 +75,13 @@
       "kept_apikey_header": true,
       "added_accept_json": true,
       "official_docs_reason": "Supabase publishable keys are not JWT-based; Data API Quickstart uses apikey header for REST requests."
+    },
+    "data_api_probe_v2": {
+      "probe_table": "reality_healthcheck_probe",
+      "checks_rest_root": true,
+      "checks_table_path": true,
+      "connected_requires_200_ok": true,
+      "distinguishes_401_from_missing_table": true
     }
   },
   "vercel_production_url": "https://evolution-factory.vercel.app",

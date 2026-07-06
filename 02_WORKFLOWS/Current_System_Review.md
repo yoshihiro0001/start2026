@@ -347,3 +347,13 @@ Current Status:
 Runtime fix committed locally. Reality Verification must be rerun after Vercel deploy.
 
 Next Review Date: 2026-07-12
+
+Data API Probe Update:
+`/rest/v1/` root-only health check is not enough to classify the failure.
+Runtime now checks both:
+- REST root endpoint
+- Data API table path: `/rest/v1/reality_healthcheck_probe?select=*&limit=1`
+
+The new probe keeps Connected strict: only Data API 200 OK means Connected.
+If status is 401, auth/key is still rejected.
+If status is 404/400, Data API is reachable but the probe table is missing or inaccessible.

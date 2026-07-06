@@ -4,9 +4,9 @@
   "note": "Human Console is currently statically reflected from this status source. Future implementation should load this JSON automatically.",
   "overall_readiness": {
     "current_percent": 55,
-    "status": "Runtime header fix made; Vercel redeploy verification pending",
-    "blocker": "Need production redeploy and recheck after removing Authorization Bearer header",
-    "next_action": "Push runtime fix and rerun Reality Verification",
+    "status": "Data API probe v2 implemented; redeploy verification pending",
+    "blocker": "Need production redeploy and dataApiCheck status",
+    "next_action": "Push Data API probe v2 and rerun Reality Verification",
     "confidence": "66%"
   },
   "categories": [

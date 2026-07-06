@@ -3,7 +3,7 @@
   "human_next_action": "現在Human追加操作なし。CodexがRuntime修正後に再検証する",
   "one_action_only": true,
   "approved_task": "Security Foundation Sprint started",
-  "codex_next_task": "After push and Vercel deployment, rerun /api/supabase-health and record Connected or Failed. Do not ask Human for more input first.",
+  "codex_next_task": "After push and Vercel deployment, rerun /api/supabase-health and record dataApiCheck status/meaning.",
   "status": "Knowledge Compiler / Registry / Guided Execution created; Vercel Project import pending",
   "related_files": [
     "SECURITY/README.md",
@@ -60,7 +60,7 @@
   "console_mode": "CEO Console",
   "decision_quality_status": "Decision Quality Pipeline created; CEO Console top view added",
   "next_human_decision": "VercelでGitHub repo yoshihiro0001/evolution-factory をImportする",
-  "current_bottleneck": "Vercel redeploy pending after runtime header fix",
+  "current_bottleneck": "Vercel redeploy pending after Data API probe v2",
   "current_sprint": "Vercel Project Import + Supabase Env preparation",
   "supabase_created": true,
   "supabase_connected_to_vercel": false,
@@ -90,7 +90,7 @@
   "current_blocker": "Vercel Project Import",
   "highest_risk": "Secret誤保存 / Console情報過多 / Registry未接続",
   "current_state_registry": "03_STATUS/current_state.json",
-  "supabase_reality_verification": "runtime_fix_redeploy_pending",
+  "supabase_reality_verification": "data_api_probe_v2_redeploy_pending",
   "reality_verified": false,
   "last_verified": "2026-07-06T08:19:04.459Z"
 }
