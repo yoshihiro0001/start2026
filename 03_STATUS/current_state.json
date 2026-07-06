@@ -12,10 +12,10 @@
   "github_repo_connected_to_vercel": true,
   "supabase_connected_to_vercel": false,
   "env_vars_configured": true,
-  "current_screen": "Supabase Dashboard / Project Settings / API and Vercel Project / Settings / Environment Variables",
+  "current_screen": "CEO Operating Map / Runtime Verification status",
   "current_next_action": "Create minimal health check table reality_healthcheck_probe with safe public read RLS, then rerun Reality Verification",
-  "exact_button": "Supabase Settings / API; Vercel Settings / Environment Variables",
-  "exact_input": "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY (value must stay only in Vercel, not in Chat/Git/Markdown)",
+  "exact_button": "None",
+  "exact_input": "None",
   "do_not_touch": [
     "service_role",
     "secret key",
@@ -45,9 +45,9 @@
     "security": "SECURITY/README.md",
     "supabase_evidence": "04_EVIDENCE/Supabase_Project_Setup.md"
   },
-  "current_human_action": "Health Check用テーブル作成を承認する",
+  "current_human_action": "None until Runtime Office produces the next CEO Decision",
   "current_objective": "Supabase Data APIを200 OKでReality Verifiedにする",
-  "current_bottleneck": "Health Check probe table missing or inaccessible (404 PGRST205)",
+  "current_bottleneck": "Runtime Verification not Connected",
   "structure_freeze_status": "ACTIVE",
   "current_canonical_source": "03_STATUS/current_state.json + 01_HUMAN_CONSOLE/index.html + 00_CONSTITUTION/Structure_Freeze_Rule.md",
   "supabase_reality_verification": {
@@ -93,5 +93,43 @@
   },
   "vercel_production_url": "https://evolution-factory.vercel.app",
   "reality_verified": false,
-  "last_verified": "2026-07-06T08:57:28.094Z"
+  "last_verified": "2026-07-06T08:57:28.094Z",
+  "company_health": {
+    "status": "Draft",
+    "score": 56,
+    "reason": "GitHub and Vercel are connected; Supabase env is configured; Runtime verification is not yet Connected."
+  },
+  "purpose_alignment": "medium_high",
+  "constitution_status": "locked_rules_active_manual_enforcement",
+  "knowledge_status": "active_manual_sync",
+  "runtime_status": "runtime_office_reviewing_reality_verification",
+  "reality_status": {
+    "github": "connected",
+    "vercel": "connected",
+    "supabase_env": "configured",
+    "runtime_verification": "failed",
+    "latest_evidence": "Data API reached; probe table missing or inaccessible (404 PGRST205). Earlier REST root remained 401."
+  },
+  "learning_status": "manual_evidence_recording",
+  "security_health": "prototype_locked_secret_rules",
+  "entropy_status": "high_structure_freeze_active",
+  "owner_office": "Runtime Office",
+  "ceo_decision_required": "Approve Runtime Office next verification path before new Human setup actions",
+  "human_action": "None until Runtime Office produces the next CEO Decision",
+  "locked_policy_count": 4,
+  "unverified_claims_count": 1,
+  "decision_queue": [
+    "Approve Runtime fix / Reality verification next path",
+    "Approve minimal health check table only after Runtime Office proposes exact safe SQL/RLS"
+  ],
+  "task_queue_summary": "Worker/Codex tasks only; CEO does not inspect task details",
+  "locked_policies": [
+    "Trust Rule",
+    "Env Naming Standard",
+    "Secret Handling Rule",
+    "Structure Freeze"
+  ],
+  "next_approved_move": "Runtime Office continues verification and returns one CEO Decision",
+  "ceo_operating_map": "Blueprint/08_CEO_Operating_Map.md",
+  "mrbrain_blueprint_sync": "Blueprint/09_MrBrain_Blueprint_Sync.md"
 }

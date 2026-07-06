@@ -159,3 +159,25 @@ Reality Office
 
 Current Reality Step:
 Vercel Import
+
+## Policy Lock / Rule Lock
+
+CEOがLockしたRuleは、AI / Codex / Workerが勝手に変更できない。
+
+Lock対象:
+
+- Design Rule
+- Security Rule
+- Naming Standard
+- Trust Rule
+- Environment Variable Naming Standard
+- Secret Handling Rule
+- Structure Freeze
+
+Rules:
+
+- Lock解除にはCEO Decisionが必要。
+- Locked RuleはCEO Consoleに表示する。
+- 新しい提案はLocked Ruleと照合してからTask化する。
+- Locked Ruleに反するTaskは、Task Queueへ入れずDecision Queueへ戻す。
+- AI / Codex / WorkerはLocked Ruleの変更を提案できるが、実行はできない。
